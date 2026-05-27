@@ -2,10 +2,13 @@ const map = L.map("map", {
   zoomControl: true,
   preferCanvas: true,
 }).setView([50.2, 122.2], 7);
+window.__hikeMap = map;
 
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+L.tileLayer("https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}", {
+  subdomains: ["1", "2", "3", "4"],
   maxZoom: 18,
-  attribution: "&copy; OpenStreetMap contributors",
+  noWrap: true,
+  attribution: "&copy; 高德地图",
 }).addTo(map);
 
 const state = {
@@ -69,7 +72,15 @@ function renderMarkers() {
   }
 
   els.poiCount.textContent = state.features.filter(featureVisible).length;
-  if (bounds.length) map.fitBounds(bounds, { padding: [26, 26], maxZoom: 9 });
+  map.invalidateSize();
+  if (bounds.length) {
+    const sidebarWidth = document.querySelector(".sidebar")?.getBoundingClientRect().width || 0;
+    map.fitBounds(bounds, {
+      paddingTopLeft: [sidebarWidth + 42, 52],
+      paddingBottomRight: [52, 52],
+      maxZoom: 8,
+    });
+  }
 }
 
 function parseLocation(location) {
@@ -78,6 +89,7 @@ function parseLocation(location) {
 }
 
 async function init() {
+  map.invalidateSize();
   const [places, anchors, routes] = await Promise.all([
     fetch("../data/processed/places-first-pass.geojson").then((r) => r.json()),
     fetch("../data/processed/anchor-towns.json").then((r) => r.json()),
@@ -116,6 +128,8 @@ async function init() {
     .join("");
 
   renderMarkers();
+  requestAnimationFrame(() => map.invalidateSize());
+  setTimeout(() => map.invalidateSize(), 250);
 }
 
 els.filters.forEach((button) => {
