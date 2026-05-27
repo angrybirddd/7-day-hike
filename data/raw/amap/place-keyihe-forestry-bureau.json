@@ -1,0 +1,2061 @@
+﻿{
+    "suggestion":  {
+                       "keywords":  [
+
+                                    ],
+                       "cities":  [
+
+                                  ]
+                   },
+    "count":  "16",
+    "infocode":  "10000",
+    "pois":  [
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "政府机关",
+                     "type":  "政府机构及社会团体;政府机关;乡镇级政府及事业单位",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130105",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFGZ6NR4",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "122.499263,50.651249",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "克一河林业局电讯管理处",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F017020_5172",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7522738902",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-04-03 23:46:39",
+                     "website":  [
+
+                                 ],
+                     "address":  "克一河林业局",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.499322,50.651066",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "工会",
+                     "type":  "政府机构及社会团体;政府机关;乡镇级政府及事业单位",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130105",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFFRN41F",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "122.500018,50.651352",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "克一河林业局工会",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F017020_98",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7522748000",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-04-03 15:19:40",
+                     "website":  [
+
+                                 ],
+                     "address":  "中央大街附近",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.500094,50.651147",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "公安局",
+                     "type":  "政府机构及社会团体;公检法机构;公安警察",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130501",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60N9QP",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "122.521819,50.654436",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "内蒙古自治区克一河森林公安局",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F017021_19",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "周一至周日 00:00-24:00",
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  "24小时营业"
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7522748112",
+                     "shopinfo":  "2",
+                     "alias":  "克一河森林公安局",
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 23:25:47",
+                     "website":  [
+
+                                 ],
+                     "address":  "克一河森林公安局",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.522187,50.653801",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "政府机关",
+                     "type":  "政府机构及社会团体;政府机关;乡镇级政府及事业单位",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130105",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0JGNDUSIX",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "122.504757,50.652023",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "克一河林业局森调大队",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7522748001",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-04-14 12:55:47",
+                     "website":  [
+
+                                 ],
+                     "address":  "克一河镇中央街大桥东南侧",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.504819,50.651841",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "公司",
+                     "type":  "政府机构及社会团体;政府机关;乡镇级政府及事业单位|公司企业;公司;公司",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/87808d1398770cfafa18024ef31d9d1b"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/db6798b9bbead3523098e16b5b7d89f2"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130105|170200",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFGZ5YFA",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "122.496069,50.6508",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "克一河森工公司",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "夏季个人业务-工作日:周一至周六工作时间:08:30-16:30冬季个人业务-工作日:周一至周六",
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7522738902",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-04-03 23:56:24",
+                     "website":  [
+
+                                 ],
+                     "address":  "中央街364号",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.496268,50.650652",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "派出所",
+                     "type":  "政府机构及社会团体;公检法机构;公安警察",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/8bf01ee6ab4e4de2bf49f70a40a45520"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130501",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60NA79",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "122.494145,50.650881",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "克一河派出所",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F017020_79",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7522738901",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 20:56:10",
+                     "website":  [
+
+                                 ],
+                     "address":  "301省道110号",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.493825,50.650837",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "物业管理",
+                     "type":  "公司企业;公司;公司",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/90be017fa9e0c297513e4be07716e8de"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "170200",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0JGNSSVXR",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "122.497346,50.650996",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "林泰物业克一河分公司",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F017020_68",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  "3.1",
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7522738902",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-06 00:21:07",
+                     "website":  [
+
+                                 ],
+                     "address":  "中央街362号",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.497274,50.651139",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "党委会",
+                     "type":  "政府机构及社会团体;公检法机构;公安警察",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130501",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60N9M2",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "122.521823,50.654436",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "中共克一河森林公安局委员会",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F017021_20",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "00:00-24:00,仅供参考,实际以商家为准",
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  "24小时营业"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7522748112",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 21:37:14",
+                     "website":  [
+
+                                 ],
+                     "address":  "中央街",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.521884,50.654265",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "生活服务,生活服务场所,生活服务场所",
+                     "type":  "生活服务;生活服务场所;生活服务场所",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/8c6febfc94eb31eec530e086691d682a"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/2622b0f3c33696d53e1452fe3f3899ea"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/0715321dbebef8aca9825864a3561d7a"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "070000",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  "15947740915",
+                     "id":  "B0JKYZVP0I",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "122.397477,50.643864",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "工会驿站(克一河林业局66综合管护站工会户外劳动者服务站点)",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  "2.6",
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7522737102",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-04-14 14:46:26",
+                     "website":  [
+
+                                 ],
+                     "address":  "克一河镇克一河林业局综合管护站",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.397456,50.644060",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "便利店",
+                     "type":  "购物服务;便民商店/便利店;便民商店/便利店",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/882004bb673971be86b765abfcac3cf8"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "060200",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  "15847035232",
+                     "id":  "B0H6CMW4TS",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "克一河新悦来食品商店",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "周一至周日 07:30-22:00",
+                                     "rating":  "2.5",
+                                     "open_time":  "07:30-22:00"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7522737921",
+                     "shopinfo":  "1",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-05-10 12:38:07",
+                     "website":  [
+
+                                 ],
+                     "address":  "克一河林业局老楼三号楼下",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.495225,50.649175",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "政府机关",
+                     "type":  "政府机构及社会团体;政府机关;乡镇级政府及事业单位",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130105",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFI9RJPA",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "122.397400,50.643859",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "克一河森林资源管护站",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F017020_5176",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7522737102",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-04-07 15:14:01",
+                     "website":  [
+
+                                 ],
+                     "address":  "301省道北50米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.397381,50.644060",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "家电维修",
+                     "type":  "生活服务;维修站点;维修站点",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/0b81c523366dc78936b698df1ef9b843"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "071200",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  "13847098339",
+                     "id":  "B0G0VHKGW1",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "122.494889,50.648710",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "家电修理",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  "2.9",
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7522737921",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-05-11 13:47:53",
+                     "website":  [
+
+                                 ],
+                     "address":  "克一河林业局西南侧220米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.494794,50.648712",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "中餐",
+                     "type":  "餐饮服务;中餐厅;中餐厅",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/d72f84993e0495d64e8fc47cd377959e"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "050100",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFL2XZZD",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  "diner",
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "迎宾饭店(杜鹃路店)",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  "26.00",
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  "3.2",
+                                     "open_time":  [
+
+                                                   ],
+                                     "meal_ordering":  "0"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7522737921",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-01-23 09:18:12",
+                     "website":  [
+
+                                 ],
+                     "address":  "克一河林业局西南侧260米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.494963,50.648264",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "日杂店",
+                     "type":  "购物服务;便民商店/便利店;便民商店/便利店",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/9c6458ca84e83a203e45856de6a121b2"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "060200",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFG4P1FL",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "新林城商店",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "周一至周日 06:30-22:30",
+                                     "rating":  "2.3",
+                                     "open_time":  "06:30-22:30"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7522737921",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-06 16:15:38",
+                     "website":  [
+
+                                 ],
+                     "address":  "克一河林业局西南侧170米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.494518,50.649305",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "中餐",
+                     "type":  "餐饮服务;中餐厅;综合酒楼|体育休闲服务;休闲场所;休闲场所",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/16766c32d54f000b278ad90dbaa47749"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/932f89fbe6736e8025e3c7539d274302"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "050101|080500",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60NAMW",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  "diner",
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "诺敏山庄",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F017020_64",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  "76.00",
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  "4.1",
+                                     "open_time":  [
+
+                                                   ],
+                                     "meal_ordering":  "0"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7522738901",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-01-03 12:47:29",
+                     "website":  [
+
+                                 ],
+                     "address":  "克一河林业局",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.494511,50.650733",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "烟酒",
+                     "type":  "购物服务;专卖店;烟酒专卖店",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "061210",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0JGNSVMPL",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "122.494462,50.649959",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "星期八酒行",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  "2.4",
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7522738901",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-04-14 13:00:57",
+                     "website":  [
+
+                                 ],
+                     "address":  "克一河林业局西侧130米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "122.494280,50.650107",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 }
+             ],
+    "status":  "1",
+    "info":  "OK"
+}

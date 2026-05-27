@@ -1,0 +1,1180 @@
+﻿{
+    "suggestion":  {
+                       "keywords":  [
+
+                                    ],
+                       "cities":  [
+
+                                  ]
+                   },
+    "count":  "10",
+    "infocode":  "10000",
+    "pois":  [
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "政府机关",
+                     "type":  "政府机构及社会团体;政府机关;政府机关相关",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130100",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "牙克石市",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60NG6U",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "121.620786,50.029043",
+                     "adcode":  "150782",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "库都尔林业局",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7521043912",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 21:54:18",
+                     "website":  [
+
+                                 ],
+                     "address":  [
+
+                                 ],
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "121.620809,50.029267",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "公安局",
+                     "type":  "政府机构及社会团体;公检法机构;公安警察",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130501",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "牙克石市",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D601KJ9",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "121.618750,50.028572",
+                     "adcode":  "150782",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "内蒙古自治区库都尔森林公安局",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F024013_7",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7521043911",
+                     "shopinfo":  "2",
+                     "alias":  "库都尔森林公安局",
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 17:33:30",
+                     "website":  [
+
+                                 ],
+                     "address":  "牙伊线内蒙古库都尔森林公安局",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "121.619000,50.028515",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "中学",
+                     "type":  "科教文化服务;学校;中学",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "141202",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "牙克石市",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D601KJ6",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "121.6225,50.028993",
+                     "adcode":  "150782",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "库都尔林业局中学",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F024013_4",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7521043912",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 17:55:55",
+                     "website":  [
+
+                                 ],
+                     "address":  "库都尔镇",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "121.622442,50.029834",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "公检法机构",
+                     "type":  "政府机构及社会团体;公检法机构;法院",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130503",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "牙克石市",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60N6L0",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "121.623394,50.028759",
+                     "adcode":  "150782",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "牙克石市人民法院库都尔法庭",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F024013_65",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7521043912",
+                     "shopinfo":  "2",
+                     "alias":  "库都尔法庭",
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 19:58:01",
+                     "website":  [
+
+                                 ],
+                     "address":  "库都尔林业局中学东南侧130米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "121.623241,50.028754",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "手机销售",
+                     "type":  "购物服务;家电电子卖场;家电电子卖场",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/4db9a7242d0367866b1e5e97a29d5a96"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/99d1fe89ec67741e9206d739bfbf5962"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "060300",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "牙克石市",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  "13154703866",
+                     "id":  "B0FFL6AWTU",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150782",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "林海家电商场",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "周一至周日 08:00-20:00",
+                                     "rating":  "2.9",
+                                     "open_time":  "08:00-20:00"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7521043911",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-01-20 11:40:43",
+                     "website":  [
+
+                                 ],
+                     "address":  "库都尔森林公安局西侧160米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "121.616772,50.028842",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "火锅",
+                     "type":  "餐饮服务;中餐厅;火锅店",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "https://aos-comment.amap.com/B0GKXLGZOD/comment/content_media_external_images_media_1000054099_ss__1729077099551_38903961.jpg"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "https://aos-comment.amap.com/B0GKXLGZOD/comment/content_media_external_images_media_1000054097_ss__1729077099550_33278879.jpg"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "https://store.is.autonavi.com/showpic/aff3a1ea4c47e66d9eeab0d283ec77f5"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "050117",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "牙克石市",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  "13904705008",
+                     "id":  "B0GKXLGZOD",
+                     "tag":  "羊肉,黄油",
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150782",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  "diner",
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  "羊肉,黄油",
+                     "name":  "四季香约火锅",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "周一至周日 09:00-21:00",
+                                     "rating":  "2.8",
+                                     "open_time":  "09:00-21:00",
+                                     "meal_ordering":  "0"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7521043911",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-01-15 05:31:33",
+                     "website":  [
+
+                                 ],
+                     "address":  "库都尔林业局西南侧110米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "121.619540,50.028706",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "卫生院",
+                     "type":  "医疗保健服务;综合医院;卫生院",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "090102",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "牙克石市",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0LK078U5X",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "121.618034,50.028785",
+                     "adcode":  "150782",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "库都尔镇中心卫生院",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7521043911",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-31 18:09:26",
+                     "website":  [
+
+                                 ],
+                     "address":  "库都尔森林公安局西侧60米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "121.618075,50.028525",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "药店",
+                     "type":  "医疗保健服务;医药保健销售店;药房",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/2fdddcd908f5d969d76aaf000206b8b7"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "090601",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "牙克石市",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFLD5MKI",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "121.618586,50.028821",
+                     "adcode":  "150782",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "同致药店(X302店)",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7521043911",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-05-04 14:36:11",
+                     "website":  [
+
+                                 ],
+                     "address":  "库都尔森林公安局西北侧50米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "121.618562,50.028972",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "旅馆",
+                     "type":  "住宿服务;旅馆招待所;旅馆招待所",
+                     "photos":  [
+                                    {
+                                        "provider":  [
+
+                                                     ],
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/d06cd1843b0bfdd02b28c5845cbce23c"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "100200",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "牙克石市",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFKZKIOT",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "121.619345,50.028859",
+                     "adcode":  "150782",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  "hotel",
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "温暖居旅店",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "star":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "lowest_price":  [
+
+                                                      ],
+                                     "hotel_ordering":  "0",
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7521043911",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-04-07 23:35:09",
+                     "website":  [
+
+                                 ],
+                     "address":  "库都尔林业局西南侧120米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "121.619461,50.028594",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 }
+             ],
+    "status":  "1",
+    "info":  "OK"
+}

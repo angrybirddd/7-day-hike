@@ -1,0 +1,142 @@
+﻿[
+    {
+        "name":  "海拉尔区",
+        "formatted_address":  "内蒙古自治区呼伦贝尔市海拉尔区",
+        "province":  "内蒙古自治区",
+        "city":  "呼伦贝尔市",
+        "district":  "海拉尔区",
+        "adcode":  "150702",
+        "location":  "119.824542,49.234715",
+        "source":  "amap_geocode"
+    },
+    {
+        "name":  "牙克石市",
+        "formatted_address":  "内蒙古自治区呼伦贝尔市牙克石市",
+        "province":  "内蒙古自治区",
+        "city":  "呼伦贝尔市",
+        "district":  "牙克石市",
+        "adcode":  "150782",
+        "location":  "120.711639,49.285947",
+        "source":  "amap_geocode"
+    },
+    {
+        "name":  "免渡河镇",
+        "formatted_address":  "内蒙古自治区呼伦贝尔市牙克石市免渡河镇",
+        "province":  "内蒙古自治区",
+        "city":  "呼伦贝尔市",
+        "district":  "牙克石市",
+        "adcode":  "150782",
+        "location":  "121.048896,49.094153",
+        "source":  "amap_geocode"
+    },
+    {
+        "name":  "乌尔旗汗镇",
+        "formatted_address":  "内蒙古自治区呼伦贝尔市牙克石市乌尔旗汗镇",
+        "province":  "内蒙古自治区",
+        "city":  "呼伦贝尔市",
+        "district":  "牙克石市",
+        "adcode":  "150782",
+        "location":  "121.385249,49.565834",
+        "source":  "amap_geocode"
+    },
+    {
+        "name":  "库都尔镇",
+        "formatted_address":  "内蒙古自治区呼伦贝尔市牙克石市库都尔镇",
+        "province":  "内蒙古自治区",
+        "city":  "呼伦贝尔市",
+        "district":  "牙克石市",
+        "adcode":  "150782",
+        "location":  "121.623050,50.029263",
+        "source":  "amap_geocode"
+    },
+    {
+        "name":  "图里河镇",
+        "formatted_address":  "内蒙古自治区呼伦贝尔市牙克石市图里河镇",
+        "province":  "内蒙古自治区",
+        "city":  "呼伦贝尔市",
+        "district":  "牙克石市",
+        "adcode":  "150782",
+        "location":  "121.672987,50.482493",
+        "source":  "amap_geocode"
+    },
+    {
+        "name":  "伊图里河镇",
+        "formatted_address":  "内蒙古自治区呼伦贝尔市牙克石市伊图里河镇",
+        "province":  "内蒙古自治区",
+        "city":  "呼伦贝尔市",
+        "district":  "牙克石市",
+        "adcode":  "150782",
+        "location":  "121.549123,50.636857",
+        "source":  "amap_geocode"
+    },
+    {
+        "name":  "根河市",
+        "formatted_address":  "内蒙古自治区呼伦贝尔市根河市",
+        "province":  "内蒙古自治区",
+        "city":  "呼伦贝尔市",
+        "district":  "根河市",
+        "adcode":  "150785",
+        "location":  "121.520165,50.779758",
+        "source":  "amap_geocode"
+    },
+    {
+        "name":  "克一河镇",
+        "formatted_address":  "内蒙古自治区呼伦贝尔市鄂伦春自治旗克一河镇",
+        "province":  "内蒙古自治区",
+        "city":  "呼伦贝尔市",
+        "district":  "鄂伦春自治旗",
+        "adcode":  "150723",
+        "location":  "122.495903,50.650994",
+        "source":  "amap_geocode"
+    },
+    {
+        "name":  "吉文镇",
+        "formatted_address":  "内蒙古自治区呼伦贝尔市鄂伦春自治旗吉文镇",
+        "province":  "内蒙古自治区",
+        "city":  "呼伦贝尔市",
+        "district":  "鄂伦春自治旗",
+        "adcode":  "150723",
+        "location":  "123.202224,50.576340",
+        "source":  "amap_geocode"
+    },
+    {
+        "name":  "甘河镇",
+        "formatted_address":  "甘河镇 POI override",
+        "province":  null,
+        "city":  null,
+        "district":  null,
+        "adcode":  "150723",
+        "location":  "123.050544,50.632735",
+        "source":  "amap_place_text_override"
+    },
+    {
+        "name":  "阿里河镇",
+        "formatted_address":  "阿里河镇 POI override",
+        "province":  null,
+        "city":  null,
+        "district":  null,
+        "adcode":  "150723",
+        "location":  "123.724613,50.599909",
+        "source":  "amap_place_text_override"
+    },
+    {
+        "name":  "大杨树镇",
+        "formatted_address":  "大杨树镇 POI override",
+        "province":  null,
+        "city":  null,
+        "district":  null,
+        "adcode":  "150723",
+        "location":  "124.625848,49.737245",
+        "source":  "amap_place_text_override"
+    },
+    {
+        "name":  "加格达奇区",
+        "formatted_address":  "黑龙江省大兴安岭地区加格达奇区",
+        "province":  "黑龙江省",
+        "city":  "大兴安岭地区",
+        "district":  "加格达奇区",
+        "adcode":  "232718",
+        "location":  "124.139742,50.408822",
+        "source":  "amap_geocode"
+    }
+]

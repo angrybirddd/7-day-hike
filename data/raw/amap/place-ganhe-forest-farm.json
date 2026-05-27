@@ -1,0 +1,3227 @@
+﻿{
+    "suggestion":  {
+                       "keywords":  [
+
+                                    ],
+                       "cities":  [
+
+                                  ]
+                   },
+    "count":  "148",
+    "infocode":  "10000",
+    "pois":  [
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "农林牧渔",
+                     "type":  "公司企业;农林牧渔基地;其它农林牧渔基地",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "170400",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0L0C7Z69T",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河农场",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7424032001",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-06 21:51:35",
+                     "website":  [
+
+                                 ],
+                     "address":  [
+
+                                 ],
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.383075,49.352125",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "农林牧渔",
+                     "type":  "公司企业;农林牧渔基地;其它农林牧渔基地",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "https://store.is.autonavi.com/showpic/8e6463d417998a821052fecda9cad053"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "170400",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  "0470-2372011",
+                     "id":  "B0LACAKE4B",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "国营甘河农场",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "周一至周日 00:00-24:00",
+                                     "rating":  "4.0",
+                                     "open_time":  "24小时营业"
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7424055120",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-05-20 15:19:05",
+                     "website":  [
+
+                                 ],
+                     "address":  "甘河农场学校东侧ab座",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.640649,49.381567",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "中学",
+                     "type":  "科教文化服务;学校;中学",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/550851cf3bfe2875821303329a93b283"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "https://aos-comment.amap.com/B01D601KR1/comment/174443271026_1744432712397_69274871.jpg"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "https://store.is.autonavi.com/showpic/6393653f2d6d1c723f2a5bc0b2edacf3"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "141202",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D601KR1",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "124.639339,49.379884",
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河农场学校",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F032038_5",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7424055012",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-05-23 23:12:30",
+                     "website":  [
+
+                                 ],
+                     "address":  "长兴路",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.637953,49.380698",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "农林牧渔",
+                     "type":  "公司企业;农林牧渔基地;其它农林牧渔基地",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "170400",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0M6B7HJG6",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "124.881692,49.522346",
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河农场",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7424272021",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-04-04 18:05:10",
+                     "website":  [
+
+                                 ],
+                     "address":  "巴彦农场中央街与兴彦路交叉口东北100米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.881625,49.522475",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "农林牧渔",
+                     "type":  "公司企业;农林牧渔基地;其它农林牧渔基地",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "170400",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0LKPUZJH9",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "国营甘河农场",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7324756502",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-06 18:54:31",
+                     "website":  [
+
+                                 ],
+                     "address":  [
+
+                                 ],
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.698725,49.300875",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "农林牧渔",
+                     "type":  "公司企业;农林牧渔基地;其它农林牧渔基地",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "170400",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0L3ASTP3U",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "国营甘河农场",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7324758510",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-07 01:14:40",
+                     "website":  [
+
+                                 ],
+                     "address":  [
+
+                                 ],
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.690425,49.320625",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "住宅区",
+                     "type":  "商务住宅;商务住宅相关;商务住宅相关",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "120000",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFLBL95M",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "124.632773,49.377786",
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河农场民心小区",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7424055001",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-05-14 16:42:53",
+                     "website":  [
+
+                                 ],
+                     "address":  "甘河农场",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.632436,49.378373",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  "B0HRD7YK3F",
+                     "pcode":  "150000",
+                     "keytag":  "河流",
+                     "type":  "地名地址信息;自然地名;河流",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "190204",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFGH8RXF",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  "7",
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F035042_786",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "3",
+                     "discount_num":  "0",
+                     "gridcode":  "7325610201",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-05 11:53:48",
+                     "website":  [
+
+                                 ],
+                     "address":  "莫力达瓦达斡尔族自治旗",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "125.155222,49.167481",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "农林牧渔",
+                     "type":  "公司企业;农林牧渔基地;其它农林牧渔基地",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "170400",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0KRLG56E5",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "国营甘河农场",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7324656212",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-06 21:47:13",
+                     "website":  [
+
+                                 ],
+                     "address":  "腾克镇G111(京加线)",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.658580,49.221416",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "河流",
+                     "type":  "地名地址信息;自然地名;河流",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "190204",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0HRD7YK3F",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424720521",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-01 11:13:26",
+                     "website":  [
+
+                                 ],
+                     "address":  "鄂伦春自治旗",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.318088,49.924873",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "政府机关",
+                     "type":  "政府机构及社会团体;政府机关;乡镇级政府及事业单位",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/472a49ea7ec2c4901dba2070c618d3e1"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130105",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60NBGW",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "123.050389,50.632535",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河林业局",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F017025_121",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7523705420",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 19:45:40",
+                     "website":  [
+
+                                 ],
+                     "address":  "甘河镇",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "123.050544,50.632735",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "农林牧渔",
+                     "type":  "公司企业;农林牧渔基地;其它农林牧渔基地",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "170400",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0LDCHTDOR",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "国营甘河农场",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424042411",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-06 18:47:55",
+                     "website":  [
+
+                                 ],
+                     "address":  [
+
+                                 ],
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.557775,49.353625",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "农林牧渔",
+                     "type":  "公司企业;农林牧渔基地;其它农林牧渔基地",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "170400",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0LRZK10BY",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "国营甘河农场",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7324756820",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-06 18:57:24",
+                     "website":  [
+
+                                 ],
+                     "address":  [
+
+                                 ],
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.727125,49.307675",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "收费站",
+                     "type":  "道路附属设施;收费站;收费站",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "180200",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "BZGJRQ0004",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河农场收费站(京加线西北向)",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424259801",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-01 06:44:56",
+                     "website":  [
+
+                                 ],
+                     "address":  "莫力达瓦达斡尔族自治旗",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.732164,49.576509",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "公园",
+                     "type":  "风景名胜;公园广场;公园",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "110101",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D601KQY",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "124.646789,49.374519",
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  "tour",
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河农场公园",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F032038_2",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "周一至周日 00:00-24:00",
+                                     "rating":  "3.5",
+                                     "open_time":  "24小时营业",
+                                     "ticket_ordering":  "0"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424054122",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 18:03:25",
+                     "website":  [
+
+                                 ],
+                     "address":  "111国道西100米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.644149,49.373651",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  "B0HRD7YK3F",
+                     "pcode":  "150000",
+                     "keytag":  "河流",
+                     "type":  "地名地址信息;自然地名;河流",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "190204",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFGK35QG",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  "7",
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F031039_15",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424160122",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-05 17:32:09",
+                     "website":  [
+
+                                 ],
+                     "address":  "莫力达瓦达斡尔族自治旗",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.774760,49.424215",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "收费站",
+                     "type":  "道路附属设施;收费站;收费站",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "180200",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "BZGJRQ0003",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河农场收费站(京加线东南向)",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424259801",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-01 00:53:19",
+                     "website":  [
+
+                                 ],
+                     "address":  "莫力达瓦达斡尔族自治旗",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.731541,49.576376",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "加油站",
+                     "type":  "汽车服务;加油站;中国石油",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/14cce60ab251a411906c6b1c89aac561"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/bb95cff2f2d37128a9ea670ab304f061"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/219ebee83c64b0835eb157abd3d3ec8a"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "010102",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  "0470-4872848",
+                     "id":  "B01D601KR7",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "124.646449,49.367851",
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "莫旗甘河农场南中国石油甘河加油站",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F032038_11",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  "8.00",
+                                     "opentime2":  "周一至周日 06:00-22:00",
+                                     "rating":  "4.4",
+                                     "open_time":  "06:00-22:00"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424054102",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-05-24 06:23:47",
+                     "website":  [
+
+                                 ],
+                     "address":  "111国道西甘河交警队斜对面",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.646414,49.367672",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "农林牧渔",
+                     "type":  "公司企业;农林牧渔基地;其它农林牧渔基地",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "170400",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0K13H0WGC",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "国营甘河农场",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424052300",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-07 00:50:02",
+                     "website":  [
+
+                                 ],
+                     "address":  "兴农村村民委员会东北侧",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.664578,49.351630",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  "B0HRD7YK3F",
+                     "pcode":  "150000",
+                     "keytag":  "河流",
+                     "type":  "地名地址信息;自然地名;河流",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "190204",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFGK370S",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  "7",
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F032040_18",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424075400",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-05 17:32:02",
+                     "website":  [
+
+                                 ],
+                     "address":  "莫力达瓦达斡尔族自治旗",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.927072,49.376464",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  "B0HRD7YK3F",
+                     "pcode":  "150000",
+                     "keytag":  "河流",
+                     "type":  "地名地址信息;自然地名;河流",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "190204",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFGIPEXW",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  "7",
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F032039_3",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424069611",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-05 18:38:02",
+                     "website":  [
+
+                                 ],
+                     "address":  "莫力达瓦达斡尔族自治旗",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.830152,49.413415",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  "B0HRD7YK3F",
+                     "pcode":  "150000",
+                     "keytag":  "河流",
+                     "type":  "地名地址信息;自然地名;河流",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "190204",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFGK3533",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  "7",
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F030038_16",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424253200",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-01 02:06:09",
+                     "website":  [
+
+                                 ],
+                     "address":  "莫力达瓦达斡尔族自治旗",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.652793,49.526367",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "火车站",
+                     "type":  "交通设施服务;火车站;火车站",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "https://aos-comment.amap.com/B01D60N8Z7/comment/8d551aa3f265de7435b9506e1fdde7bb_2048_2048_80.jpg"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "https://aos-comment.amap.com/B01D60N8Z7/comment/c730e466d89c5a7c290d59b4a0a30b77_2048_2048_80.jpg"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "https://aos-comment.amap.com/B01D60N8Z7/comment/b5d5fddef8e0cdcd1d02a7f0e3880073_2048_2048_80.jpg"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "150200",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60N8Z7",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "123.05911,50.628895",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河站",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F017025_184",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7523705412",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 17:47:57",
+                     "website":  [
+
+                                 ],
+                     "address":  "甘河镇",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "123.059379,50.629665",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  "B0HRD7YK3F",
+                     "pcode":  "150000",
+                     "keytag":  "河流",
+                     "type":  "地名地址信息;自然地名;河流",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "190204",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFGIPEXZ",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  "7",
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F030037_11",
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424249801",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-01 09:46:47",
+                     "website":  [
+
+                                 ],
+                     "address":  "莫力达瓦达斡尔族自治旗",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.607669,49.576727",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "湖泊",
+                     "type":  "地名地址信息;自然地名;湖泊",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "190205",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "莫力达瓦达斡尔族自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0FFI0XKCB",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150722",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "甘河农场水库",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  [
+
+                                  ],
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7424054100",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-06 19:59:20",
+                     "website":  [
+
+                                 ],
+                     "address":  "莫力达瓦达斡尔族自治旗",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "124.641262,49.369293",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 }
+             ],
+    "status":  "1",
+    "info":  "OK"
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>7天徒步 · 大兴安岭林业点位</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIINfQPDt4j0N2u6CkHHWMxT6cW5Jw4r6wM="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="sidebar" aria-label="数据概览">
+        <div class="brand">
+          <span class="kicker">Amap first pass</span>
+          <h1>大兴安岭林业点位</h1>
+        </div>
+
+        <div class="metrics">
+          <div>
+            <strong id="poiCount">0</strong>
+            <span>POI</span>
+          </div>
+          <div>
+            <strong id="anchorCount">0</strong>
+            <span>锚点</span>
+          </div>
+          <div>
+            <strong id="routeKm">0</strong>
+            <span>路线 km</span>
+          </div>
+        </div>
+
+        <div class="filters" aria-label="筛选">
+          <button class="filter active" data-filter="all">全部</button>
+          <button class="filter" data-filter="bureau">林业局</button>
+          <button class="filter" data-filter="farm">林场</button>
+          <button class="filter" data-filter="other">其他</button>
+        </div>
+
+        <label class="search">
+          <span>搜索</span>
+          <input id="searchInput" type="search" placeholder="输入林场、林业局或镇名" />
+        </label>
+
+        <ol id="routeList" class="route-list" aria-label="相邻路线距离"></ol>
+      </section>
+
+      <section class="map-wrap" aria-label="地图">
+        <div id="map"></div>
+        <div class="legend">
+          <span><i class="dot bureau"></i>林业局</span>
+          <span><i class="dot farm"></i>林场</span>
+          <span><i class="line"></i>锚点路线</span>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

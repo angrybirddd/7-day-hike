@@ -1,0 +1,262 @@
+﻿{
+    "suggestion":  {
+                       "keywords":  [
+
+                                    ],
+                       "cities":  [
+
+                                  ]
+                   },
+    "count":  "2",
+    "infocode":  "10000",
+    "pois":  [
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "政府机关",
+                     "type":  "政府机构及社会团体;政府机关;乡镇级政府及事业单位",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130105",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "牙克石市",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60NG40",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "121.38772,49.568508",
+                     "adcode":  "150782",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "乌尔其汉林业局",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  "187",
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7421238002",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 19:11:39",
+                     "website":  [
+
+                                 ],
+                     "address":  "乌尔其汉镇",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "121.386856,49.568939",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "公安局",
+                     "type":  "政府机构及社会团体;公检法机构;公安警察",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130501",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "牙克石市",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60NFKY",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "121.38635,49.568073",
+                     "adcode":  "150782",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "乌尔其汗森林公安局(第二派出所)",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  "266",
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "周一至周日 00:00-24:00",
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  "24小时营业"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7421238002",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 21:08:29",
+                     "website":  [
+
+                                 ],
+                     "address":  "乌尔其汉镇",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "121.386505,49.568198",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 }
+             ],
+    "status":  "1",
+    "info":  "OK"
+}

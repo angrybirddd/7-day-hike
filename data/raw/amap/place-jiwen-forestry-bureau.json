@@ -1,0 +1,1000 @@
+﻿{
+    "suggestion":  {
+                       "keywords":  [
+
+                                    ],
+                       "cities":  [
+
+                                  ]
+                   },
+    "count":  "8",
+    "infocode":  "10000",
+    "pois":  [
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "党委会",
+                     "type":  "政府机构及社会团体;政府机关;乡镇级政府及事业单位",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130105",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60N60X",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "123.206324,50.582218",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "中共吉文林业局委员会",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F018026_65",
+                     "distance":  "695",
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7523619621",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 20:54:54",
+                     "website":  [
+
+                                 ],
+                     "address":  "吉文森工公司东侧80米",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "123.206380,50.582003",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "政府机关",
+                     "type":  "政府机构及社会团体;政府机关;乡镇级政府及事业单位",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/95d266431ef07c81a207a9f1b2fc3a18"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130105",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0H6PMM12W",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "123.183868,50.579444",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "内蒙古吉文林业局森防站",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F018026_6",
+                     "distance":  "1351",
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7523619412",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-04-09 17:35:35",
+                     "website":  [
+
+                                 ],
+                     "address":  "吉文镇",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "123.183862,50.579725",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "公司",
+                     "type":  "公司企业;公司;公司",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "170200",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60NA3E",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "123.216298,50.573615",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "吉文林业局燃料供应处",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F018026_75",
+                     "distance":  "1085",
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "周一至周日 08:00-17:00",
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  "08:00-17:00"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7523618720",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 20:33:04",
+                     "website":  [
+
+                                 ],
+                     "address":  "吉文镇",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "123.216319,50.572477",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "公司",
+                     "type":  "公司企业;公司;公司",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "170200",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60NB5E",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "123.210074,50.582582",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "内蒙古自治区吉文林业局贮木场",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F018026_57",
+                     "distance":  "871",
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "周一至周日 08:30-17:30",
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  "08:30-17:30"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7523619622",
+                     "shopinfo":  "0",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-01-30 12:47:29",
+                     "website":  [
+
+                                 ],
+                     "address":  "吉文镇",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "123.210125,50.582345",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "政府机关",
+                     "type":  "政府机构及社会团体;政府机关;乡镇级政府及事业单位",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130105",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  "0470-5932023",
+                     "id":  "B0FFFFAOU1",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "123.204756,50.58022",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "吉文镇政府",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  "450",
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "周一至周五 09:00-17:00",
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  "09:00-17:00"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7523619611",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-04-03 13:57:59",
+                     "website":  [
+
+                                 ],
+                     "address":  "吉文镇吉文林业局",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "123.203973,50.580232",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "公安局",
+                     "type":  "政府机构及社会团体;公检法机构;公安警察",
+                     "photos":  [
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/e8fabc87eb0f4c758f8d8c33e68b782d"
+                                    },
+                                    {
+                                        "title":  [
+
+                                                  ],
+                                        "url":  "http://store.is.autonavi.com/showpic/c52c6c76e9e7cdf8b5553c3baabf0571"
+                                    }
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130501",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  "0470-5926110;0470-5926240",
+                     "id":  "B01D601KDD",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "123.204574,50.581077",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "吉文森林公安局",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F018026_8",
+                     "distance":  "565",
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "周一至周日 08:30-12:00，14:30-17:30",
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  "08:30-12:00 14:30-17:30"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7523619621",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 19:13:12",
+                     "website":  [
+
+                                 ],
+                     "address":  "吉文镇中央路112号",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "123.204865,50.581135",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "党委会",
+                     "type":  "政府机构及社会团体;公检法机构;公安警察",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130501",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B01D60N66D",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  "123.204572,50.581081",
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "中共吉文森林公安局委员会",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  "M51F018026_52",
+                     "distance":  "563",
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  "00:00-24:00,仅供参考,实际以商家为准",
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  "24小时营业"
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7523619621",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-03-27 23:09:25",
+                     "website":  [
+
+                                 ],
+                     "address":  "鑫永利茶庄北侧",
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "123.204891,50.581112",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 },
+                 {
+                     "parent":  [
+
+                                ],
+                     "pcode":  "150000",
+                     "keytag":  "党委会",
+                     "type":  "政府机构及社会团体;政府机关;乡镇级政府及事业单位",
+                     "photos":  [
+
+                                ],
+                     "building":  [
+
+                                  ],
+                     "typecode":  "130105",
+                     "poiweight":  [
+
+                                   ],
+                     "citycode":  "0470",
+                     "adname":  "鄂伦春自治旗",
+                     "children":  [
+
+                                  ],
+                     "featured_reviews_remake":  [
+
+                                                 ],
+                     "tel":  [
+
+                             ],
+                     "id":  "B0H64ZHXZQ",
+                     "tag":  [
+
+                             ],
+                     "entr_location":  [
+
+                                       ],
+                     "adcode":  "150723",
+                     "pname":  "内蒙古自治区",
+                     "biz_type":  [
+
+                                  ],
+                     "cityname":  "呼伦贝尔市",
+                     "postcode":  [
+
+                                  ],
+                     "business_area":  [
+
+                                       ],
+                     "childtype":  [
+
+                                   ],
+                     "atag":  [
+
+                              ],
+                     "name":  "中共吉文林业局森防站支部委员会",
+                     "shopid":  [
+
+                                ],
+                     "favorite_num":  [
+
+                                      ],
+                     "navi_poiid":  [
+
+                                    ],
+                     "distance":  "1340",
+                     "importance":  [
+
+                                    ],
+                     "biz_ext":  {
+                                     "cost":  [
+
+                                              ],
+                                     "opentime2":  [
+
+                                                   ],
+                                     "rating":  [
+
+                                                ],
+                                     "open_time":  [
+
+                                                   ]
+                                 },
+                     "recommend":  "0",
+                     "discount_num":  "0",
+                     "gridcode":  "7523619412",
+                     "shopinfo":  "2",
+                     "alias":  [
+
+                               ],
+                     "event":  [
+
+                               ],
+                     "indoor_map":  "0",
+                     "email":  [
+
+                               ],
+                     "timestamp":  "2026-01-21 06:05:44",
+                     "website":  [
+
+                                 ],
+                     "address":  [
+
+                                 ],
+                     "space_num":  [
+
+                                   ],
+                     "match":  "0",
+                     "indoor_data":  {
+                                         "cmsid":  [
+
+                                                   ],
+                                         "truefloor":  [
+
+                                                       ],
+                                         "cpid":  [
+
+                                                  ],
+                                         "floor":  [
+
+                                                   ]
+                                     },
+                     "exit_location":  [
+
+                                       ],
+                     "location":  "123.183986,50.579623",
+                     "groupbuy_num":  "0",
+                     "featured_reviews":  [
+
+                                          ]
+                 }
+             ],
+    "status":  "1",
+    "info":  "OK"
+}

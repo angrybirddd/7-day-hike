@@ -1,0 +1,44 @@
+﻿{
+    "status":  "1",
+    "info":  "OK",
+    "infocode":  "10000",
+    "count":  "1",
+    "geocodes":  [
+                     {
+                         "formatted_address":  "内蒙古自治区呼伦贝尔市海拉尔区",
+                         "country":  "中国",
+                         "province":  "内蒙古自治区",
+                         "citycode":  "0470",
+                         "city":  "呼伦贝尔市",
+                         "district":  "海拉尔区",
+                         "township":  [
+
+                                      ],
+                         "neighborhood":  {
+                                              "name":  [
+
+                                                       ],
+                                              "type":  [
+
+                                                       ]
+                                          },
+                         "building":  {
+                                          "name":  [
+
+                                                   ],
+                                          "type":  [
+
+                                                   ]
+                                      },
+                         "adcode":  "150702",
+                         "street":  [
+
+                                    ],
+                         "number":  [
+
+                                    ],
+                         "location":  "119.824542,49.234715",
+                         "level":  "区县"
+                     }
+                 ]
+}

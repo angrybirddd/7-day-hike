@@ -1,0 +1,132 @@
+﻿[
+    {
+        "from":  "海拉尔区",
+        "to":  "牙克石市",
+        "origin":  "119.824542,49.234715",
+        "destination":  "120.711639,49.285947",
+        "distance_m":  72576,
+        "duration_s":  3267,
+        "tolls_yuan":  "22",
+        "source":  "amap_direction_driving"
+    },
+    {
+        "from":  "牙克石市",
+        "to":  "免渡河镇",
+        "origin":  "120.711639,49.285947",
+        "destination":  "121.048896,49.094153",
+        "distance_m":  38513,
+        "duration_s":  2543,
+        "tolls_yuan":  "0",
+        "source":  "amap_direction_driving"
+    },
+    {
+        "from":  "免渡河镇",
+        "to":  "乌尔旗汗镇",
+        "origin":  "121.048896,49.094153",
+        "destination":  "121.385249,49.565834",
+        "distance_m":  103142,
+        "duration_s":  8403,
+        "tolls_yuan":  "0",
+        "source":  "amap_direction_driving"
+    },
+    {
+        "from":  "乌尔旗汗镇",
+        "to":  "库都尔镇",
+        "origin":  "121.385249,49.565834",
+        "destination":  "121.623050,50.029263",
+        "distance_m":  75476,
+        "duration_s":  8031,
+        "tolls_yuan":  "0",
+        "source":  "amap_direction_driving"
+    },
+    {
+        "from":  "库都尔镇",
+        "to":  "图里河镇",
+        "origin":  "121.623050,50.029263",
+        "destination":  "121.672987,50.482493",
+        "distance_m":  67840,
+        "duration_s":  6808,
+        "tolls_yuan":  "0",
+        "source":  "amap_direction_driving"
+    },
+    {
+        "from":  "图里河镇",
+        "to":  "伊图里河镇",
+        "origin":  "121.672987,50.482493",
+        "destination":  "121.549123,50.636857",
+        "distance_m":  29405,
+        "duration_s":  3018,
+        "tolls_yuan":  "0",
+        "source":  "amap_direction_driving"
+    },
+    {
+        "from":  "伊图里河镇",
+        "to":  "根河市",
+        "origin":  "121.549123,50.636857",
+        "destination":  "121.520165,50.779758",
+        "distance_m":  21631,
+        "duration_s":  1540,
+        "tolls_yuan":  "0",
+        "source":  "amap_direction_driving"
+    },
+    {
+        "from":  "根河市",
+        "to":  "克一河镇",
+        "origin":  "121.520165,50.779758",
+        "destination":  "122.495903,50.650994",
+        "distance_m":  86156,
+        "duration_s":  3880,
+        "tolls_yuan":  "0",
+        "source":  "amap_direction_driving"
+    },
+    {
+        "from":  "克一河镇",
+        "to":  "吉文镇",
+        "origin":  "122.495903,50.650994",
+        "destination":  "123.202224,50.576340",
+        "distance_m":  55444,
+        "duration_s":  2658,
+        "tolls_yuan":  "16",
+        "source":  "amap_direction_driving"
+    },
+    {
+        "from":  "吉文镇",
+        "to":  "甘河镇",
+        "origin":  "123.202224,50.576340",
+        "destination":  "123.050544,50.632735",
+        "distance_m":  14963,
+        "duration_s":  959,
+        "tolls_yuan":  "0",
+        "source":  "amap_direction_driving"
+    },
+    {
+        "from":  "甘河镇",
+        "to":  "阿里河镇",
+        "origin":  "123.050544,50.632735",
+        "destination":  "123.724613,50.599909",
+        "distance_m":  61155,
+        "duration_s":  2827,
+        "tolls_yuan":  "15",
+        "source":  "amap_direction_driving"
+    },
+    {
+        "from":  "阿里河镇",
+        "to":  "大杨树镇",
+        "origin":  "123.724613,50.599909",
+        "destination":  "124.625848,49.737245",
+        "distance_m":  145269,
+        "duration_s":  7277,
+        "tolls_yuan":  "20",
+        "source":  "amap_direction_driving"
+    },
+    {
+        "from":  "大杨树镇",
+        "to":  "加格达奇区",
+        "origin":  "124.625848,49.737245",
+        "destination":  "124.139742,50.408822",
+        "distance_m":  99444,
+        "duration_s":  5077,
+        "tolls_yuan":  "0",
+        "source":  "amap_direction_driving"
+    }
+]

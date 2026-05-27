@@ -1,0 +1,80 @@
+﻿{
+    "status":  "1",
+    "info":  "OK",
+    "infocode":  "10000",
+    "count":  "2",
+    "geocodes":  [
+                     {
+                         "formatted_address":  "黑龙江省大兴安岭地区加格达奇区阿里河镇",
+                         "country":  "中国",
+                         "province":  "黑龙江省",
+                         "citycode":  "0457",
+                         "city":  "大兴安岭地区",
+                         "district":  "加格达奇区",
+                         "township":  [
+
+                                      ],
+                         "neighborhood":  {
+                                              "name":  [
+
+                                                       ],
+                                              "type":  [
+
+                                                       ]
+                                          },
+                         "building":  {
+                                          "name":  [
+
+                                                   ],
+                                          "type":  [
+
+                                                   ]
+                                      },
+                         "adcode":  "232718",
+                         "street":  [
+
+                                    ],
+                         "number":  [
+
+                                    ],
+                         "location":  "124.133983,50.424915",
+                         "level":  "乡镇"
+                     },
+                     {
+                         "formatted_address":  "内蒙古自治区呼伦贝尔市鄂伦春自治旗阿里河镇",
+                         "country":  "中国",
+                         "province":  "内蒙古自治区",
+                         "citycode":  "0470",
+                         "city":  "呼伦贝尔市",
+                         "district":  "鄂伦春自治旗",
+                         "township":  [
+
+                                      ],
+                         "neighborhood":  {
+                                              "name":  [
+
+                                                       ],
+                                              "type":  [
+
+                                                       ]
+                                          },
+                         "building":  {
+                                          "name":  [
+
+                                                   ],
+                                          "type":  [
+
+                                                   ]
+                                      },
+                         "adcode":  "150723",
+                         "street":  [
+
+                                    ],
+                         "number":  [
+
+                                    ],
+                         "location":  "123.726396,50.587417",
+                         "level":  "乡镇"
+                     }
+                 ]
+}
