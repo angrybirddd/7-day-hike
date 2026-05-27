@@ -106,6 +106,46 @@ test("builds map data with anchors, routes, trusted places, unverified places, a
   assert.equal(whiteBirch.length, 1);
 });
 
+test("builds route groups for the original route and three unverified draft hiking routes", async () => {
+  const data = await buildMapData({
+    placesGeojsonPath: "data/processed/places-first-pass.geojson",
+    anchorsPath: "data/processed/anchor-towns.json",
+    routesPath: "data/processed/anchor-route-segments.json",
+    draftRoutesPath: "data/route-drafts/hiking-routes.json",
+  });
+
+  assert.equal(data.routeGroups.length, 4);
+  assert.deepEqual(
+    data.routeGroups.map((group) => group.id),
+    ["greater-khingan-forestry", "huanggangliang-high-intensity", "hulunbuir-khingan-crossing", "keshiketeng-family-grassland"],
+  );
+
+  const original = data.routeGroups[0];
+  assert.equal(original.status, "trusted");
+  assert.equal(original.segments.length, data.routes.length);
+  assert.equal(original.stops.length, data.anchors.length);
+
+  const drafts = data.routeGroups.slice(1);
+  assert.equal(drafts.every((group) => group.status === "draft_unverified"), true);
+  assert.deepEqual(
+    drafts.map((group) => group.totalKm),
+    [190, 185, 190],
+  );
+  assert.equal(drafts.every((group) => group.segments.every((segment) => segment.status === "draft_unverified")), true);
+
+  const huanggangliang = data.routeGroups.find((group) => group.id === "huanggangliang-high-intensity");
+  assert.equal(huanggangliang.stops.length, 10);
+  assert.equal(huanggangliang.segments.length, 9);
+  assert.equal(huanggangliang.segments[0].planKm, 22);
+  assert.equal(huanggangliang.segments[0].ascentM, 650);
+  assert.equal(huanggangliang.segments[0].terrain.includes("森林"), true);
+
+  const hulunbuir = data.routeGroups.find((group) => group.id === "hulunbuir-khingan-crossing");
+  assert.match(hulunbuir.name, /大兴安岭-草原-湿地/);
+  assert.equal(hulunbuir.days, "9天");
+  assert.equal(hulunbuir.segments.length, 9);
+});
+
 test("readJsonFile tolerates UTF-8 BOM files", async () => {
   const data = await readJsonFile("data/processed/places-first-pass.geojson");
   assert.equal(data.type, "FeatureCollection");

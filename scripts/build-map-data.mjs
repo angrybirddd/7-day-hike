@@ -6,6 +6,7 @@ const DEFAULT_INPUTS = {
   placesGeojsonPath: "data/processed/places-first-pass.geojson",
   anchorsPath: "data/processed/anchor-towns.json",
   routesPath: "data/processed/anchor-route-segments.json",
+  draftRoutesPath: "data/route-drafts/hiking-routes.json",
   outputPath: "data/processed/map-data.json",
 };
 
@@ -166,11 +167,131 @@ function normalizeRoute(route, index) {
   };
 }
 
+function normalizeOriginalRouteGroup(anchors, routes) {
+  return {
+    id: "greater-khingan-forestry",
+    name: "海拉尔-加格达奇大兴安岭林业路线",
+    region: "呼伦贝尔市、大兴安岭林区",
+    type: "forestry_anchor_route",
+    difficulty: "数据采集路线",
+    status: "trusted",
+    totalKm: Math.round(routes.reduce((sum, route) => sum + Number(route.distance_m || 0), 0) / 1000),
+    days: "",
+    color: "#2d7190",
+    notes: ["由现有高德地理编码锚点和驾车路线段生成。"],
+    stops: anchors.map((anchor) => ({
+      id: anchor.id,
+      localId: anchor.id,
+      name: anchor.name,
+      lnglat: anchor.lnglat,
+      source: anchor.source,
+      status: anchor.status,
+    })),
+    segments: routes.map((route, index) => ({
+      id: `${route.id}:group`,
+      routeId: "greater-khingan-forestry",
+      day: `Segment ${index + 1}`,
+      from: route.from,
+      to: route.to,
+      fromStopId: `anchor:${route.from}`,
+      toStopId: `anchor:${route.to}`,
+      origin: route.origin,
+      destination: route.destination,
+      planKm: Math.round(route.distance_m / 100) / 10,
+      distanceM: route.distance_m,
+      durationS: route.duration_s,
+      ascentM: null,
+      descentM: null,
+      terrain: "城镇/林业局相邻路线段",
+      source: route.source,
+      status: "trusted",
+      drawable: true,
+    })),
+  };
+}
+
+function normalizeDraftStop(group, stop) {
+  return {
+    id: `${group.id}:stop:${stop.id}`,
+    localId: stop.id,
+    name: stop.name,
+    lnglat: Array.isArray(stop.lnglat) ? stop.lnglat.map(Number) : null,
+    source: stop.source || "draft_route_text",
+    status: stop.status || group.status || "draft_unverified",
+  };
+}
+
+function normalizeDraftSegment(group, segment, index, stopsByLocalId) {
+  const from = stopsByLocalId.get(segment.from);
+  const to = stopsByLocalId.get(segment.to);
+  const hasPath = Boolean(from?.lnglat && to?.lnglat);
+
+  return {
+    id: `${group.id}:segment:${index}`,
+    routeId: group.id,
+    day: segment.day || `Day ${index + 1}`,
+    from: from?.name || segment.from,
+    to: to?.name || segment.to,
+    fromStopId: from?.id || null,
+    toStopId: to?.id || null,
+    origin: hasPath ? from.lnglat : null,
+    destination: hasPath ? to.lnglat : null,
+    planKm: segment.planKm ?? null,
+    distanceM: null,
+    durationS: null,
+    ascentM: segment.ascentM ?? null,
+    descentM: segment.descentM ?? null,
+    terrain: segment.terrain || "",
+    camp: segment.camp || "",
+    risk: segment.risk || "",
+    support: segment.support || "",
+    source: "draft_route_text",
+    status: group.status || "draft_unverified",
+    drawable: hasPath,
+  };
+}
+
+function normalizeDraftRouteGroup(group) {
+  const stops = (group.stops || []).map((stop) => normalizeDraftStop(group, stop));
+  const stopsByLocalId = new Map(stops.map((stop) => [stop.localId, stop]));
+
+  return {
+    id: group.id,
+    name: group.name,
+    region: group.region,
+    type: group.type,
+    difficulty: group.difficulty,
+    status: group.status || "draft_unverified",
+    totalKm: group.totalKm,
+    days: group.days,
+    color: group.color,
+    notes: group.notes || [],
+    stops,
+    segments: (group.segments || []).map((segment, index) => normalizeDraftSegment(group, segment, index, stopsByLocalId)),
+  };
+}
+
+async function readDraftRouteGroups(path) {
+  if (!path) return [];
+
+  try {
+    const draftData = await readJsonFile(path);
+    const groups = Array.isArray(draftData) ? draftData : draftData.routes || [];
+    return groups.map(normalizeDraftRouteGroup);
+  } catch (error) {
+    if (error.code === "ENOENT") return [];
+    throw error;
+  }
+}
+
 export async function buildMapData(paths = DEFAULT_INPUTS) {
   const placesGeojson = await readJsonFile(paths.placesGeojsonPath);
   const anchors = await readJsonFile(paths.anchorsPath);
   const routes = await readJsonFile(paths.routesPath);
+  const draftRouteGroups = await readDraftRouteGroups(paths.draftRoutesPath);
   const placeFeatures = dedupePlaceFeatures(placesGeojson.features);
+  const normalizedAnchors = anchors.map(normalizeAnchor);
+  const normalizedRoutes = routes.map(normalizeRoute);
 
   return {
     meta: {
@@ -180,9 +301,11 @@ export async function buildMapData(paths = DEFAULT_INPUTS) {
       placeCount: placeFeatures.length,
       anchorCount: anchors.length,
       routeCount: routes.length,
+      routeGroupCount: 1 + draftRouteGroups.length,
     },
-    anchors: anchors.map(normalizeAnchor),
-    routes: routes.map(normalizeRoute),
+    anchors: normalizedAnchors,
+    routes: normalizedRoutes,
+    routeGroups: [normalizeOriginalRouteGroup(normalizedAnchors, normalizedRoutes), ...draftRouteGroups],
     places: placeFeatures.map(normalizePlace),
   };
 }

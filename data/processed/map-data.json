@@ -1,11 +1,12 @@
 {
   "meta": {
     "source": "amap-first-pass",
-    "generatedAt": "2026-05-27T02:54:26.605Z",
+    "generatedAt": "2026-05-27T10:38:35.119Z",
     "rawPlaceCount": 339,
     "placeCount": 302,
     "anchorCount": 14,
-    "routeCount": 13
+    "routeCount": 13,
+    "routeGroupCount": 4
   },
   "anchors": [
     {
@@ -413,6 +414,1692 @@
       "distance_m": 99444,
       "duration_s": 5077,
       "source": "amap_direction_driving"
+    }
+  ],
+  "routeGroups": [
+    {
+      "id": "greater-khingan-forestry",
+      "name": "海拉尔-加格达奇大兴安岭林业路线",
+      "region": "呼伦贝尔市、大兴安岭林区",
+      "type": "forestry_anchor_route",
+      "difficulty": "数据采集路线",
+      "status": "trusted",
+      "totalKm": 871,
+      "days": "",
+      "color": "#2d7190",
+      "notes": [
+        "由现有高德地理编码锚点和驾车路线段生成。"
+      ],
+      "stops": [
+        {
+          "id": "anchor:海拉尔区",
+          "localId": "anchor:海拉尔区",
+          "name": "海拉尔区",
+          "lnglat": [
+            119.824542,
+            49.234715
+          ],
+          "source": "amap_geocode",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:牙克石市",
+          "localId": "anchor:牙克石市",
+          "name": "牙克石市",
+          "lnglat": [
+            120.711639,
+            49.285947
+          ],
+          "source": "amap_geocode",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:免渡河镇",
+          "localId": "anchor:免渡河镇",
+          "name": "免渡河镇",
+          "lnglat": [
+            121.048896,
+            49.094153
+          ],
+          "source": "amap_geocode",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:乌尔旗汗镇",
+          "localId": "anchor:乌尔旗汗镇",
+          "name": "乌尔旗汗镇",
+          "lnglat": [
+            121.385249,
+            49.565834
+          ],
+          "source": "amap_geocode",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:库都尔镇",
+          "localId": "anchor:库都尔镇",
+          "name": "库都尔镇",
+          "lnglat": [
+            121.62305,
+            50.029263
+          ],
+          "source": "amap_geocode",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:图里河镇",
+          "localId": "anchor:图里河镇",
+          "name": "图里河镇",
+          "lnglat": [
+            121.672987,
+            50.482493
+          ],
+          "source": "amap_geocode",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:伊图里河镇",
+          "localId": "anchor:伊图里河镇",
+          "name": "伊图里河镇",
+          "lnglat": [
+            121.549123,
+            50.636857
+          ],
+          "source": "amap_geocode",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:根河市",
+          "localId": "anchor:根河市",
+          "name": "根河市",
+          "lnglat": [
+            121.520165,
+            50.779758
+          ],
+          "source": "amap_geocode",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:克一河镇",
+          "localId": "anchor:克一河镇",
+          "name": "克一河镇",
+          "lnglat": [
+            122.495903,
+            50.650994
+          ],
+          "source": "amap_geocode",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:吉文镇",
+          "localId": "anchor:吉文镇",
+          "name": "吉文镇",
+          "lnglat": [
+            123.202224,
+            50.57634
+          ],
+          "source": "amap_geocode",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:甘河镇",
+          "localId": "anchor:甘河镇",
+          "name": "甘河镇",
+          "lnglat": [
+            123.050544,
+            50.632735
+          ],
+          "source": "amap_place_text_override",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:阿里河镇",
+          "localId": "anchor:阿里河镇",
+          "name": "阿里河镇",
+          "lnglat": [
+            123.724613,
+            50.599909
+          ],
+          "source": "amap_place_text_override",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:大杨树镇",
+          "localId": "anchor:大杨树镇",
+          "name": "大杨树镇",
+          "lnglat": [
+            124.625848,
+            49.737245
+          ],
+          "source": "amap_place_text_override",
+          "status": "trusted"
+        },
+        {
+          "id": "anchor:加格达奇区",
+          "localId": "anchor:加格达奇区",
+          "name": "加格达奇区",
+          "lnglat": [
+            124.139742,
+            50.408822
+          ],
+          "source": "amap_geocode",
+          "status": "trusted"
+        }
+      ],
+      "segments": [
+        {
+          "id": "route:0:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 1",
+          "from": "海拉尔区",
+          "to": "牙克石市",
+          "fromStopId": "anchor:海拉尔区",
+          "toStopId": "anchor:牙克石市",
+          "origin": [
+            119.824542,
+            49.234715
+          ],
+          "destination": [
+            120.711639,
+            49.285947
+          ],
+          "planKm": 72.6,
+          "distanceM": 72576,
+          "durationS": 3267,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        },
+        {
+          "id": "route:1:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 2",
+          "from": "牙克石市",
+          "to": "免渡河镇",
+          "fromStopId": "anchor:牙克石市",
+          "toStopId": "anchor:免渡河镇",
+          "origin": [
+            120.711639,
+            49.285947
+          ],
+          "destination": [
+            121.048896,
+            49.094153
+          ],
+          "planKm": 38.5,
+          "distanceM": 38513,
+          "durationS": 2543,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        },
+        {
+          "id": "route:2:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 3",
+          "from": "免渡河镇",
+          "to": "乌尔旗汗镇",
+          "fromStopId": "anchor:免渡河镇",
+          "toStopId": "anchor:乌尔旗汗镇",
+          "origin": [
+            121.048896,
+            49.094153
+          ],
+          "destination": [
+            121.385249,
+            49.565834
+          ],
+          "planKm": 103.1,
+          "distanceM": 103142,
+          "durationS": 8403,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        },
+        {
+          "id": "route:3:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 4",
+          "from": "乌尔旗汗镇",
+          "to": "库都尔镇",
+          "fromStopId": "anchor:乌尔旗汗镇",
+          "toStopId": "anchor:库都尔镇",
+          "origin": [
+            121.385249,
+            49.565834
+          ],
+          "destination": [
+            121.62305,
+            50.029263
+          ],
+          "planKm": 75.5,
+          "distanceM": 75476,
+          "durationS": 8031,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        },
+        {
+          "id": "route:4:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 5",
+          "from": "库都尔镇",
+          "to": "图里河镇",
+          "fromStopId": "anchor:库都尔镇",
+          "toStopId": "anchor:图里河镇",
+          "origin": [
+            121.62305,
+            50.029263
+          ],
+          "destination": [
+            121.672987,
+            50.482493
+          ],
+          "planKm": 67.8,
+          "distanceM": 67840,
+          "durationS": 6808,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        },
+        {
+          "id": "route:5:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 6",
+          "from": "图里河镇",
+          "to": "伊图里河镇",
+          "fromStopId": "anchor:图里河镇",
+          "toStopId": "anchor:伊图里河镇",
+          "origin": [
+            121.672987,
+            50.482493
+          ],
+          "destination": [
+            121.549123,
+            50.636857
+          ],
+          "planKm": 29.4,
+          "distanceM": 29405,
+          "durationS": 3018,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        },
+        {
+          "id": "route:6:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 7",
+          "from": "伊图里河镇",
+          "to": "根河市",
+          "fromStopId": "anchor:伊图里河镇",
+          "toStopId": "anchor:根河市",
+          "origin": [
+            121.549123,
+            50.636857
+          ],
+          "destination": [
+            121.520165,
+            50.779758
+          ],
+          "planKm": 21.6,
+          "distanceM": 21631,
+          "durationS": 1540,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        },
+        {
+          "id": "route:7:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 8",
+          "from": "根河市",
+          "to": "克一河镇",
+          "fromStopId": "anchor:根河市",
+          "toStopId": "anchor:克一河镇",
+          "origin": [
+            121.520165,
+            50.779758
+          ],
+          "destination": [
+            122.495903,
+            50.650994
+          ],
+          "planKm": 86.2,
+          "distanceM": 86156,
+          "durationS": 3880,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        },
+        {
+          "id": "route:8:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 9",
+          "from": "克一河镇",
+          "to": "吉文镇",
+          "fromStopId": "anchor:克一河镇",
+          "toStopId": "anchor:吉文镇",
+          "origin": [
+            122.495903,
+            50.650994
+          ],
+          "destination": [
+            123.202224,
+            50.57634
+          ],
+          "planKm": 55.4,
+          "distanceM": 55444,
+          "durationS": 2658,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        },
+        {
+          "id": "route:9:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 10",
+          "from": "吉文镇",
+          "to": "甘河镇",
+          "fromStopId": "anchor:吉文镇",
+          "toStopId": "anchor:甘河镇",
+          "origin": [
+            123.202224,
+            50.57634
+          ],
+          "destination": [
+            123.050544,
+            50.632735
+          ],
+          "planKm": 15,
+          "distanceM": 14963,
+          "durationS": 959,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        },
+        {
+          "id": "route:10:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 11",
+          "from": "甘河镇",
+          "to": "阿里河镇",
+          "fromStopId": "anchor:甘河镇",
+          "toStopId": "anchor:阿里河镇",
+          "origin": [
+            123.050544,
+            50.632735
+          ],
+          "destination": [
+            123.724613,
+            50.599909
+          ],
+          "planKm": 61.2,
+          "distanceM": 61155,
+          "durationS": 2827,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        },
+        {
+          "id": "route:11:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 12",
+          "from": "阿里河镇",
+          "to": "大杨树镇",
+          "fromStopId": "anchor:阿里河镇",
+          "toStopId": "anchor:大杨树镇",
+          "origin": [
+            123.724613,
+            50.599909
+          ],
+          "destination": [
+            124.625848,
+            49.737245
+          ],
+          "planKm": 145.3,
+          "distanceM": 145269,
+          "durationS": 7277,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        },
+        {
+          "id": "route:12:group",
+          "routeId": "greater-khingan-forestry",
+          "day": "Segment 13",
+          "from": "大杨树镇",
+          "to": "加格达奇区",
+          "fromStopId": "anchor:大杨树镇",
+          "toStopId": "anchor:加格达奇区",
+          "origin": [
+            124.625848,
+            49.737245
+          ],
+          "destination": [
+            124.139742,
+            50.408822
+          ],
+          "planKm": 99.4,
+          "distanceM": 99444,
+          "durationS": 5077,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "城镇/林业局相邻路线段",
+          "source": "amap_direction_driving",
+          "status": "trusted",
+          "drawable": true
+        }
+      ]
+    },
+    {
+      "id": "huanggangliang-high-intensity",
+      "name": "克什克腾旗「黄岗梁-大青山-浑善达克」高强度环线",
+      "region": "赤峰市克什克腾旗、锡林郭勒草原南缘",
+      "type": "high_intensity_loop",
+      "difficulty": "★★★★☆（进阶挑战）",
+      "status": "draft_unverified",
+      "totalKm": 190,
+      "days": "9-10天",
+      "color": "#b84a32",
+      "notes": [
+        "文字日程生成的草案路线，坐标和可通行性需要人工复核。",
+        "最低点约1380m，最高点约2029m，累计爬升约3800m。",
+        "建议配保障车、2名领队，并做每日体能评估。"
+      ],
+      "stops": [
+        {
+          "id": "huanggangliang-high-intensity:stop:jingpeng",
+          "localId": "jingpeng",
+          "name": "经棚镇",
+          "lnglat": [
+            117.54157,
+            43.25862
+          ],
+          "source": "public_coordinate_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "huanggangliang-high-intensity:stop:huanggangliang-forest",
+          "localId": "huanggangliang-forest",
+          "name": "黄岗梁森林",
+          "lnglat": [
+            117.768,
+            43.575
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "huanggangliang-high-intensity:stop:huanggangliang-peak",
+          "localId": "huanggangliang-peak",
+          "name": "大兴安岭主峰（黄岗梁主峰）",
+          "lnglat": [
+            117.742,
+            43.586
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "huanggangliang-high-intensity:stop:reshuitang",
+          "localId": "reshuitang",
+          "name": "热水塘",
+          "lnglat": [
+            117.725,
+            43.458
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "huanggangliang-high-intensity:stop:daqingshan-pass",
+          "localId": "daqingshan-pass",
+          "name": "大青山垭口",
+          "lnglat": [
+            117.82,
+            43.34
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "huanggangliang-high-intensity:stop:haolaihure",
+          "localId": "haolaihure",
+          "name": "浩来呼热",
+          "lnglat": [
+            117.18,
+            43.09
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "huanggangliang-high-intensity:stop:hunshandake",
+          "localId": "hunshandake",
+          "name": "浑善达克沙地",
+          "lnglat": [
+            116.62,
+            42.78
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "huanggangliang-high-intensity:stop:duolun-upstream",
+          "localId": "duolun-upstream",
+          "name": "多伦湖上游",
+          "lnglat": [
+            116.55,
+            42.28
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "huanggangliang-high-intensity:stop:ulanbutong",
+          "localId": "ulanbutong",
+          "name": "乌兰布统",
+          "lnglat": [
+            117.276,
+            42.535
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "huanggangliang-high-intensity:stop:jingpeng-return",
+          "localId": "jingpeng-return",
+          "name": "经棚镇",
+          "lnglat": [
+            117.54157,
+            43.25862
+          ],
+          "source": "public_coordinate_seed",
+          "status": "draft_unverified"
+        }
+      ],
+      "segments": [
+        {
+          "id": "huanggangliang-high-intensity:segment:0",
+          "routeId": "huanggangliang-high-intensity",
+          "day": "Day1",
+          "from": "经棚镇",
+          "to": "黄岗梁森林",
+          "fromStopId": "huanggangliang-high-intensity:stop:jingpeng",
+          "toStopId": "huanggangliang-high-intensity:stop:huanggangliang-forest",
+          "origin": [
+            117.54157,
+            43.25862
+          ],
+          "destination": [
+            117.768,
+            43.575
+          ],
+          "planKm": 22,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 650,
+          "descentM": 0,
+          "terrain": "森林、陡坡、山脊，全程上坡",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "huanggangliang-high-intensity:segment:1",
+          "routeId": "huanggangliang-high-intensity",
+          "day": "Day2",
+          "from": "黄岗梁森林",
+          "to": "大兴安岭主峰（黄岗梁主峰）",
+          "fromStopId": "huanggangliang-high-intensity:stop:huanggangliang-forest",
+          "toStopId": "huanggangliang-high-intensity:stop:huanggangliang-peak",
+          "origin": [
+            117.768,
+            43.575
+          ],
+          "destination": [
+            117.742,
+            43.586
+          ],
+          "planKm": 20,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 700,
+          "descentM": 0,
+          "terrain": "原始落叶松、高山草甸、乱石坡",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "huanggangliang-high-intensity:segment:2",
+          "routeId": "huanggangliang-high-intensity",
+          "day": "Day3",
+          "from": "大兴安岭主峰（黄岗梁主峰）",
+          "to": "热水塘",
+          "fromStopId": "huanggangliang-high-intensity:stop:huanggangliang-peak",
+          "toStopId": "huanggangliang-high-intensity:stop:reshuitang",
+          "origin": [
+            117.742,
+            43.586
+          ],
+          "destination": [
+            117.725,
+            43.458
+          ],
+          "planKm": 21,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 0,
+          "descentM": 800,
+          "terrain": "陡坡下山、溪流峡谷",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "huanggangliang-high-intensity:segment:3",
+          "routeId": "huanggangliang-high-intensity",
+          "day": "Day4",
+          "from": "热水塘",
+          "to": "大青山垭口",
+          "fromStopId": "huanggangliang-high-intensity:stop:reshuitang",
+          "toStopId": "huanggangliang-high-intensity:stop:daqingshan-pass",
+          "origin": [
+            117.725,
+            43.458
+          ],
+          "destination": [
+            117.82,
+            43.34
+          ],
+          "planKm": 23,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 600,
+          "descentM": 0,
+          "terrain": "草甸、花岗岩岩壁、铁链攀爬段",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "huanggangliang-high-intensity:segment:4",
+          "routeId": "huanggangliang-high-intensity",
+          "day": "Day5",
+          "from": "大青山垭口",
+          "to": "浩来呼热",
+          "fromStopId": "huanggangliang-high-intensity:stop:daqingshan-pass",
+          "toStopId": "huanggangliang-high-intensity:stop:haolaihure",
+          "origin": [
+            117.82,
+            43.34
+          ],
+          "destination": [
+            117.18,
+            43.09
+          ],
+          "planKm": 19,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 400,
+          "descentM": 400,
+          "terrain": "大青山、石林、山脊、草原断崖",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "huanggangliang-high-intensity:segment:5",
+          "routeId": "huanggangliang-high-intensity",
+          "day": "Day6",
+          "from": "浩来呼热",
+          "to": "浑善达克沙地",
+          "fromStopId": "huanggangliang-high-intensity:stop:haolaihure",
+          "toStopId": "huanggangliang-high-intensity:stop:hunshandake",
+          "origin": [
+            117.18,
+            43.09
+          ],
+          "destination": [
+            116.62,
+            42.78
+          ],
+          "planKm": 20,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "沙化路、软沙、小沙丘",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "huanggangliang-high-intensity:segment:6",
+          "routeId": "huanggangliang-high-intensity",
+          "day": "Day7",
+          "from": "浑善达克沙地",
+          "to": "多伦湖上游",
+          "fromStopId": "huanggangliang-high-intensity:stop:hunshandake",
+          "toStopId": "huanggangliang-high-intensity:stop:duolun-upstream",
+          "origin": [
+            116.62,
+            42.78
+          ],
+          "destination": [
+            116.55,
+            42.28
+          ],
+          "planKm": 22,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "湿地、沼泽边缘、灌木",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "huanggangliang-high-intensity:segment:7",
+          "routeId": "huanggangliang-high-intensity",
+          "day": "Day8",
+          "from": "多伦湖上游",
+          "to": "乌兰布统",
+          "fromStopId": "huanggangliang-high-intensity:stop:duolun-upstream",
+          "toStopId": "huanggangliang-high-intensity:stop:ulanbutong",
+          "origin": [
+            116.55,
+            42.28
+          ],
+          "destination": [
+            117.276,
+            42.535
+          ],
+          "planKm": 21,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "山地草原、连续缓坡",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "huanggangliang-high-intensity:segment:8",
+          "routeId": "huanggangliang-high-intensity",
+          "day": "Day9",
+          "from": "乌兰布统",
+          "to": "经棚镇",
+          "fromStopId": "huanggangliang-high-intensity:stop:ulanbutong",
+          "toStopId": "huanggangliang-high-intensity:stop:jingpeng-return",
+          "origin": [
+            117.276,
+            42.535
+          ],
+          "destination": [
+            117.54157,
+            43.25862
+          ],
+          "planKm": 22,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "长距离平路、缓上",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        }
+      ]
+    },
+    {
+      "id": "hulunbuir-khingan-crossing",
+      "name": "呼伦贝尔「大兴安岭-草原-湿地」穿越线",
+      "region": "呼伦贝尔市海拉尔区、根河湿地、大兴安岭林区、陈巴尔虎旗草原过渡带",
+      "type": "forest_grassland_wetland_crossing",
+      "difficulty": "★★★★☆（挑战级）",
+      "status": "draft_unverified",
+      "totalKm": 185,
+      "days": "9天",
+      "color": "#2a6f9b",
+      "notes": [
+        "根据用户提供的文字路线录入：海拉尔→根河湿地→莫尔道嘎森林→金河→满归→草原过渡带→陈巴尔虎旗→海拉尔。",
+        "文字日程生成，坐标为人工草案锚点；真实可通行轨迹、林区/边境许可、露营点和接驳点必须复核。",
+        "最低点约580m，最高点约1450m，总相对落差约870m，累计爬升约4200m。",
+        "特点：连续森林穿越、长距离爬坡、湿滑路段、蚊虫多、昼夜温差大。"
+      ],
+      "stops": [
+        {
+          "id": "hulunbuir-khingan-crossing:stop:hailar-start",
+          "localId": "hailar-start",
+          "name": "海拉尔",
+          "lnglat": [
+            119.824542,
+            49.234715
+          ],
+          "source": "amap_geocode_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:stop:genhe-wetland",
+          "localId": "genhe-wetland",
+          "name": "根河湿地待核查点",
+          "lnglat": [
+            120.184,
+            50.252
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:stop:khingan-ridge",
+          "localId": "khingan-ridge",
+          "name": "大兴安岭山脊待核查点",
+          "lnglat": [
+            120.72,
+            50.86
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:stop:mordaga-forest",
+          "localId": "mordaga-forest",
+          "name": "莫尔道嘎森林",
+          "lnglat": [
+            120.754,
+            51.322
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:stop:jinhe-town",
+          "localId": "jinhe-town",
+          "name": "金河镇",
+          "lnglat": [
+            121.335,
+            51.33
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:stop:mangui-town",
+          "localId": "mangui-town",
+          "name": "满归镇",
+          "lnglat": [
+            122.08,
+            52.045
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:stop:grassland-transition",
+          "localId": "grassland-transition",
+          "name": "草原过渡带待核查点",
+          "lnglat": [
+            120.88,
+            50.25
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:stop:chenbarhu-banner",
+          "localId": "chenbarhu-banner",
+          "name": "陈巴尔虎旗草原",
+          "lnglat": [
+            119.424,
+            49.326
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:stop:hailar-wetland-edge",
+          "localId": "hailar-wetland-edge",
+          "name": "海拉尔湿地边缘待核查点",
+          "lnglat": [
+            119.91,
+            49.28
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:stop:hailar-finish",
+          "localId": "hailar-finish",
+          "name": "海拉尔",
+          "lnglat": [
+            119.824542,
+            49.234715
+          ],
+          "source": "amap_geocode_seed",
+          "status": "draft_unverified"
+        }
+      ],
+      "segments": [
+        {
+          "id": "hulunbuir-khingan-crossing:segment:0",
+          "routeId": "hulunbuir-khingan-crossing",
+          "day": "Day1",
+          "from": "海拉尔",
+          "to": "根河湿地待核查点",
+          "fromStopId": "hulunbuir-khingan-crossing:stop:hailar-start",
+          "toStopId": "hulunbuir-khingan-crossing:stop:genhe-wetland",
+          "origin": [
+            119.824542,
+            49.234715
+          ],
+          "destination": [
+            120.184,
+            50.252
+          ],
+          "planKm": 20,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 450,
+          "descentM": 120,
+          "terrain": "海拉尔出发，草原湿地边缘，长距离热身。",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:segment:1",
+          "routeId": "hulunbuir-khingan-crossing",
+          "day": "Day2",
+          "from": "根河湿地待核查点",
+          "to": "大兴安岭山脊待核查点",
+          "fromStopId": "hulunbuir-khingan-crossing:stop:genhe-wetland",
+          "toStopId": "hulunbuir-khingan-crossing:stop:khingan-ridge",
+          "origin": [
+            120.184,
+            50.252
+          ],
+          "destination": [
+            120.72,
+            50.86
+          ],
+          "planKm": 21,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 800,
+          "descentM": 160,
+          "terrain": "湿地外围转入大兴安岭山地，连续爬升，为单日强度峰值段。",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:segment:2",
+          "routeId": "hulunbuir-khingan-crossing",
+          "day": "Day3",
+          "from": "大兴安岭山脊待核查点",
+          "to": "莫尔道嘎森林",
+          "fromStopId": "hulunbuir-khingan-crossing:stop:khingan-ridge",
+          "toStopId": "hulunbuir-khingan-crossing:stop:mordaga-forest",
+          "origin": [
+            120.72,
+            50.86
+          ],
+          "destination": [
+            120.754,
+            51.322
+          ],
+          "planKm": 22,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 520,
+          "descentM": 650,
+          "terrain": "山脊、原始森林、湿滑林道，下降较多。",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:segment:3",
+          "routeId": "hulunbuir-khingan-crossing",
+          "day": "Day4",
+          "from": "莫尔道嘎森林",
+          "to": "金河镇",
+          "fromStopId": "hulunbuir-khingan-crossing:stop:mordaga-forest",
+          "toStopId": "hulunbuir-khingan-crossing:stop:jinhe-town",
+          "origin": [
+            120.754,
+            51.322
+          ],
+          "destination": [
+            121.335,
+            51.33
+          ],
+          "planKm": 20,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 430,
+          "descentM": 360,
+          "terrain": "莫尔道嘎森林到金河方向，针叶林和林区道路。",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:segment:4",
+          "routeId": "hulunbuir-khingan-crossing",
+          "day": "Day5",
+          "from": "金河镇",
+          "to": "满归镇",
+          "fromStopId": "hulunbuir-khingan-crossing:stop:jinhe-town",
+          "toStopId": "hulunbuir-khingan-crossing:stop:mangui-town",
+          "origin": [
+            121.335,
+            51.33
+          ],
+          "destination": [
+            122.08,
+            52.045
+          ],
+          "planKm": 23,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 560,
+          "descentM": 420,
+          "terrain": "金河至满归方向，森林穿越、林区起伏和湿滑路段。",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:segment:5",
+          "routeId": "hulunbuir-khingan-crossing",
+          "day": "Day6",
+          "from": "满归镇",
+          "to": "草原过渡带待核查点",
+          "fromStopId": "hulunbuir-khingan-crossing:stop:mangui-town",
+          "toStopId": "hulunbuir-khingan-crossing:stop:grassland-transition",
+          "origin": [
+            122.08,
+            52.045
+          ],
+          "destination": [
+            120.88,
+            50.25
+          ],
+          "planKm": 21,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 500,
+          "descentM": 720,
+          "terrain": "满归返回草原过渡带方向，森林到草原地貌切换。",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:segment:6",
+          "routeId": "hulunbuir-khingan-crossing",
+          "day": "Day7",
+          "from": "草原过渡带待核查点",
+          "to": "陈巴尔虎旗草原",
+          "fromStopId": "hulunbuir-khingan-crossing:stop:grassland-transition",
+          "toStopId": "hulunbuir-khingan-crossing:stop:chenbarhu-banner",
+          "origin": [
+            120.88,
+            50.25
+          ],
+          "destination": [
+            119.424,
+            49.326
+          ],
+          "planKm": 20,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 300,
+          "descentM": 460,
+          "terrain": "草原过渡带、缓坡、牧场边缘，需确认牧场和道路权限。",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:segment:7",
+          "routeId": "hulunbuir-khingan-crossing",
+          "day": "Day8",
+          "from": "陈巴尔虎旗草原",
+          "to": "海拉尔湿地边缘待核查点",
+          "fromStopId": "hulunbuir-khingan-crossing:stop:chenbarhu-banner",
+          "toStopId": "hulunbuir-khingan-crossing:stop:hailar-wetland-edge",
+          "origin": [
+            119.424,
+            49.326
+          ],
+          "destination": [
+            119.91,
+            49.28
+          ],
+          "planKm": 19,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 320,
+          "descentM": 210,
+          "terrain": "陈巴尔虎旗草原回海拉尔方向，草地、湿地和公路接驳点交错。",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "hulunbuir-khingan-crossing:segment:8",
+          "routeId": "hulunbuir-khingan-crossing",
+          "day": "Day9",
+          "from": "海拉尔湿地边缘待核查点",
+          "to": "海拉尔",
+          "fromStopId": "hulunbuir-khingan-crossing:stop:hailar-wetland-edge",
+          "toStopId": "hulunbuir-khingan-crossing:stop:hailar-finish",
+          "origin": [
+            119.91,
+            49.28
+          ],
+          "destination": [
+            119.824542,
+            49.234715
+          ],
+          "planKm": 19,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": 320,
+          "descentM": 300,
+          "terrain": "海拉尔湿地边缘收尾段，平缓草原路和城市边缘道路。",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        }
+      ]
+    },
+    {
+      "id": "keshiketeng-family-grassland",
+      "name": "克什克腾旗-锡林郭勒草原亲子长线",
+      "region": "赤峰市克什克腾旗、锡林郭勒草原、乌兰布统",
+      "type": "family_grassland_long_route",
+      "difficulty": "★★☆☆☆（草原平缓为主）",
+      "status": "draft_unverified",
+      "totalKm": 190,
+      "days": "9-10天",
+      "color": "#4f8a3d",
+      "notes": [
+        "亲子组团草案路线，坐标和每日住宿点需复核。",
+        "最佳季节为6月下旬至8月。",
+        "靠近公路和牧民点的安全可控性需要结合实际接驳路线确认。"
+      ],
+      "stops": [
+        {
+          "id": "keshiketeng-family-grassland:stop:jingpeng",
+          "localId": "jingpeng",
+          "name": "经棚镇",
+          "lnglat": [
+            117.54157,
+            43.25862
+          ],
+          "source": "public_coordinate_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "keshiketeng-family-grassland:stop:haolaihure",
+          "localId": "haolaihure",
+          "name": "浩来呼热",
+          "lnglat": [
+            117.18,
+            43.09
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "keshiketeng-family-grassland:stop:daqingshan-goulaochang",
+          "localId": "daqingshan-goulaochang",
+          "name": "大青山沟老场",
+          "lnglat": [
+            117.75,
+            43.31
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "keshiketeng-family-grassland:stop:meilingu",
+          "localId": "meilingu",
+          "name": "美林谷",
+          "lnglat": [
+            117.62,
+            43.19
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "keshiketeng-family-grassland:stop:bolongke-edge",
+          "localId": "bolongke-edge",
+          "name": "勃隆克沙漠边缘",
+          "lnglat": [
+            117.08,
+            42.77
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "keshiketeng-family-grassland:stop:hunshandake-south",
+          "localId": "hunshandake-south",
+          "name": "浑善达克沙地南缘",
+          "lnglat": [
+            116.55,
+            42.65
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "keshiketeng-family-grassland:stop:duolun-west",
+          "localId": "duolun-west",
+          "name": "多伦湖西岸",
+          "lnglat": [
+            116.49,
+            42.19
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "keshiketeng-family-grassland:stop:hulu-nuur",
+          "localId": "hulu-nuur",
+          "name": "乌兰布统葫芦诺日",
+          "lnglat": [
+            117.22,
+            42.55
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "keshiketeng-family-grassland:stop:xiyangpo",
+          "localId": "xiyangpo",
+          "name": "西杨坡",
+          "lnglat": [
+            117.35,
+            42.83
+          ],
+          "source": "manual_draft_seed",
+          "status": "draft_unverified"
+        },
+        {
+          "id": "keshiketeng-family-grassland:stop:jingpeng-return",
+          "localId": "jingpeng-return",
+          "name": "经棚镇",
+          "lnglat": [
+            117.54157,
+            43.25862
+          ],
+          "source": "public_coordinate_seed",
+          "status": "draft_unverified"
+        }
+      ],
+      "segments": [
+        {
+          "id": "keshiketeng-family-grassland:segment:0",
+          "routeId": "keshiketeng-family-grassland",
+          "day": "Day1",
+          "from": "经棚镇",
+          "to": "浩来呼热",
+          "fromStopId": "keshiketeng-family-grassland:stop:jingpeng",
+          "toStopId": "keshiketeng-family-grassland:stop:haolaihure",
+          "origin": [
+            117.54157,
+            43.25862
+          ],
+          "destination": [
+            117.18,
+            43.09
+          ],
+          "planKm": 20,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "草原缓坡、溪流草甸",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "keshiketeng-family-grassland:segment:1",
+          "routeId": "keshiketeng-family-grassland",
+          "day": "Day2",
+          "from": "浩来呼热",
+          "to": "大青山沟老场",
+          "fromStopId": "keshiketeng-family-grassland:stop:haolaihure",
+          "toStopId": "keshiketeng-family-grassland:stop:daqingshan-goulaochang",
+          "origin": [
+            117.18,
+            43.09
+          ],
+          "destination": [
+            117.75,
+            43.31
+          ],
+          "planKm": 22,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "高山草甸、花岗岩石林",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "keshiketeng-family-grassland:segment:2",
+          "routeId": "keshiketeng-family-grassland",
+          "day": "Day3",
+          "from": "大青山沟老场",
+          "to": "美林谷",
+          "fromStopId": "keshiketeng-family-grassland:stop:daqingshan-goulaochang",
+          "toStopId": "keshiketeng-family-grassland:stop:meilingu",
+          "origin": [
+            117.75,
+            43.31
+          ],
+          "destination": [
+            117.62,
+            43.19
+          ],
+          "planKm": 18,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "森林、草甸、溪流",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "keshiketeng-family-grassland:segment:3",
+          "routeId": "keshiketeng-family-grassland",
+          "day": "Day4",
+          "from": "美林谷",
+          "to": "勃隆克沙漠边缘",
+          "fromStopId": "keshiketeng-family-grassland:stop:meilingu",
+          "toStopId": "keshiketeng-family-grassland:stop:bolongke-edge",
+          "origin": [
+            117.62,
+            43.19
+          ],
+          "destination": [
+            117.08,
+            42.77
+          ],
+          "planKm": 21,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "草原到沙地过渡，轻沙徒步",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "keshiketeng-family-grassland:segment:4",
+          "routeId": "keshiketeng-family-grassland",
+          "day": "Day5",
+          "from": "勃隆克沙漠边缘",
+          "to": "浑善达克沙地南缘",
+          "fromStopId": "keshiketeng-family-grassland:stop:bolongke-edge",
+          "toStopId": "keshiketeng-family-grassland:stop:hunshandake-south",
+          "origin": [
+            117.08,
+            42.77
+          ],
+          "destination": [
+            116.55,
+            42.65
+          ],
+          "planKm": 20,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "沙地疏林、小湖泊、水鸟",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "keshiketeng-family-grassland:segment:5",
+          "routeId": "keshiketeng-family-grassland",
+          "day": "Day6",
+          "from": "浑善达克沙地南缘",
+          "to": "多伦湖西岸",
+          "fromStopId": "keshiketeng-family-grassland:stop:hunshandake-south",
+          "toStopId": "keshiketeng-family-grassland:stop:duolun-west",
+          "origin": [
+            116.55,
+            42.65
+          ],
+          "destination": [
+            116.49,
+            42.19
+          ],
+          "planKm": 22,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "环湖草原、白桦林、湿地",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "keshiketeng-family-grassland:segment:6",
+          "routeId": "keshiketeng-family-grassland",
+          "day": "Day7",
+          "from": "多伦湖西岸",
+          "to": "乌兰布统葫芦诺日",
+          "fromStopId": "keshiketeng-family-grassland:stop:duolun-west",
+          "toStopId": "keshiketeng-family-grassland:stop:hulu-nuur",
+          "origin": [
+            116.49,
+            42.19
+          ],
+          "destination": [
+            117.22,
+            42.55
+          ],
+          "planKm": 19,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "乌兰布统草原，牛羊成群",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "keshiketeng-family-grassland:segment:7",
+          "routeId": "keshiketeng-family-grassland",
+          "day": "Day8",
+          "from": "乌兰布统葫芦诺日",
+          "to": "西杨坡",
+          "fromStopId": "keshiketeng-family-grassland:stop:hulu-nuur",
+          "toStopId": "keshiketeng-family-grassland:stop:xiyangpo",
+          "origin": [
+            117.22,
+            42.55
+          ],
+          "destination": [
+            117.35,
+            42.83
+          ],
+          "planKm": 23,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "山地草原、缓坡、白桦林",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        },
+        {
+          "id": "keshiketeng-family-grassland:segment:8",
+          "routeId": "keshiketeng-family-grassland",
+          "day": "Day9",
+          "from": "西杨坡",
+          "to": "经棚镇",
+          "fromStopId": "keshiketeng-family-grassland:stop:xiyangpo",
+          "toStopId": "keshiketeng-family-grassland:stop:jingpeng-return",
+          "origin": [
+            117.35,
+            42.83
+          ],
+          "destination": [
+            117.54157,
+            43.25862
+          ],
+          "planKm": 25,
+          "distanceM": null,
+          "durationS": null,
+          "ascentM": null,
+          "descentM": null,
+          "terrain": "平缓草原路，收尾返程段",
+          "camp": "",
+          "risk": "",
+          "support": "",
+          "source": "draft_route_text",
+          "status": "draft_unverified",
+          "drawable": true
+        }
+      ]
     }
   ],
   "places": [

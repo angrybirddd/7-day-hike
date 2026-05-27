@@ -1,18 +1,26 @@
+const DEFAULT_ROUTE_GROUP_ID = "all";
+
 const state = {
   amap: null,
   map: null,
   data: null,
   zoom: 7,
+  activeRouteGroupId: DEFAULT_ROUTE_GROUP_ID,
   showBureau: true,
   showFarm: true,
   showUnverified: false,
+  measuring: false,
+  measurePoints: [],
+  walking: null,
   overlays: {
     routeLines: [],
-    anchorMarkers: [],
+    routeStopMarkers: [],
     placeMarkers: [],
     labelsLayer: null,
     unverifiedCluster: null,
     highlight: null,
+    measureMarkers: [],
+    measureLine: null,
   },
 };
 
@@ -26,10 +34,14 @@ const els = {
   routeKm: document.querySelector("#routeKm"),
   searchInput: document.querySelector("#searchInput"),
   layerButtons: [...document.querySelectorAll("[data-layer]")],
+  routeGroupControls: document.querySelector("#routeGroupControls"),
   routeList: document.querySelector("#routeList"),
   resultsList: document.querySelector("#resultsList"),
   detailPanel: document.querySelector("#detailPanel"),
   zoomHint: document.querySelector("#zoomHint"),
+  measureToggle: document.querySelector("#measureToggle"),
+  measureClear: document.querySelector("#measureClear"),
+  measureStatus: document.querySelector("#measureStatus"),
 };
 
 const CATEGORY_LABELS = {
@@ -37,12 +49,23 @@ const CATEGORY_LABELS = {
   bureau: "林业局",
   farm: "林场",
   related: "待核查",
+  draft_stop: "草案节点",
 };
 
 const STATUS_LABELS = {
   trusted: "可信",
   unverified: "待核查",
+  draft_unverified: "草案待核查",
 };
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
 
 function showError(title, body) {
   els.loading.hidden = true;
@@ -90,12 +113,18 @@ async function loadAmap(config) {
   return window.AMapLoader.load({
     key: config.amap.key,
     version: "2.0",
-    plugins: ["AMap.MarkerCluster"],
+    plugins: ["AMap.MarkerCluster", "AMap.Walking"],
   });
 }
 
+function selectedRouteGroups() {
+  if (!state.data?.routeGroups) return [];
+  if (state.activeRouteGroupId === "all") return state.data.routeGroups;
+  return state.data.routeGroups.filter((group) => group.id === state.activeRouteGroupId);
+}
+
 function totalRouteKm() {
-  return Math.round(state.data.routes.reduce((sum, route) => sum + route.distance_m, 0) / 1000);
+  return Math.round(selectedRouteGroups().reduce((sum, group) => sum + Number(group.totalKm || 0), 0));
 }
 
 function visibleTrustedPlaces() {
@@ -116,6 +145,35 @@ function visibleLabelPlaces() {
   return places;
 }
 
+function routeGroupById(id) {
+  return state.data.routeGroups.find((group) => group.id === id);
+}
+
+function ensureActiveRouteGroup() {
+  if (state.activeRouteGroupId !== "all" && !routeGroupById(state.activeRouteGroupId)) {
+    state.activeRouteGroupId = "all";
+  }
+}
+
+function visibleSegments() {
+  return selectedRouteGroups().flatMap((group) =>
+    group.segments
+      .filter((segment) => segment.drawable !== false && segment.origin && segment.destination)
+      .map((segment) => ({ ...segment, group })),
+  );
+}
+
+function visibleStops() {
+  const byKey = new Map();
+  for (const group of selectedRouteGroups()) {
+    for (const stop of group.stops || []) {
+      if (!stop.lnglat) continue;
+      byKey.set(`${group.id}:${stop.localId || stop.id}`, { ...stop, group });
+    }
+  }
+  return [...byKey.values()];
+}
+
 function clearOverlays(items) {
   for (const item of items) item.setMap?.(null);
   items.length = 0;
@@ -126,7 +184,7 @@ function clearLayer(layer) {
 }
 
 function markerContent(className, text = "") {
-  const label = text ? `<span>${text}</span>` : "";
+  const label = text ? `<span>${escapeHtml(text)}</span>` : "";
   return `<div class="${className}">${label}</div>`;
 }
 
@@ -142,6 +200,19 @@ function makeMarker(item, className, text = "") {
   return marker;
 }
 
+function makeRouteStopMarker(stop, index) {
+  const isDraft = stop.status === "draft_unverified";
+  const marker = new state.amap.Marker({
+    position: stop.lnglat,
+    content: markerContent(isDraft ? "marker marker-draft" : "marker marker-anchor", isDraft ? "" : String(index + 1)),
+    anchor: "center",
+    offset: new state.amap.Pixel(0, 0),
+    extData: stop,
+  });
+  marker.on("click", () => selectItem({ ...stop, category: isDraft ? "draft_stop" : "anchor", status: stop.status || "trusted" }));
+  return marker;
+}
+
 function renderMetrics() {
   const trusted = state.data.places.filter((place) => place.status === "trusted").length;
   els.poiCount.textContent = state.data.places.length;
@@ -149,36 +220,57 @@ function renderMetrics() {
   els.routeKm.textContent = totalRouteKm();
 }
 
+function renderRouteGroupControls() {
+  const groups = [{ id: "all", name: "全部路线", status: "mixed" }, ...state.data.routeGroups];
+  els.routeGroupControls.innerHTML = groups
+    .map((group) => {
+      const active = group.id === state.activeRouteGroupId ? "active" : "";
+      const draft = group.status === "draft_unverified" ? " draft" : "";
+      return `<button class="route-tab ${active}${draft}" type="button" data-route-group="${escapeHtml(group.id)}">${escapeHtml(group.name)}</button>`;
+    })
+    .join("");
+
+  els.routeGroupControls.querySelectorAll("[data-route-group]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.activeRouteGroupId = button.dataset.routeGroup;
+      renderAll();
+      fitVisibleRoutes();
+    });
+  });
+}
+
 function renderRoutes() {
   clearOverlays(state.overlays.routeLines);
 
-  for (const route of state.data.routes) {
+  state.overlays.routeLines = visibleSegments().map(({ group, ...segment }) => {
+    const draft = segment.status === "draft_unverified";
     const line = new state.amap.Polyline({
-      path: [route.origin, route.destination],
-      strokeColor: "#2d7190",
-      strokeWeight: 7,
-      strokeOpacity: 0.9,
+      path: [segment.origin, segment.destination],
+      strokeColor: group.color || "#2d7190",
+      strokeWeight: draft ? 5 : 7,
+      strokeOpacity: draft ? 0.72 : 0.9,
+      strokeStyle: draft ? "dashed" : "solid",
       lineJoin: "round",
       lineCap: "round",
-      extData: route,
-      zIndex: 80,
+      extData: { ...segment, group },
+      zIndex: draft ? 70 : 82,
     });
-    line.on("click", () => selectRoute(route));
-    state.overlays.routeLines.push(line);
-  }
+    line.on("click", () => selectRouteSegment({ ...segment, group }));
+    return line;
+  });
 
-  state.map.add(state.overlays.routeLines);
+  if (state.overlays.routeLines.length) state.map.add(state.overlays.routeLines);
 }
 
-function renderAnchors() {
-  clearOverlays(state.overlays.anchorMarkers);
-  state.overlays.anchorMarkers = state.data.anchors.map((anchor, index) => makeMarker(anchor, "marker marker-anchor", String(index + 1)));
-  state.map.add(state.overlays.anchorMarkers);
+function renderRouteStops() {
+  clearOverlays(state.overlays.routeStopMarkers);
+  state.overlays.routeStopMarkers = visibleStops().map((stop, index) => makeRouteStopMarker(stop, index));
+  if (state.overlays.routeStopMarkers.length) state.map.add(state.overlays.routeStopMarkers);
 }
 
-function labelIcon(category, status) {
-  const color = category === "bureau" ? "#b55b32" : category === "farm" ? "#145c3d" : category === "anchor" ? "#2d7190" : "#6e8f3d";
-  const opacity = status === "unverified" ? 0.58 : 0.96;
+function labelIcon(category, status, colorOverride) {
+  const color = colorOverride || (category === "bureau" ? "#b55b32" : category === "farm" ? "#145c3d" : category === "anchor" ? "#2d7190" : "#6e8f3d");
+  const opacity = status === "unverified" || status === "draft_unverified" ? 0.62 : 0.96;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><circle cx="9" cy="9" r="6" fill="${color}" fill-opacity="${opacity}" stroke="white" stroke-width="3"/></svg>`;
   return {
     type: "image",
@@ -211,12 +303,37 @@ function makeLabelMarker(item) {
   return marker;
 }
 
-function makeRouteDistanceLabel(route) {
-  const midpoint = [(route.origin[0] + route.destination[0]) / 2, (route.origin[1] + route.destination[1]) / 2];
+function makeRouteStopLabel(stop) {
+  const draft = stop.status === "draft_unverified";
+  const marker = new state.amap.LabelMarker({
+    position: stop.lnglat,
+    rank: draft ? 68 : 100,
+    icon: labelIcon(draft ? "draft_stop" : "anchor", stop.status, stop.group?.color),
+    text: {
+      content: stop.name,
+      direction: draft ? "right" : "top",
+      offset: draft ? [8, 0] : [0, -10],
+      style: {
+        fontSize: draft ? 12 : 14,
+        fontWeight: draft ? "700" : "800",
+        fillColor: draft ? "#3b3f35" : "#14211d",
+        strokeColor: "#fffdf7",
+        strokeWidth: draft ? 4 : 5,
+      },
+    },
+    extData: stop,
+  });
+  marker.on("click", () => selectItem({ ...stop, category: draft ? "draft_stop" : "anchor", status: stop.status || "trusted" }));
+  return marker;
+}
+
+function makeRouteDistanceLabel(segment) {
+  const midpoint = [(segment.origin[0] + segment.destination[0]) / 2, (segment.origin[1] + segment.destination[1]) / 2];
   const emptyIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"></svg>`;
+  const label = segment.planKm ? `${Math.round(Number(segment.planKm))} km` : "待核查";
   const marker = new state.amap.LabelMarker({
     position: midpoint,
-    rank: 80,
+    rank: segment.status === "trusted" ? 82 : 58,
     icon: {
       type: "image",
       image: `data:image/svg+xml;utf8,${encodeURIComponent(emptyIcon)}`,
@@ -224,20 +341,20 @@ function makeRouteDistanceLabel(route) {
       anchor: "center",
     },
     text: {
-      content: `${Math.round(route.distance_m / 1000)} km`,
+      content: label,
       direction: "center",
       offset: [0, 0],
       style: {
         fontSize: 12,
         fontWeight: "800",
-        fillColor: "#2d7190",
+        fillColor: segment.group?.color || "#2d7190",
         strokeColor: "#fffdf7",
         strokeWidth: 5,
       },
     },
-    extData: route,
+    extData: segment,
   });
-  marker.on("click", () => selectRoute(route));
+  marker.on("click", () => selectRouteSegment(segment));
   return marker;
 }
 
@@ -250,31 +367,9 @@ function renderLabels() {
     allowCollision: false,
   });
 
-  const anchorLabels = state.data.anchors.map((anchor) => {
-    const marker = new state.amap.LabelMarker({
-      position: anchor.lnglat,
-      rank: 100,
-      icon: labelIcon("anchor", "trusted"),
-      text: {
-        content: anchor.name,
-        direction: "top",
-        offset: [0, -10],
-        style: {
-          fontSize: 14,
-          fontWeight: "800",
-          fillColor: "#14211d",
-          strokeColor: "#fffdf7",
-          strokeWidth: 5,
-        },
-      },
-      extData: anchor,
-    });
-    marker.on("click", () => selectItem(anchor));
-    return marker;
-  });
-
-  const routeLabels = state.data.routes.map(makeRouteDistanceLabel);
-  state.overlays.labelsLayer.add([...anchorLabels, ...routeLabels, ...visibleLabelPlaces().map(makeLabelMarker)]);
+  const routeStopLabels = visibleStops().map(makeRouteStopLabel);
+  const routeLabels = visibleSegments().map(makeRouteDistanceLabel);
+  state.overlays.labelsLayer.add([...routeStopLabels, ...routeLabels, ...visibleLabelPlaces().map(makeLabelMarker)]);
   state.map.add(state.overlays.labelsLayer);
 }
 
@@ -316,6 +411,8 @@ function renderUnverifiedCluster() {
 
 function renderMapObjects() {
   if (!state.map) return;
+  renderRoutes();
+  renderRouteStops();
   renderTrustedMarkers();
   renderLabels();
   renderUnverifiedCluster();
@@ -323,12 +420,13 @@ function renderMapObjects() {
 }
 
 function renderZoomHint() {
+  const active = state.activeRouteGroupId === "all" ? "全部路线" : routeGroupById(state.activeRouteGroupId)?.name || "当前路线";
   if (state.zoom < 8) {
-    els.zoomHint.textContent = "当前只显示路线骨架。放大到 8 级显示林业局，10 级显示林场。";
+    els.zoomHint.textContent = `${active}：当前主要看路线骨架。放大到 8 级显示林业局，10 级显示林场。`;
   } else if (state.zoom < 10) {
-    els.zoomHint.textContent = "当前显示可信林业局。继续放大到 10 级显示林场。";
+    els.zoomHint.textContent = `${active}：当前显示可信林业局。继续放大到 10 级显示林场。`;
   } else if (state.zoom < 12) {
-    els.zoomHint.textContent = "当前显示可信林业局和林场。12 级后可查看待核查点。";
+    els.zoomHint.textContent = `${active}：当前显示可信林业局和林场。12 级后可查看待核查点。`;
   } else {
     els.zoomHint.textContent = state.showUnverified ? "待核查层已开启，标签会自动避让；完整列表仍可搜索。" : "可开启待核查层查看高德返回的关联 POI。";
   }
@@ -347,25 +445,35 @@ function routeLabel(route) {
   return `${route.from} -> ${route.to}`;
 }
 
+function segmentMeta(segment) {
+  const km = segment.planKm ? `${Number(segment.planKm).toFixed(1)} km` : "计划里程待核查";
+  const climb = segment.ascentM ? `爬升 ${segment.ascentM} m` : "";
+  return [segment.day, km, climb, STATUS_LABELS[segment.status]].filter(Boolean).join(" · ");
+}
+
 function renderRouteList() {
-  els.routeList.innerHTML = state.data.routes
-    .map((route) => {
-      const km = (route.distance_m / 1000).toFixed(1);
-      const hours = (route.duration_s / 3600).toFixed(1);
-      return `<li><button type="button" data-route="${route.id}"><b>${routeLabel(route)}</b><span>${km} km · ${hours} h</span></button></li>`;
+  const groups = selectedRouteGroups();
+  els.routeList.innerHTML = groups
+    .map((group) => {
+      const items = group.segments
+        .map((segment) => `<li><button type="button" data-segment="${escapeHtml(segment.id)}"><b>${escapeHtml(routeLabel(segment))}</b><span>${escapeHtml(segmentMeta(segment))}</span></button></li>`)
+        .join("");
+      return `<li class="route-group-title"><b style="--route-color:${escapeHtml(group.color || "#2d7190")}">${escapeHtml(group.name)}</b><span>${escapeHtml(group.status === "draft_unverified" ? "草案待核查" : "可信路线")}</span></li>${items}`;
     })
     .join("");
 
-  els.routeList.querySelectorAll("[data-route]").forEach((button) => {
+  els.routeList.querySelectorAll("[data-segment]").forEach((button) => {
     button.addEventListener("click", () => {
-      const route = state.data.routes.find((item) => item.id === button.dataset.route);
-      selectRoute(route);
+      const segment = selectedRouteGroups().flatMap((group) => group.segments.map((item) => ({ ...item, group }))).find((item) => item.id === button.dataset.segment);
+      selectRouteSegment(segment);
     });
   });
 }
 
 function matchesSearch(item, term) {
-  const text = [item.name, item.from, item.to, item.address, item.adname, item.category, item.status, item.query].filter(Boolean).join(" ");
+  const text = [item.name, item.from, item.to, item.address, item.adname, item.category, item.status, item.query, item.region, item.terrain, item.camp, item.risk, item.support]
+    .filter(Boolean)
+    .join(" ");
   return text.toLowerCase().includes(term.toLowerCase());
 }
 
@@ -376,28 +484,44 @@ function renderResults() {
     return;
   }
 
-  const items = [
-    ...state.data.anchors.map((item) => ({ type: "item", item })),
-    ...state.data.routes.map((item) => ({ type: "route", item })),
-    ...state.data.places.map((item) => ({ type: "item", item })),
-  ]
+  const routeGroupResults = state.data.routeGroups.map((item) => ({ type: "group", item }));
+  const segmentResults = state.data.routeGroups.flatMap((group) => group.segments.map((segment) => ({ type: "segment", item: { ...segment, group } })));
+  const stopResults = state.data.routeGroups.flatMap((group) => group.stops.map((stop) => ({ type: "stop", item: { ...stop, group, category: stop.status === "draft_unverified" ? "draft_stop" : "anchor" } })));
+  const itemResults = state.data.places.map((item) => ({ type: "item", item }));
+
+  const items = [...routeGroupResults, ...segmentResults, ...stopResults, ...itemResults]
     .filter(({ item }) => matchesSearch(item, term))
-    .slice(0, 30);
+    .slice(0, 35);
 
   els.resultsList.innerHTML = items
     .map(({ type, item }) => {
-      const title = type === "route" ? routeLabel(item) : item.name;
-      const meta = type === "route" ? `${Math.round(item.distance_m / 1000)} km` : `${CATEGORY_LABELS[item.category]} · ${STATUS_LABELS[item.status]}`;
-      return `<li><button type="button" data-kind="${type}" data-id="${item.id}"><b>${title}</b><span>${meta}</span></button></li>`;
+      const title = type === "segment" ? routeLabel(item) : item.name;
+      const meta =
+        type === "group"
+          ? `${item.totalKm || 0} km · ${STATUS_LABELS[item.status] || item.status}`
+          : type === "segment"
+            ? segmentMeta(item)
+            : `${CATEGORY_LABELS[item.category]} · ${STATUS_LABELS[item.status] || item.status}`;
+      return `<li><button type="button" data-kind="${type}" data-id="${escapeHtml(item.id)}"><b>${escapeHtml(title)}</b><span>${escapeHtml(meta)}</span></button></li>`;
     })
     .join("");
 
   els.resultsList.querySelectorAll("button").forEach((button) => {
     button.addEventListener("click", () => {
-      if (button.dataset.kind === "route") {
-        selectRoute(state.data.routes.find((item) => item.id === button.dataset.id));
+      const kind = button.dataset.kind;
+      const id = button.dataset.id;
+      if (kind === "group") {
+        state.activeRouteGroupId = id;
+        renderAll();
+        fitVisibleRoutes();
+      } else if (kind === "segment") {
+        const segment = state.data.routeGroups.flatMap((group) => group.segments.map((item) => ({ ...item, group }))).find((item) => item.id === id);
+        selectRouteSegment(segment);
+      } else if (kind === "stop") {
+        const stop = state.data.routeGroups.flatMap((group) => group.stops.map((item) => ({ ...item, group, category: item.status === "draft_unverified" ? "draft_stop" : "anchor" }))).find((item) => item.id === id);
+        selectItem(stop);
       } else {
-        selectItem([...state.data.anchors, ...state.data.places].find((item) => item.id === button.dataset.id));
+        selectItem(state.data.places.find((item) => item.id === id));
       }
     });
   });
@@ -410,44 +534,54 @@ function renderDetail(html) {
 function detailRows(rows) {
   return rows
     .filter((row) => row.value !== undefined && row.value !== null && row.value !== "")
-    .map((row) => `<dt>${row.label}</dt><dd>${row.value}</dd>`)
+    .map((row) => `<dt>${escapeHtml(row.label)}</dt><dd>${escapeHtml(row.value)}</dd>`)
     .join("");
+}
+
+function measureButtons(item) {
+  if (!item?.lnglat) return "";
+  return `
+    <div class="detail-actions">
+      <button type="button" data-measure-point="start" data-lnglat="${escapeHtml(item.lnglat.join(","))}" data-name="${escapeHtml(item.name)}">设为起点</button>
+      <button type="button" data-measure-point="end" data-lnglat="${escapeHtml(item.lnglat.join(","))}" data-name="${escapeHtml(item.name)}">设为终点</button>
+    </div>
+  `;
 }
 
 function selectItem(item) {
   if (!item) return;
-  state.map.setZoomAndCenter(Math.max(state.zoom, item.category === "anchor" ? 8 : 12), item.lnglat);
+  const category = item.category || (item.status === "draft_unverified" ? "draft_stop" : "anchor");
+  const status = item.status || "trusted";
+  state.map.setZoomAndCenter(Math.max(state.zoom, category === "anchor" ? 8 : 12), item.lnglat);
   drawHighlight(item.lnglat);
 
   renderDetail(`
-    <article class="detail-card ${item.status}">
-      <span>${CATEGORY_LABELS[item.category]} · ${STATUS_LABELS[item.status]}</span>
-      <h2>${item.name}</h2>
+    <article class="detail-card ${escapeHtml(status)}">
+      <span>${escapeHtml(CATEGORY_LABELS[category] || category)} · ${escapeHtml(STATUS_LABELS[status] || status)}</span>
+      <h2>${escapeHtml(item.name)}</h2>
       <dl>${detailRows([
         { label: "地址", value: item.address },
-        { label: "区域", value: item.adname },
+        { label: "区域", value: item.adname || item.group?.region },
+        { label: "路线", value: item.group?.name },
         { label: "来源", value: item.source },
-        { label: "查询词", value: item.query },
-        { label: "判断", value: item.reason },
-        { label: "坐标", value: item.lnglat.join(", ") },
+        { label: "判断", value: item.reason || (status === "draft_unverified" ? "文字路线草案节点，坐标需复核" : "") },
+        { label: "坐标", value: item.lnglat?.join(", ") },
       ])}</dl>
+      ${measureButtons(item)}
     </article>
   `);
 }
 
-function routeBounds(route) {
-  const minLng = Math.min(route.origin[0], route.destination[0]);
-  const maxLng = Math.max(route.origin[0], route.destination[0]);
-  const minLat = Math.min(route.origin[1], route.destination[1]);
-  const maxLat = Math.max(route.origin[1], route.destination[1]);
-  return new state.amap.Bounds([minLng, minLat], [maxLng, maxLat]);
+function routeBoundsFromPositions(positions) {
+  const lngs = positions.map((position) => position[0]);
+  const lats = positions.map((position) => position[1]);
+  return new state.amap.Bounds([Math.min(...lngs), Math.min(...lats)], [Math.max(...lngs), Math.max(...lats)]);
 }
 
 function mapAvoidPadding() {
   const sidebar = document.querySelector(".sidebar")?.getBoundingClientRect();
   if (!sidebar) return [72, 72, 72, 72];
 
-  // AMap's avoid array order is top, bottom, left, right.
   if (window.innerWidth <= 680) {
     return [72, Math.min(Math.round(sidebar.height + 32), Math.round(window.innerHeight * 0.48)), 48, 48];
   }
@@ -455,19 +589,29 @@ function mapAvoidPadding() {
   return [72, 72, Math.min(Math.round(sidebar.width + 48), Math.round(window.innerWidth * 0.45)), 72];
 }
 
-function selectRoute(route) {
-  if (!route) return;
-  state.map.setBounds(routeBounds(route), false, mapAvoidPadding());
+function selectRouteSegment(segment) {
+  if (!segment) return;
+  if (segment.origin && segment.destination) {
+    state.map.setBounds(routeBoundsFromPositions([segment.origin, segment.destination]), false, mapAvoidPadding());
+  }
   clearHighlight();
 
   renderDetail(`
-    <article class="detail-card route">
-      <span>路线段</span>
-      <h2>${routeLabel(route)}</h2>
+    <article class="detail-card route ${escapeHtml(segment.status)}">
+      <span>${escapeHtml(segment.group?.name || "路线段")} · ${escapeHtml(STATUS_LABELS[segment.status] || segment.status)}</span>
+      <h2>${escapeHtml(routeLabel(segment))}</h2>
       <dl>${detailRows([
-        { label: "距离", value: `${(route.distance_m / 1000).toFixed(1)} km` },
-        { label: "预计时间", value: `${(route.duration_s / 3600).toFixed(1)} h` },
-        { label: "来源", value: route.source },
+        { label: "日程", value: segment.day },
+        { label: "计划里程", value: segment.planKm ? `${Number(segment.planKm).toFixed(1)} km` : "待轨迹复核" },
+        { label: "预计时间", value: segment.durationS ? `${(segment.durationS / 3600).toFixed(1)} h` : "" },
+        { label: "爬升", value: segment.ascentM ? `${segment.ascentM} m` : "" },
+        { label: "下降", value: segment.descentM ? `${segment.descentM} m` : "" },
+        { label: "地形", value: segment.terrain },
+        { label: "接应/露营", value: segment.camp },
+        { label: "关键风险", value: segment.risk },
+        { label: "执行规则", value: segment.support },
+        { label: "来源", value: segment.source },
+        { label: "核查状态", value: segment.status === "draft_unverified" ? "文字日程生成，坐标和可通行性需复核" : "高德数据锚点路线" },
       ])}</dl>
     </article>
   `);
@@ -494,20 +638,162 @@ function drawHighlight(position) {
   state.map.add(state.overlays.highlight);
 }
 
-function fitRoute() {
-  const overlays = [...state.overlays.anchorMarkers, ...state.overlays.routeLines];
+function fitVisibleRoutes() {
+  const overlays = [...state.overlays.routeStopMarkers, ...state.overlays.routeLines];
   if (overlays.length) {
     state.map.setFitView(overlays, false, mapAvoidPadding(), 11);
-  } else if (state.data.anchors.length) {
-    state.map.setCenter(state.data.anchors[0].lnglat);
+  } else {
+    const positions = visibleStops().map((stop) => stop.lnglat);
+    if (positions.length) state.map.setBounds(routeBoundsFromPositions(positions), false, mapAvoidPadding());
   }
+}
+
+function renderMeasureStatus(text) {
+  els.measureStatus.textContent = text;
+}
+
+function clearMeasureResult() {
+  clearOverlays(state.overlays.measureMarkers);
+  if (state.overlays.measureLine) {
+    state.overlays.measureLine.setMap(null);
+    state.overlays.measureLine = null;
+  }
+  state.measurePoints = [];
+  renderMeasureStatus(state.measuring ? "请选择起点和终点。" : "测距未开启。");
+}
+
+function renderMeasureMarkers() {
+  clearOverlays(state.overlays.measureMarkers);
+  state.overlays.measureMarkers = state.measurePoints.map((point, index) =>
+    new state.amap.Marker({
+      position: point.lnglat,
+      content: markerContent(index === 0 ? "marker marker-measure-start" : "marker marker-measure-end", index === 0 ? "起" : "终"),
+      anchor: "center",
+      offset: new state.amap.Pixel(0, 0),
+    }),
+  );
+  if (state.overlays.measureMarkers.length) state.map.add(state.overlays.measureMarkers);
+}
+
+function routePathFromWalkingResult(result) {
+  const route = result?.routes?.[0];
+  const steps = route?.steps || [];
+  const path = [];
+  for (const step of steps) {
+    for (const point of step.path || []) {
+      if (Array.isArray(point)) path.push(point);
+      else if (typeof point.getLng === "function") path.push([point.getLng(), point.getLat()]);
+      else if ("lng" in point && "lat" in point) path.push([point.lng, point.lat]);
+    }
+  }
+  return { route, path };
+}
+
+function searchWalkingDistance() {
+  if (state.measurePoints.length !== 2) return;
+  const [start, end] = state.measurePoints;
+  renderMeasureStatus("正在用高德步行规划计算路线距离...");
+
+  if (state.overlays.measureLine) {
+    state.overlays.measureLine.setMap(null);
+    state.overlays.measureLine = null;
+  }
+
+  state.walking.search(start.lnglat, end.lnglat, (status, result) => {
+    if (status !== "complete") {
+      renderMeasureStatus(`无法规划步行路线：${result?.info || result || "高德未返回可用路线"}`);
+      renderDetail(`
+        <article class="detail-card route">
+          <span>路线测距</span>
+          <h2>${escapeHtml(start.name)} -> ${escapeHtml(end.name)}</h2>
+          <p>高德无法规划该步行路线；本工具不会用直线距离替代路线距离。</p>
+        </article>
+      `);
+      return;
+    }
+
+    const { route, path } = routePathFromWalkingResult(result);
+    if (!route || !path.length) {
+      renderMeasureStatus("无法规划步行路线：高德没有返回可绘制路径。");
+      return;
+    }
+
+    state.overlays.measureLine = new state.amap.Polyline({
+      path,
+      strokeColor: "#f7c948",
+      strokeWeight: 7,
+      strokeOpacity: 0.95,
+      lineJoin: "round",
+      lineCap: "round",
+      zIndex: 180,
+    });
+    state.map.add(state.overlays.measureLine);
+    state.map.setFitView([...state.overlays.measureMarkers, state.overlays.measureLine], false, mapAvoidPadding(), 13);
+
+    const km = (Number(route.distance || 0) / 1000).toFixed(2);
+    const hours = (Number(route.time || 0) / 3600).toFixed(1);
+    renderMeasureStatus(`步行路线距离 ${km} km，预计 ${hours} h。`);
+    renderDetail(`
+      <article class="detail-card route">
+        <span>路线测距 · 高德步行规划</span>
+        <h2>${escapeHtml(start.name)} -> ${escapeHtml(end.name)}</h2>
+        <dl>${detailRows([
+          { label: "路线距离", value: `${km} km` },
+          { label: "预计时间", value: `${hours} h` },
+          { label: "起点", value: start.lnglat.join(", ") },
+          { label: "终点", value: end.lnglat.join(", ") },
+        ])}</dl>
+      </article>
+    `);
+  });
+}
+
+function setMeasurePoint(kind, lnglat, name) {
+  if (!state.measuring) toggleMeasure(true);
+  const point = { lnglat: lnglat.map(Number), name };
+  if (kind === "start") {
+    state.measurePoints = [point, state.measurePoints[1]].filter(Boolean);
+  } else if (kind === "end") {
+    state.measurePoints = [state.measurePoints[0], point].filter(Boolean);
+  } else if (state.measurePoints.length >= 2) {
+    state.measurePoints = [point];
+  } else {
+    state.measurePoints.push(point);
+  }
+  renderMeasureMarkers();
+  if (state.measurePoints.length === 1) renderMeasureStatus(`已选择起点：${state.measurePoints[0].name}。请选择终点。`);
+  if (state.measurePoints.length === 2) searchWalkingDistance();
+}
+
+function handleMapClick(event) {
+  if (!state.measuring) return;
+  const lnglat = [event.lnglat.getLng(), event.lnglat.getLat()];
+  setMeasurePoint("next", lnglat, state.measurePoints.length ? "地图终点" : "地图起点");
+}
+
+function toggleMeasure(force) {
+  state.measuring = typeof force === "boolean" ? force : !state.measuring;
+  els.measureToggle.classList.toggle("active", state.measuring);
+  els.measureToggle.setAttribute("aria-pressed", String(state.measuring));
+  clearMeasureResult();
+}
+
+function renderAll() {
+  renderMetrics();
+  renderRouteGroupControls();
+  renderLayerButtons();
+  renderRouteList();
+  renderResults();
+  renderMapObjects();
 }
 
 async function boot() {
   setLoading("正在读取地图配置...");
   const [config, data] = await Promise.all([getJson("/api/config"), getJson("../data/processed/map-data.json")]);
   state.data = data;
+  ensureActiveRouteGroup();
   renderMetrics();
+  renderRouteGroupControls();
   renderRouteList();
   renderResults();
 
@@ -519,9 +805,10 @@ async function boot() {
   setLoading("正在加载高德地图...");
   const AMap = await loadAmap(config);
   state.amap = AMap;
+  state.walking = new AMap.Walking({ hideMarkers: true });
   state.map = new AMap.Map("map", {
-    zoom: 7,
-    center: [122.2, 50.1],
+    zoom: 6,
+    center: [121.5, 48.6],
     viewMode: "2D",
     resizeEnable: true,
     mapStyle: "amap://styles/whitesmoke",
@@ -531,14 +818,13 @@ async function boot() {
     state.zoom = state.map.getZoom();
     renderMapObjects();
   });
+  state.map.on("click", handleMapClick);
 
   state.map.on("complete", () => {
     state.zoom = state.map.getZoom();
     els.loading.hidden = true;
-    renderRoutes();
-    renderAnchors();
-    renderMapObjects();
-    fitRoute();
+    renderAll();
+    fitVisibleRoutes();
   });
 }
 
@@ -548,14 +834,22 @@ els.layerButtons.forEach((button) => {
     if (layer === "bureau") state.showBureau = !state.showBureau;
     if (layer === "farm") state.showFarm = !state.showFarm;
     if (layer === "unverified") state.showUnverified = !state.showUnverified;
-    renderLayerButtons();
-    renderMapObjects();
+    renderAll();
   });
 });
 
 els.searchInput.addEventListener("input", renderResults);
+els.measureToggle.addEventListener("click", () => toggleMeasure());
+els.measureClear.addEventListener("click", clearMeasureResult);
+els.detailPanel.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-measure-point]");
+  if (!button) return;
+  const lnglat = button.dataset.lnglat.split(",").map(Number);
+  setMeasurePoint(button.dataset.measurePoint, lnglat, button.dataset.name);
+});
 
 renderLayerButtons();
+renderMeasureStatus("测距未开启。");
 boot().catch((error) => {
   showError("地图初始化失败", error.message || String(error));
 });

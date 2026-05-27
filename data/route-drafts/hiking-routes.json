@@ -1,0 +1,606 @@
+[
+  {
+    "id": "huanggangliang-high-intensity",
+    "name": "克什克腾旗「黄岗梁-大青山-浑善达克」高强度环线",
+    "region": "赤峰市克什克腾旗、锡林郭勒草原南缘",
+    "type": "high_intensity_loop",
+    "difficulty": "★★★★☆（进阶挑战）",
+    "status": "draft_unverified",
+    "totalKm": 190,
+    "days": "9-10天",
+    "color": "#b84a32",
+    "notes": [
+      "文字日程生成的草案路线，坐标和可通行性需要人工复核。",
+      "最低点约1380m，最高点约2029m，累计爬升约3800m。",
+      "建议配保障车、2名领队，并做每日体能评估。"
+    ],
+    "stops": [
+      {
+        "id": "jingpeng",
+        "name": "经棚镇",
+        "lnglat": [
+          117.54157,
+          43.25862
+        ],
+        "source": "public_coordinate_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "huanggangliang-forest",
+        "name": "黄岗梁森林",
+        "lnglat": [
+          117.768,
+          43.575
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "huanggangliang-peak",
+        "name": "大兴安岭主峰（黄岗梁主峰）",
+        "lnglat": [
+          117.742,
+          43.586
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "reshuitang",
+        "name": "热水塘",
+        "lnglat": [
+          117.725,
+          43.458
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "daqingshan-pass",
+        "name": "大青山垭口",
+        "lnglat": [
+          117.82,
+          43.34
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "haolaihure",
+        "name": "浩来呼热",
+        "lnglat": [
+          117.18,
+          43.09
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "hunshandake",
+        "name": "浑善达克沙地",
+        "lnglat": [
+          116.62,
+          42.78
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "duolun-upstream",
+        "name": "多伦湖上游",
+        "lnglat": [
+          116.55,
+          42.28
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "ulanbutong",
+        "name": "乌兰布统",
+        "lnglat": [
+          117.276,
+          42.535
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "jingpeng-return",
+        "name": "经棚镇",
+        "lnglat": [
+          117.54157,
+          43.25862
+        ],
+        "source": "public_coordinate_seed",
+        "status": "draft_unverified"
+      }
+    ],
+    "segments": [
+      {
+        "day": "Day1",
+        "from": "jingpeng",
+        "to": "huanggangliang-forest",
+        "planKm": 22,
+        "ascentM": 650,
+        "descentM": 0,
+        "terrain": "森林、陡坡、山脊，全程上坡"
+      },
+      {
+        "day": "Day2",
+        "from": "huanggangliang-forest",
+        "to": "huanggangliang-peak",
+        "planKm": 20,
+        "ascentM": 700,
+        "descentM": 0,
+        "terrain": "原始落叶松、高山草甸、乱石坡"
+      },
+      {
+        "day": "Day3",
+        "from": "huanggangliang-peak",
+        "to": "reshuitang",
+        "planKm": 21,
+        "ascentM": 0,
+        "descentM": 800,
+        "terrain": "陡坡下山、溪流峡谷"
+      },
+      {
+        "day": "Day4",
+        "from": "reshuitang",
+        "to": "daqingshan-pass",
+        "planKm": 23,
+        "ascentM": 600,
+        "descentM": 0,
+        "terrain": "草甸、花岗岩岩壁、铁链攀爬段"
+      },
+      {
+        "day": "Day5",
+        "from": "daqingshan-pass",
+        "to": "haolaihure",
+        "planKm": 19,
+        "ascentM": 400,
+        "descentM": 400,
+        "terrain": "大青山、石林、山脊、草原断崖"
+      },
+      {
+        "day": "Day6",
+        "from": "haolaihure",
+        "to": "hunshandake",
+        "planKm": 20,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "沙化路、软沙、小沙丘"
+      },
+      {
+        "day": "Day7",
+        "from": "hunshandake",
+        "to": "duolun-upstream",
+        "planKm": 22,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "湿地、沼泽边缘、灌木"
+      },
+      {
+        "day": "Day8",
+        "from": "duolun-upstream",
+        "to": "ulanbutong",
+        "planKm": 21,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "山地草原、连续缓坡"
+      },
+      {
+        "day": "Day9",
+        "from": "ulanbutong",
+        "to": "jingpeng-return",
+        "planKm": 22,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "长距离平路、缓上"
+      }
+    ]
+  },
+  {
+    "id": "hulunbuir-khingan-crossing",
+    "name": "呼伦贝尔「大兴安岭-草原-湿地」穿越线",
+    "region": "呼伦贝尔市海拉尔区、根河湿地、大兴安岭林区、陈巴尔虎旗草原过渡带",
+    "type": "forest_grassland_wetland_crossing",
+    "difficulty": "★★★★☆（挑战级）",
+    "status": "draft_unverified",
+    "totalKm": 185,
+    "days": "9天",
+    "color": "#2a6f9b",
+    "notes": [
+      "根据用户提供的文字路线录入：海拉尔→根河湿地→莫尔道嘎森林→金河→满归→草原过渡带→陈巴尔虎旗→海拉尔。",
+      "文字日程生成，坐标为人工草案锚点；真实可通行轨迹、林区/边境许可、露营点和接驳点必须复核。",
+      "最低点约580m，最高点约1450m，总相对落差约870m，累计爬升约4200m。",
+      "特点：连续森林穿越、长距离爬坡、湿滑路段、蚊虫多、昼夜温差大。"
+    ],
+    "stops": [
+      {
+        "id": "hailar-start",
+        "name": "海拉尔",
+        "lnglat": [
+          119.824542,
+          49.234715
+        ],
+        "source": "amap_geocode_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "genhe-wetland",
+        "name": "根河湿地待核查点",
+        "lnglat": [
+          120.184,
+          50.252
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "khingan-ridge",
+        "name": "大兴安岭山脊待核查点",
+        "lnglat": [
+          120.72,
+          50.86
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "mordaga-forest",
+        "name": "莫尔道嘎森林",
+        "lnglat": [
+          120.754,
+          51.322
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "jinhe-town",
+        "name": "金河镇",
+        "lnglat": [
+          121.335,
+          51.33
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "mangui-town",
+        "name": "满归镇",
+        "lnglat": [
+          122.08,
+          52.045
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "grassland-transition",
+        "name": "草原过渡带待核查点",
+        "lnglat": [
+          120.88,
+          50.25
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "chenbarhu-banner",
+        "name": "陈巴尔虎旗草原",
+        "lnglat": [
+          119.424,
+          49.326
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "hailar-wetland-edge",
+        "name": "海拉尔湿地边缘待核查点",
+        "lnglat": [
+          119.91,
+          49.28
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "hailar-finish",
+        "name": "海拉尔",
+        "lnglat": [
+          119.824542,
+          49.234715
+        ],
+        "source": "amap_geocode_seed",
+        "status": "draft_unverified"
+      }
+    ],
+    "segments": [
+      {
+        "day": "Day1",
+        "from": "hailar-start",
+        "to": "genhe-wetland",
+        "planKm": 20,
+        "ascentM": 450,
+        "descentM": 120,
+        "terrain": "海拉尔出发，草原湿地边缘，长距离热身。"
+      },
+      {
+        "day": "Day2",
+        "from": "genhe-wetland",
+        "to": "khingan-ridge",
+        "planKm": 21,
+        "ascentM": 800,
+        "descentM": 160,
+        "terrain": "湿地外围转入大兴安岭山地，连续爬升，为单日强度峰值段。"
+      },
+      {
+        "day": "Day3",
+        "from": "khingan-ridge",
+        "to": "mordaga-forest",
+        "planKm": 22,
+        "ascentM": 520,
+        "descentM": 650,
+        "terrain": "山脊、原始森林、湿滑林道，下降较多。"
+      },
+      {
+        "day": "Day4",
+        "from": "mordaga-forest",
+        "to": "jinhe-town",
+        "planKm": 20,
+        "ascentM": 430,
+        "descentM": 360,
+        "terrain": "莫尔道嘎森林到金河方向，针叶林和林区道路。"
+      },
+      {
+        "day": "Day5",
+        "from": "jinhe-town",
+        "to": "mangui-town",
+        "planKm": 23,
+        "ascentM": 560,
+        "descentM": 420,
+        "terrain": "金河至满归方向，森林穿越、林区起伏和湿滑路段。"
+      },
+      {
+        "day": "Day6",
+        "from": "mangui-town",
+        "to": "grassland-transition",
+        "planKm": 21,
+        "ascentM": 500,
+        "descentM": 720,
+        "terrain": "满归返回草原过渡带方向，森林到草原地貌切换。"
+      },
+      {
+        "day": "Day7",
+        "from": "grassland-transition",
+        "to": "chenbarhu-banner",
+        "planKm": 20,
+        "ascentM": 300,
+        "descentM": 460,
+        "terrain": "草原过渡带、缓坡、牧场边缘，需确认牧场和道路权限。"
+      },
+      {
+        "day": "Day8",
+        "from": "chenbarhu-banner",
+        "to": "hailar-wetland-edge",
+        "planKm": 19,
+        "ascentM": 320,
+        "descentM": 210,
+        "terrain": "陈巴尔虎旗草原回海拉尔方向，草地、湿地和公路接驳点交错。"
+      },
+      {
+        "day": "Day9",
+        "from": "hailar-wetland-edge",
+        "to": "hailar-finish",
+        "planKm": 19,
+        "ascentM": 320,
+        "descentM": 300,
+        "terrain": "海拉尔湿地边缘收尾段，平缓草原路和城市边缘道路。"
+      }
+    ]
+  },
+  {
+    "id": "keshiketeng-family-grassland",
+    "name": "克什克腾旗-锡林郭勒草原亲子长线",
+    "region": "赤峰市克什克腾旗、锡林郭勒草原、乌兰布统",
+    "type": "family_grassland_long_route",
+    "difficulty": "★★☆☆☆（草原平缓为主）",
+    "status": "draft_unverified",
+    "totalKm": 190,
+    "days": "9-10天",
+    "color": "#4f8a3d",
+    "notes": [
+      "亲子组团草案路线，坐标和每日住宿点需复核。",
+      "最佳季节为6月下旬至8月。",
+      "靠近公路和牧民点的安全可控性需要结合实际接驳路线确认。"
+    ],
+    "stops": [
+      {
+        "id": "jingpeng",
+        "name": "经棚镇",
+        "lnglat": [
+          117.54157,
+          43.25862
+        ],
+        "source": "public_coordinate_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "haolaihure",
+        "name": "浩来呼热",
+        "lnglat": [
+          117.18,
+          43.09
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "daqingshan-goulaochang",
+        "name": "大青山沟老场",
+        "lnglat": [
+          117.75,
+          43.31
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "meilingu",
+        "name": "美林谷",
+        "lnglat": [
+          117.62,
+          43.19
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "bolongke-edge",
+        "name": "勃隆克沙漠边缘",
+        "lnglat": [
+          117.08,
+          42.77
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "hunshandake-south",
+        "name": "浑善达克沙地南缘",
+        "lnglat": [
+          116.55,
+          42.65
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "duolun-west",
+        "name": "多伦湖西岸",
+        "lnglat": [
+          116.49,
+          42.19
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "hulu-nuur",
+        "name": "乌兰布统葫芦诺日",
+        "lnglat": [
+          117.22,
+          42.55
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "xiyangpo",
+        "name": "西杨坡",
+        "lnglat": [
+          117.35,
+          42.83
+        ],
+        "source": "manual_draft_seed",
+        "status": "draft_unverified"
+      },
+      {
+        "id": "jingpeng-return",
+        "name": "经棚镇",
+        "lnglat": [
+          117.54157,
+          43.25862
+        ],
+        "source": "public_coordinate_seed",
+        "status": "draft_unverified"
+      }
+    ],
+    "segments": [
+      {
+        "day": "Day1",
+        "from": "jingpeng",
+        "to": "haolaihure",
+        "planKm": 20,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "草原缓坡、溪流草甸"
+      },
+      {
+        "day": "Day2",
+        "from": "haolaihure",
+        "to": "daqingshan-goulaochang",
+        "planKm": 22,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "高山草甸、花岗岩石林"
+      },
+      {
+        "day": "Day3",
+        "from": "daqingshan-goulaochang",
+        "to": "meilingu",
+        "planKm": 18,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "森林、草甸、溪流"
+      },
+      {
+        "day": "Day4",
+        "from": "meilingu",
+        "to": "bolongke-edge",
+        "planKm": 21,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "草原到沙地过渡，轻沙徒步"
+      },
+      {
+        "day": "Day5",
+        "from": "bolongke-edge",
+        "to": "hunshandake-south",
+        "planKm": 20,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "沙地疏林、小湖泊、水鸟"
+      },
+      {
+        "day": "Day6",
+        "from": "hunshandake-south",
+        "to": "duolun-west",
+        "planKm": 22,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "环湖草原、白桦林、湿地"
+      },
+      {
+        "day": "Day7",
+        "from": "duolun-west",
+        "to": "hulu-nuur",
+        "planKm": 19,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "乌兰布统草原，牛羊成群"
+      },
+      {
+        "day": "Day8",
+        "from": "hulu-nuur",
+        "to": "xiyangpo",
+        "planKm": 23,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "山地草原、缓坡、白桦林"
+      },
+      {
+        "day": "Day9",
+        "from": "xiyangpo",
+        "to": "jingpeng-return",
+        "planKm": 25,
+        "ascentM": null,
+        "descentM": null,
+        "terrain": "平缓草原路，收尾返程段"
+      }
+    ]
+  }
+]
