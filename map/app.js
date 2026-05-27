@@ -57,7 +57,8 @@ function setLoading(text) {
 }
 
 async function getJson(url) {
-  const response = await fetch(url, { cache: "no-store" });
+  const cleanUrl = new URL(url, `${window.location.protocol}//${window.location.host}`).toString();
+  const response = await fetch(cleanUrl, { cache: "no-store" });
   if (!response.ok) throw new Error(`${url} returned ${response.status}`);
   return response.json();
 }
