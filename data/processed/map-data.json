@@ -1,0 +1,4950 @@
+{
+  "meta": {
+    "source": "amap-first-pass",
+    "generatedAt": "2026-05-27T02:54:26.605Z",
+    "rawPlaceCount": 339,
+    "placeCount": 302,
+    "anchorCount": 14,
+    "routeCount": 13
+  },
+  "anchors": [
+    {
+      "id": "anchor:海拉尔区",
+      "name": "海拉尔区",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        119.824542,
+        49.234715
+      ],
+      "address": "内蒙古自治区呼伦贝尔市海拉尔区",
+      "adname": "海拉尔区",
+      "source": "amap_geocode",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:牙克石市",
+      "name": "牙克石市",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        120.711639,
+        49.285947
+      ],
+      "address": "内蒙古自治区呼伦贝尔市牙克石市",
+      "adname": "牙克石市",
+      "source": "amap_geocode",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:免渡河镇",
+      "name": "免渡河镇",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        121.048896,
+        49.094153
+      ],
+      "address": "内蒙古自治区呼伦贝尔市牙克石市免渡河镇",
+      "adname": "牙克石市",
+      "source": "amap_geocode",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:乌尔旗汗镇",
+      "name": "乌尔旗汗镇",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        121.385249,
+        49.565834
+      ],
+      "address": "内蒙古自治区呼伦贝尔市牙克石市乌尔旗汗镇",
+      "adname": "牙克石市",
+      "source": "amap_geocode",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:库都尔镇",
+      "name": "库都尔镇",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        121.62305,
+        50.029263
+      ],
+      "address": "内蒙古自治区呼伦贝尔市牙克石市库都尔镇",
+      "adname": "牙克石市",
+      "source": "amap_geocode",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:图里河镇",
+      "name": "图里河镇",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        121.672987,
+        50.482493
+      ],
+      "address": "内蒙古自治区呼伦贝尔市牙克石市图里河镇",
+      "adname": "牙克石市",
+      "source": "amap_geocode",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:伊图里河镇",
+      "name": "伊图里河镇",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        121.549123,
+        50.636857
+      ],
+      "address": "内蒙古自治区呼伦贝尔市牙克石市伊图里河镇",
+      "adname": "牙克石市",
+      "source": "amap_geocode",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:根河市",
+      "name": "根河市",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        121.520165,
+        50.779758
+      ],
+      "address": "内蒙古自治区呼伦贝尔市根河市",
+      "adname": "根河市",
+      "source": "amap_geocode",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:克一河镇",
+      "name": "克一河镇",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        122.495903,
+        50.650994
+      ],
+      "address": "内蒙古自治区呼伦贝尔市鄂伦春自治旗克一河镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_geocode",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:吉文镇",
+      "name": "吉文镇",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        123.202224,
+        50.57634
+      ],
+      "address": "内蒙古自治区呼伦贝尔市鄂伦春自治旗吉文镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_geocode",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:甘河镇",
+      "name": "甘河镇",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        123.050544,
+        50.632735
+      ],
+      "address": "甘河镇 POI override",
+      "adname": "",
+      "source": "amap_place_text_override",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:阿里河镇",
+      "name": "阿里河镇",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        123.724613,
+        50.599909
+      ],
+      "address": "阿里河镇 POI override",
+      "adname": "",
+      "source": "amap_place_text_override",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:大杨树镇",
+      "name": "大杨树镇",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        124.625848,
+        49.737245
+      ],
+      "address": "大杨树镇 POI override",
+      "adname": "",
+      "source": "amap_place_text_override",
+      "reason": "manually selected route anchor"
+    },
+    {
+      "id": "anchor:加格达奇区",
+      "name": "加格达奇区",
+      "category": "anchor",
+      "status": "trusted",
+      "lnglat": [
+        124.139742,
+        50.408822
+      ],
+      "address": "黑龙江省大兴安岭地区加格达奇区",
+      "adname": "加格达奇区",
+      "source": "amap_geocode",
+      "reason": "manually selected route anchor"
+    }
+  ],
+  "routes": [
+    {
+      "id": "route:0",
+      "from": "海拉尔区",
+      "to": "牙克石市",
+      "origin": [
+        119.824542,
+        49.234715
+      ],
+      "destination": [
+        120.711639,
+        49.285947
+      ],
+      "distance_m": 72576,
+      "duration_s": 3267,
+      "source": "amap_direction_driving"
+    },
+    {
+      "id": "route:1",
+      "from": "牙克石市",
+      "to": "免渡河镇",
+      "origin": [
+        120.711639,
+        49.285947
+      ],
+      "destination": [
+        121.048896,
+        49.094153
+      ],
+      "distance_m": 38513,
+      "duration_s": 2543,
+      "source": "amap_direction_driving"
+    },
+    {
+      "id": "route:2",
+      "from": "免渡河镇",
+      "to": "乌尔旗汗镇",
+      "origin": [
+        121.048896,
+        49.094153
+      ],
+      "destination": [
+        121.385249,
+        49.565834
+      ],
+      "distance_m": 103142,
+      "duration_s": 8403,
+      "source": "amap_direction_driving"
+    },
+    {
+      "id": "route:3",
+      "from": "乌尔旗汗镇",
+      "to": "库都尔镇",
+      "origin": [
+        121.385249,
+        49.565834
+      ],
+      "destination": [
+        121.62305,
+        50.029263
+      ],
+      "distance_m": 75476,
+      "duration_s": 8031,
+      "source": "amap_direction_driving"
+    },
+    {
+      "id": "route:4",
+      "from": "库都尔镇",
+      "to": "图里河镇",
+      "origin": [
+        121.62305,
+        50.029263
+      ],
+      "destination": [
+        121.672987,
+        50.482493
+      ],
+      "distance_m": 67840,
+      "duration_s": 6808,
+      "source": "amap_direction_driving"
+    },
+    {
+      "id": "route:5",
+      "from": "图里河镇",
+      "to": "伊图里河镇",
+      "origin": [
+        121.672987,
+        50.482493
+      ],
+      "destination": [
+        121.549123,
+        50.636857
+      ],
+      "distance_m": 29405,
+      "duration_s": 3018,
+      "source": "amap_direction_driving"
+    },
+    {
+      "id": "route:6",
+      "from": "伊图里河镇",
+      "to": "根河市",
+      "origin": [
+        121.549123,
+        50.636857
+      ],
+      "destination": [
+        121.520165,
+        50.779758
+      ],
+      "distance_m": 21631,
+      "duration_s": 1540,
+      "source": "amap_direction_driving"
+    },
+    {
+      "id": "route:7",
+      "from": "根河市",
+      "to": "克一河镇",
+      "origin": [
+        121.520165,
+        50.779758
+      ],
+      "destination": [
+        122.495903,
+        50.650994
+      ],
+      "distance_m": 86156,
+      "duration_s": 3880,
+      "source": "amap_direction_driving"
+    },
+    {
+      "id": "route:8",
+      "from": "克一河镇",
+      "to": "吉文镇",
+      "origin": [
+        122.495903,
+        50.650994
+      ],
+      "destination": [
+        123.202224,
+        50.57634
+      ],
+      "distance_m": 55444,
+      "duration_s": 2658,
+      "source": "amap_direction_driving"
+    },
+    {
+      "id": "route:9",
+      "from": "吉文镇",
+      "to": "甘河镇",
+      "origin": [
+        123.202224,
+        50.57634
+      ],
+      "destination": [
+        123.050544,
+        50.632735
+      ],
+      "distance_m": 14963,
+      "duration_s": 959,
+      "source": "amap_direction_driving"
+    },
+    {
+      "id": "route:10",
+      "from": "甘河镇",
+      "to": "阿里河镇",
+      "origin": [
+        123.050544,
+        50.632735
+      ],
+      "destination": [
+        123.724613,
+        50.599909
+      ],
+      "distance_m": 61155,
+      "duration_s": 2827,
+      "source": "amap_direction_driving"
+    },
+    {
+      "id": "route:11",
+      "from": "阿里河镇",
+      "to": "大杨树镇",
+      "origin": [
+        123.724613,
+        50.599909
+      ],
+      "destination": [
+        124.625848,
+        49.737245
+      ],
+      "distance_m": 145269,
+      "duration_s": 7277,
+      "source": "amap_direction_driving"
+    },
+    {
+      "id": "route:12",
+      "from": "大杨树镇",
+      "to": "加格达奇区",
+      "origin": [
+        124.625848,
+        49.737245
+      ],
+      "destination": [
+        124.139742,
+        50.408822
+      ],
+      "distance_m": 99444,
+      "duration_s": 5077,
+      "source": "amap_direction_driving"
+    }
+  ],
+  "places": [
+    {
+      "id": "B01C90LNSB",
+      "name": "加格达奇林业局白桦林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        124.20247,
+        50.233703
+      ],
+      "address": "加格达奇林业局",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林场 | 加格达奇林业局",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B01C90LPEX",
+      "name": "加格达奇林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        124.130594,
+        50.415803
+      ],
+      "address": "晨光街",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01C90LX3V",
+      "name": "加格达奇区政府红旗街道办事处",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.124908,
+        50.429592
+      ],
+      "address": "林业加油站东侧",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D600CWH",
+      "name": "哈尔滨铁路林业管理局海拉尔分局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        119.725875,
+        49.229555
+      ],
+      "address": "海拉尔铁路靠山街190号海拉尔铁路分局林业管理所附近",
+      "adname": "海拉尔区",
+      "source": "amap_place_text",
+      "query": "海拉尔林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D600GIY",
+      "name": "内蒙古自治区根河森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.536203,
+        50.783782
+      ],
+      "address": "河东街道林海路(根河大酒店对面)",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D600H1A",
+      "name": "内蒙古根河林业局森林调查设计大队",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.542699,
+        50.781215
+      ],
+      "address": "中央路与新开街交叉口西80米",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D600H46",
+      "name": "内蒙古阿里河森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.730948,
+        50.587708
+      ],
+      "address": "龙华路与文化街交叉口东南60米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场 | 阿里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D600H7R",
+      "name": "阿里河林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        123.724613,
+        50.599909
+      ],
+      "address": "中央路264号附近",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场 | 阿里河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D600H80",
+      "name": "拓跋鲜卑历史文化园",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.667442,
+        50.618581
+      ],
+      "address": "阿里河镇西北9公里",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B01D600HJR",
+      "name": "阿里河林业宾馆",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.730133,
+        50.583565
+      ],
+      "address": "阿里河镇中央街39号",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场 | 阿里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D600JWH",
+      "name": "内蒙古自治区大兴安岭林业管理局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        120.728966,
+        49.286161
+      ],
+      "address": "兴安中街29号",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D600OUP",
+      "name": "阿里河林业局第二小学校",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.72687,
+        50.591807
+      ],
+      "address": "中央路159号",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场 | 阿里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D600OUQ",
+      "name": "阿里河森林工业有限公司防火办",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.726925,
+        50.591725
+      ],
+      "address": "中央路159号",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D600U8V",
+      "name": "大杨树沟",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.924948,
+        48.54268
+      ],
+      "address": "阿荣旗",
+      "adname": "阿荣旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B01D6014A2",
+      "name": "甘河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.304575,
+        50.060611
+      ],
+      "address": "鄂伦春自治旗",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B01D601KB6",
+      "name": "内蒙古自治区甘河森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.044491,
+        50.632863
+      ],
+      "address": "六顺路与中央街交叉口西320米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D601KD6",
+      "name": "内蒙古自治区图里河林业局森林经营处",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.65011,
+        50.514862
+      ],
+      "address": "X302鹤祥园度假村",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D601KDD",
+      "name": "吉文森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.204865,
+        50.581135
+      ],
+      "address": "吉文镇中央路112号",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "吉文林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D601KFJ",
+      "name": "牙克石市图里河医院",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.692347,
+        50.484081
+      ],
+      "address": "图里河镇",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B01D601KFL",
+      "name": "内蒙古自治区图里河森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.684055,
+        50.48504
+      ],
+      "address": "牙伊线内蒙古图里河森林公安局",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D601KJ6",
+      "name": "库都尔林业局中学",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.622442,
+        50.029834
+      ],
+      "address": "库都尔镇",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "库都尔林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D601KJ9",
+      "name": "内蒙古自治区库都尔森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.619,
+        50.028515
+      ],
+      "address": "牙伊线内蒙古库都尔森林公安局",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "库都尔林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D601KLW",
+      "name": "大杨树第二中学",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.596467,
+        49.741448
+      ],
+      "address": "大杨树镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D601KLY",
+      "name": "大杨树第一中学",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.608289,
+        49.744845
+      ],
+      "address": "大杨树镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D601KLZ",
+      "name": "大杨树站",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.609946,
+        49.748734
+      ],
+      "address": "甘奎路南200米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D601KM5",
+      "name": "大杨树地区人民检察院",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.6101337,
+        49.7430561
+      ],
+      "address": "111国道大杨树第一小学附近",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D601KQG",
+      "name": "内蒙古自治区乌尔其汉森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.395408,
+        49.579994
+      ],
+      "address": "乌尔旗汗森林公安局",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "乌尔旗汉林业局 | 牙克石林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D601KQY",
+      "name": "甘河农场公园",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.644149,
+        49.373651
+      ],
+      "address": "111国道西100米",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B01D601KR1",
+      "name": "甘河农场学校",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.637953,
+        49.380698
+      ],
+      "address": "长兴路",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D601KR7",
+      "name": "莫旗甘河农场南中国石油甘河加油站",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.646414,
+        49.367672
+      ],
+      "address": "111国道西甘河交警队斜对面",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N1X8",
+      "name": "内蒙古绰源林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.363416,
+        48.339368
+      ],
+      "address": "绰河源镇",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60N3DT",
+      "name": "阿里河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.76189,
+        50.566713
+      ],
+      "address": "鄂伦春自治旗",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B01D60N5ZZ",
+      "name": "甘河林业局工会委员会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.050241,
+        50.632312
+      ],
+      "address": "中央街与六顺路交叉口东100米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N60D",
+      "name": "内蒙古自治区得耳布尔森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.056554,
+        50.995496
+      ],
+      "address": "得耳布尔林业局东南门西南100米",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N60X",
+      "name": "中共吉文林业局委员会",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        123.20638,
+        50.582003
+      ],
+      "address": "吉文森工公司东侧80米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "吉文林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60N62Z",
+      "name": "图里河林业局工会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.682319,
+        50.485133
+      ],
+      "address": "隆丰超市东北侧120米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N65N",
+      "name": "大杨树森林公安局中心派出所",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.623658,
+        49.736936
+      ],
+      "address": "甘奎路自治旗大杨树森林公安局西南",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N66D",
+      "name": "中共吉文森林公安局委员会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.204891,
+        50.581112
+      ],
+      "address": "鑫永利茶庄北侧",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "吉文林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N68I",
+      "name": "巴林林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        122.330809,
+        48.315113
+      ],
+      "address": "巴林镇",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60N69T",
+      "name": "内蒙古图里河林业局营林生产科",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.650187,
+        50.514903
+      ],
+      "address": "302县道西50米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60N6CC",
+      "name": "甘河中学",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.03718,
+        50.632696
+      ],
+      "address": "甘河镇301省道附近",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N6CD",
+      "name": "根河市森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.519075,
+        50.778187
+      ],
+      "address": "兴安路与双拥街交叉口西140米",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N6CR",
+      "name": "大兴安岭林业管理局社会保险和再就业第一办事处",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        120.710668,
+        49.290497
+      ],
+      "address": "光明路32号",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60N6EI",
+      "name": "得耳布尔林业局总务处",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.056931,
+        50.996953
+      ],
+      "address": "林局幼儿园附近",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60N6L0",
+      "name": "牙克石市人民法院库都尔法庭",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.623241,
+        50.028754
+      ],
+      "address": "库都尔林业局中学东南侧130米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "库都尔林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N6LV",
+      "name": "大杨树宾馆",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.624094,
+        49.742265
+      ],
+      "address": "甘奎路与嫩源路交叉口东南角",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N6ZK",
+      "name": "中国联通(图里河营业厅)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.681816,
+        50.482688
+      ],
+      "address": "图里河林业局西北侧140米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N7PP",
+      "name": "免渡河林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.049458,
+        49.095729
+      ],
+      "address": "免渡河镇二道街",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局 | 牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60N7SF",
+      "name": "中共免渡河林业局委员会",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.04926,
+        49.095598
+      ],
+      "address": "中华路二道街",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局 | 牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60N7T7",
+      "name": "乌奴尔林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.253007,
+        48.859752
+      ],
+      "address": "乌奴尔镇大桥街",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60N800",
+      "name": "中国邮政鄂伦春自治旗甘河支局(甘河邮政支局)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.045097,
+        50.63224
+      ],
+      "address": "甘河镇甘河林业局",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N82S",
+      "name": "牙克石市免渡河国有林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        121.051469,
+        49.090645
+      ],
+      "address": "中华路四道街",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局 | 牙克石林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B01D60N8AL",
+      "name": "伊图里河林业局伊西检查站",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.553288,
+        50.651274
+      ],
+      "address": "301省道西50米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局 | 伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N8B0",
+      "name": "中共免渡河林业局红旗林场支部委员会",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        121.053951,
+        49.090347
+      ],
+      "address": "Z005附近",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局 | 牙克石林业局",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B01D60N8GU",
+      "name": "内蒙古牙克石森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        120.72405,
+        49.297214
+      ],
+      "address": "工业大街4号",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N8JP",
+      "name": "蓝天网吧(大杨树林业局园丁小区东南)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.6246,
+        49.731183
+      ],
+      "address": "319县道大杨树林业局园丁小区东南角底商",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N8O5",
+      "name": "大杨树客运站",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.586242,
+        49.753591
+      ],
+      "address": "大杨树镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N8OW",
+      "name": "大杨树第三中学",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.621835,
+        49.734443
+      ],
+      "address": "大杨树镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N8PI",
+      "name": "大兴安岭林管局社会保险和再就业第二办事处委员会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        120.729268,
+        49.297677
+      ],
+      "address": "工业大街与青松北路交叉口东北40米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B01D60N8YV",
+      "name": "大杨树林业局园丁小区",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.622368,
+        49.733184
+      ],
+      "address": "",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N8YX",
+      "name": "大杨树第二小学",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.631157,
+        49.733305
+      ],
+      "address": "大杨树镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N8Z7",
+      "name": "甘河站",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.059379,
+        50.629665
+      ],
+      "address": "甘河镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N9AJ",
+      "name": "小九亚林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        121.66336,
+        50.041035
+      ],
+      "address": "",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B01D60N9EH",
+      "name": "图里河森林工业有限公司",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.682877,
+        50.481229
+      ],
+      "address": "图里河镇",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60N9M2",
+      "name": "中共克一河森林公安局委员会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.521884,
+        50.654265
+      ],
+      "address": "中央街",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60N9QP",
+      "name": "内蒙古自治区克一河森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.522187,
+        50.653801
+      ],
+      "address": "克一河森林公安局",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NA0M",
+      "name": "海拉尔西山自然保护区管理局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        119.73257,
+        49.213825
+      ],
+      "address": "西交界街森林公安局",
+      "adname": "海拉尔区",
+      "source": "amap_place_text",
+      "query": "海拉尔林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NA3E",
+      "name": "吉文林业局燃料供应处",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.216319,
+        50.572477
+      ],
+      "address": "吉文镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "吉文林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NA79",
+      "name": "克一河派出所",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.493825,
+        50.650837
+      ],
+      "address": "301省道110号",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NA81",
+      "name": "乌鲁布铁管护站",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.378382,
+        49.888773
+      ],
+      "address": "中国石油乌鲁布铁镇加油站东南侧200米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NAMW",
+      "name": "诺敏山庄",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.494511,
+        50.650733
+      ],
+      "address": "克一河林业局",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NAP6",
+      "name": "得耳布尔林业局物资供应管理处",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.075781,
+        50.994046
+      ],
+      "address": "得耳布尔镇",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60NAZK",
+      "name": "得耳布尔林业局森林资源管护大队花楸山管护站",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.137201,
+        50.948795
+      ],
+      "address": "325县道西北侧",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60NB5E",
+      "name": "内蒙古自治区吉文林业局贮木场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.210125,
+        50.582345
+      ],
+      "address": "吉文镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林业局 | 吉文林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NB78",
+      "name": "伊图里河林业局银阿森林资源管护所总支委员会",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        122.334963,
+        50.64838
+      ],
+      "address": "301省道北50米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "图里河林业局 | 伊图里河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60NBFV",
+      "name": "图里河林业局森林病虫害防治检疫站",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.650187,
+        50.514903
+      ],
+      "address": "302县道西50米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60NBGW",
+      "name": "甘河林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        123.050544,
+        50.632735
+      ],
+      "address": "甘河镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场 | 甘河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60NBMQ",
+      "name": "图里河林业局幼儿园",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.683209,
+        50.485091
+      ],
+      "address": "图里河镇",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NBMR",
+      "name": "中共图里河森林公安局委员会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.684119,
+        50.484943
+      ],
+      "address": "图里河镇内蒙古自治区图里河森林公安局附近",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NBMX",
+      "name": "中共阿里河林业局森林调查设计队支部委员会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.727897,
+        50.596725
+      ],
+      "address": "龙华路与红旗街交叉口北80米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NBMY",
+      "name": "阿里河林业局森林调查设计队",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.728296,
+        50.596712
+      ],
+      "address": "龙华路45号",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NBQ6",
+      "name": "内蒙古得耳布尔林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.057107,
+        50.996473
+      ],
+      "address": "Z008附近",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60NBTY",
+      "name": "中共大杨树林业局委员会",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        124.625848,
+        49.737245
+      ],
+      "address": "能源路与甘奎路交叉口南380米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60NC2N",
+      "name": "中共阿里河森林公安局委员会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.731049,
+        50.587738
+      ],
+      "address": "龙华路与文化街交叉口东南60米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NC39",
+      "name": "内蒙古大兴安岭森林公安局大杨树分局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.62537,
+        49.737207
+      ],
+      "address": "能源路与甘奎路交叉口南400米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场 | 大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NEEU",
+      "name": "内蒙古阿里河国家森林公园",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.310697,
+        50.372023
+      ],
+      "address": "阿里河林业局",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场 | 阿里河林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B01D60NFKY",
+      "name": "乌尔其汗森林公安局(第二派出所)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.386505,
+        49.568198
+      ],
+      "address": "乌尔其汉镇",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "乌尔旗汗林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B01D60NG40",
+      "name": "乌尔其汉林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.386856,
+        49.568939
+      ],
+      "address": "乌尔其汉镇",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "乌尔旗汗林业局 | 牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60NG6L",
+      "name": "金河林业局森林资源管理处",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.518148,
+        51.333504
+      ],
+      "address": "金河镇",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60NG6U",
+      "name": "库都尔林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.620809,
+        50.029267
+      ],
+      "address": "",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "库都尔林业局 | 牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B01D60NG8M",
+      "name": "图里河林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.683148,
+        50.481691
+      ],
+      "address": "",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局 | 牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFF3WPG6",
+      "name": "满归森林公安局(第二派出所)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.05302,
+        52.044785
+      ],
+      "address": "满归镇",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFF45ZFK",
+      "name": "根河林业局电讯管理处",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.536335,
+        50.781357
+      ],
+      "address": "林海街",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFF4V7HK",
+      "name": "满归林业局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.055261,
+        52.043112
+      ],
+      "address": "324县道双利商店东30米",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFF4ZQ4M",
+      "name": "伊图里河林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.590332,
+        50.64951
+      ],
+      "address": "伊图里河镇",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局 | 牙克石林业局 | 伊图里河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFF52PNN",
+      "name": "绰尔林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.19663,
+        47.981662
+      ],
+      "address": "泰源建材西南侧180米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFF9025K",
+      "name": "银阿林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        122.335025,
+        50.648625
+      ],
+      "address": "大兴安岭林管局伊图里河林业局301省道",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "伊图里河林业局",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0FFFFAOU1",
+      "name": "吉文镇政府",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.203973,
+        50.580232
+      ],
+      "address": "吉文镇吉文林业局",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "吉文林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFFGO9OF",
+      "name": "根河林业局加拉嘎木材检查站",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        120.797867,
+        50.438046
+      ],
+      "address": "301省道北50米",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFFGOTBT",
+      "name": "根河林业局205管护站",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.145548,
+        50.609126
+      ],
+      "address": "301省道东50米",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFFRN41F",
+      "name": "克一河林业局工会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.500094,
+        50.651147
+      ],
+      "address": "中央大街附近",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFFRXOVB",
+      "name": "四平山林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        124.654725,
+        49.919675
+      ],
+      "address": "大杨树林业局",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0FFG1VI8K",
+      "name": "牙克石市牙克石林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        120.794599,
+        49.275445
+      ],
+      "address": "牙克石林场",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0FFG37D2C",
+      "name": "斌子汽车电器修理",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.627337,
+        49.737761
+      ],
+      "address": "大杨树林业局附近",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFG4P1FL",
+      "name": "新林城商店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.494518,
+        50.649305
+      ],
+      "address": "克一河林业局西南侧170米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFG8NQA1",
+      "name": "中共内蒙古大兴安岭林业管理局电信局委员会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        120.734824,
+        49.289291
+      ],
+      "address": "幸福西街与林城路交叉口西140米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFGGCNKB",
+      "name": "六二六街与阿里河路交叉口",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        119.767018,
+        49.214322
+      ],
+      "address": "海拉尔区",
+      "adname": "海拉尔区",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFGGFFFP",
+      "name": "扎兰屯路与阿里河路交叉口",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        119.766338,
+        49.2234
+      ],
+      "address": "海拉尔区",
+      "adname": "海拉尔区",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFGGLZWX",
+      "name": "新春街与阿里河路交叉口",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        119.766471,
+        49.213098
+      ],
+      "address": "海拉尔区",
+      "adname": "海拉尔区",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFGH8RXF",
+      "name": "甘河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        125.155222,
+        49.167481
+      ],
+      "address": "莫力达瓦达斡尔族自治旗",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFGIBVGQ",
+      "name": "内蒙古北部原始林区森林管护局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.049135,
+        52.044527
+      ],
+      "address": "324县道附近",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFGIPEXW",
+      "name": "甘河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.830152,
+        49.413415
+      ],
+      "address": "莫力达瓦达斡尔族自治旗",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFGIPEXZ",
+      "name": "甘河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.607669,
+        49.576727
+      ],
+      "address": "莫力达瓦达斡尔族自治旗",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFGK3533",
+      "name": "甘河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.652793,
+        49.526367
+      ],
+      "address": "莫力达瓦达斡尔族自治旗",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFGK35QG",
+      "name": "甘河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.77476,
+        49.424215
+      ],
+      "address": "莫力达瓦达斡尔族自治旗",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFGK370S",
+      "name": "甘河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.927072,
+        49.376464
+      ],
+      "address": "莫力达瓦达斡尔族自治旗",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFGL3N8P",
+      "name": "图里河林业宾馆",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.683434,
+        50.478654
+      ],
+      "address": "302县道附近",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFGXZUER",
+      "name": "根河林业局防火办",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.536913,
+        50.789498
+      ],
+      "address": "林海街与林建路交叉口东北120米",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFGY5M4J",
+      "name": "乌尔旗汗森工公司",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.403283,
+        49.584389
+      ],
+      "address": "乌尔其汗森林公安局第一派出所东北",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "乌尔旗汉林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFGZ5T3S",
+      "name": "壮志林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        124.127975,
+        50.424275
+      ],
+      "address": "林都商贸城",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0FFGZ5YFA",
+      "name": "克一河森工公司",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        122.496268,
+        50.650652
+      ],
+      "address": "中央街364号",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFGZ6NR4",
+      "name": "克一河林业局电讯管理处",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.499322,
+        50.651066
+      ],
+      "address": "克一河林业局",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFH02XP0",
+      "name": "阿里河镇政府小广场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.722805,
+        50.596856
+      ],
+      "address": "阿里河镇政府南",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFH398KF",
+      "name": "绰源林业局苏格河林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        121.361375,
+        48.333525
+      ],
+      "address": "绰源林业局",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0FFH39A85",
+      "name": "中国联通兴林合作厅(兴林步行街营业厅)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.628396,
+        49.735653
+      ],
+      "address": "大杨树林业局林小步行街",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFH438KX",
+      "name": "林兴快捷宾馆",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.058147,
+        50.631168
+      ],
+      "address": "甘河林业局甘河林业公司",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFH6MPCO",
+      "name": "大兴安岭林业管理局根河航空护林站",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.521759,
+        50.780439
+      ],
+      "address": "中央大街9号",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFH7Q426",
+      "name": "大兴安岭地区加格达奇林业局管护区办事处",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        124.131453,
+        50.416057
+      ],
+      "address": "光明东路与晨光大街交叉口北150米",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFH7QQQD",
+      "name": "加格达奇林业局大子杨山管护区",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        124.131335,
+        50.415753
+      ],
+      "address": "晨光大街67号",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFH92QLY",
+      "name": "大杨树永生润滑油商店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.623719,
+        49.738156
+      ],
+      "address": "大杨树镇林业局拐把楼北",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFH9FJ8J",
+      "name": "满归林业局公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        120.728812,
+        49.285843
+      ],
+      "address": "兴安中街与青松南路交叉口西120米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFHDBFN2",
+      "name": "正阳楼熏酱饺子馆(圆满家居建材市场店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.130158,
+        50.413832
+      ],
+      "address": "加格达奇林业局旁边",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFHDSJS2",
+      "name": "中共满归林业局离退处牙克石支部委员会",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        120.731562,
+        49.291919
+      ],
+      "address": "育才西街与青松北路交叉口东140米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFHDSJSC",
+      "name": "图里河林业局驻牙办事处",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        120.731433,
+        49.284106
+      ],
+      "address": "青松南路与爱民西街交叉口东北60米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFHKE729",
+      "name": "中天广告(山水嘉苑店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.1074,
+        50.432534
+      ],
+      "address": "加格达奇林业局山水嘉苑30号楼",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFHOL1RE",
+      "name": "加格达奇林业局西侧办公楼",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.129712,
+        50.417067
+      ],
+      "address": "加格达奇林业局晨光大街",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFHOVS2A",
+      "name": "阿里河林业局物资供应科",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        123.736298,
+        50.593451
+      ],
+      "address": "林海路与育才街交叉口东320米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFHPA8O3",
+      "name": "新桥市场(伊敏大街店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        119.768733,
+        49.222043
+      ],
+      "address": "内阿里河路33号",
+      "adname": "海拉尔区",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFHV55IB",
+      "name": "阿里河铁道南派出所",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.733634,
+        50.577996
+      ],
+      "address": "阿里河镇阿里河",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFHVFQRV",
+      "name": "益佳超市(龙华路店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.730525,
+        50.5878
+      ],
+      "address": "阿里河镇森林公安局对面",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFI0XKCB",
+      "name": "甘河农场水库",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.641262,
+        49.369293
+      ],
+      "address": "莫力达瓦达斡尔族自治旗",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFI10BQ7",
+      "name": "博克图林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        121.918782,
+        48.753238
+      ],
+      "address": "博克图站西南",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0FFI328K0",
+      "name": "大森林山珍加工部",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.149891,
+        50.413661
+      ],
+      "address": "加格达奇雁来商业街",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFI62BVK",
+      "name": "甘河林业防火办",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.057444,
+        50.633386
+      ],
+      "address": "中央街",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFI7M442",
+      "name": "梅菊土产五金商店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.047571,
+        49.095635
+      ],
+      "address": "免渡河林业局西侧130米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFI928KL",
+      "name": "要饭盒子海鲜烤肉(兴林街店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.627549,
+        49.737658
+      ],
+      "address": "大杨树镇林业局兴林步行街对面",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFI9RJPA",
+      "name": "克一河森林资源管护站",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.397381,
+        50.64406
+      ],
+      "address": "301省道北50米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFIJHSQD",
+      "name": "大兴安岭行署森林资源林政管理局加格达奇铁路木材检查站",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.122343,
+        50.422247
+      ],
+      "address": "世纪大道5号",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFIJTYLP",
+      "name": "加格达奇林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        122.365154,
+        53.482188
+      ],
+      "address": "大兴安岭地区漠河市市北极村旅游风景区北极村旅游风景区内(东侧)",
+      "adname": "漠河市",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFILVSGG",
+      "name": "大杨树人民法庭",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.594876,
+        49.747133
+      ],
+      "address": "大杨树镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFIT8Y86",
+      "name": "大兴安岭地区",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.117861,
+        50.411291
+      ],
+      "address": "加格达奇区",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFJ1HTW9",
+      "name": "满归林业局防火办",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.084483,
+        52.043006
+      ],
+      "address": "",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFJK3358",
+      "name": "图里河林业局老干部科",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.68218,
+        50.483421
+      ],
+      "address": "302县道东50米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFJMQ6F0",
+      "name": "伊东幼儿园",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.590801,
+        50.648933
+      ],
+      "address": "伊图里河林业局正对面",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFJQPP2W",
+      "name": "内蒙古大兴安岭森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        120.796281,
+        49.320123
+      ],
+      "address": "",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFJZWHLH",
+      "name": "大杨树站站前广场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.609325,
+        49.748154
+      ],
+      "address": "大杨树镇铁兴街",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFKDHAP9",
+      "name": "大杨树镇商会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.603235,
+        49.747841
+      ],
+      "address": "大杨树镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFKLPDK4",
+      "name": "内蒙古根河林业局多种经营管理处",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.537196,
+        50.785277
+      ],
+      "address": "森工路与林海街交叉口东40米",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFKOWC50",
+      "name": "伊图里河林业局道木达检查站",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.528503,
+        50.555691
+      ],
+      "address": "302县道东50米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局 | 伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFKOWHUA",
+      "name": "伊图里河林业局伊东检查站",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.61356,
+        50.652001
+      ],
+      "address": "301省道北50米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局 | 伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFKP0L96",
+      "name": "伊图里河林业局森林防火指挥部",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.591049,
+        50.651136
+      ],
+      "address": "伊图里河林业局东北200米处",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局 | 伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFKP0ZOB",
+      "name": "伊图里河森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.594634,
+        50.649837
+      ],
+      "address": "伊图里河镇",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局 | 伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFKPA9N3",
+      "name": "伊图里河林业局温河生态功能区管理处",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.920228,
+        48.756229
+      ],
+      "address": "博克图火车站北300米处",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局 | 伊图里河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFKQJ2W6",
+      "name": "伊图里河森林公安局伊东派出所",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.594622,
+        50.6498
+      ],
+      "address": "伊图里河林业中学",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局 | 伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFKQN7ZB",
+      "name": "星河广场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.591875,
+        50.65075
+      ],
+      "address": "伊图里河镇伊图里河林业中学西北100米处",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFKSKP8G",
+      "name": "二胖果蔬商店(中兴商业街店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.047279,
+        49.095812
+      ],
+      "address": "免渡河林业局西侧150米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFKSMLJI",
+      "name": "大杨树实验幼儿园",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.609563,
+        49.743941
+      ],
+      "address": "大杨树镇二马路",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFKSQJ0X",
+      "name": "呼伦贝尔市林业和草原局海拉尔分局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        119.732468,
+        49.213892
+      ],
+      "address": "西交界街西100米",
+      "adname": "海拉尔区",
+      "source": "amap_place_text",
+      "query": "海拉尔林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFKV3NEC",
+      "name": "大杨树镇大辉孵化场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.616826,
+        49.739616
+      ],
+      "address": "能源路1号",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFKZKIOT",
+      "name": "温暖居旅店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.619461,
+        50.028594
+      ],
+      "address": "库都尔林业局西南侧120米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "库都尔林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFL0XLLA",
+      "name": "阿里河国家森林公园相思谷景区",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.427223,
+        50.343584
+      ],
+      "address": "阿里河林业局",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场 | 阿里河林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFL2XZZD",
+      "name": "迎宾饭店(杜鹃路店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.494963,
+        50.648264
+      ],
+      "address": "克一河林业局西南侧260米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFL4A3E6",
+      "name": "龙驰农资经销处",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.048987,
+        49.095512
+      ],
+      "address": "免渡河林业局西南侧",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFL6AWTU",
+      "name": "林海家电商场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.616772,
+        50.028842
+      ],
+      "address": "库都尔森林公安局西侧160米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "库都尔林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFLB1DUB",
+      "name": "呼伦贝尔市森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        119.78569,
+        49.16409
+      ],
+      "address": "天骄大街与成吉思汗南路交叉口东260米",
+      "adname": "海拉尔区",
+      "source": "amap_place_text",
+      "query": "海拉尔林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFLB7AQO",
+      "name": "大杨树林业局卧罗河林场卧罗河村综合管护站",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        124.074502,
+        49.312084
+      ],
+      "address": "人社部业务服务窗口(卧罗河村)西侧150米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0FFLBL95M",
+      "name": "甘河农场民心小区",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.632436,
+        49.378373
+      ],
+      "address": "甘河农场",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFLCLAO2",
+      "name": "加格达奇森林资源管理分局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.130748,
+        50.416757
+      ],
+      "address": "晨光大街与光明东路交叉口北240米",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFLD5MKI",
+      "name": "同致药店(X302店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.618562,
+        50.028972
+      ],
+      "address": "库都尔森林公安局西北侧50米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "库都尔林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFLDGQ27",
+      "name": "鑫亿民粮油店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.624142,
+        49.73222
+      ],
+      "address": "大杨树林业局园丁小区东南侧160米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFLIDQVL",
+      "name": "中共巴林林业和草原局委员会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.33097,
+        48.315159
+      ],
+      "address": "232国道与311县道交叉口西南480米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFM14KDY",
+      "name": "呼伦贝尔市林业和草原局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        119.785126,
+        49.163983
+      ],
+      "address": "天骄大街与001乡道交叉口北100米",
+      "adname": "海拉尔区",
+      "source": "amap_place_text",
+      "query": "海拉尔林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFM1TS0I",
+      "name": "根河市金河镇林业和草原局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.505711,
+        51.332672
+      ],
+      "address": "金河镇",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0FFM4QTVH",
+      "name": "阿龙山林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.869988,
+        51.690669
+      ],
+      "address": "324县道附近",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFM9WNO7",
+      "name": "林业局工会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.584174,
+        50.648669
+      ],
+      "address": "内蒙古农村信用社伊图里河信用社西侧170米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFMA1JRR",
+      "name": "满归林业局北岸林场办事处",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        122.074399,
+        52.044022
+      ],
+      "address": "满归镇",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0FFMA50IB",
+      "name": "乌尔旗汉森林公安局第一派出所",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.404542,
+        49.585665
+      ],
+      "address": "乌尔旗汗镇惠民小区西侧",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "乌尔旗汉林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFMBWUPV",
+      "name": "新帐房林场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.820987,
+        50.14074
+      ],
+      "address": "库都尔森林公安局新帐房派出所",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0FFMDQ3NR",
+      "name": "甘河林业局森调队",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        123.030048,
+        50.631837
+      ],
+      "address": "苗木中心东北侧60米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0FFMHJ5G3",
+      "name": "大兴安岭地区加格达奇区粮食和物资储备局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.135654,
+        50.422317
+      ],
+      "address": "人民路45号大兴安岭行署林业集团公司七号办公楼",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0G0DA6S3L",
+      "name": "内蒙古绰尔林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.202982,
+        47.980987
+      ],
+      "address": "",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0G0FLB0VI",
+      "name": "大杨树社区卫生服务中心",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.624056,
+        49.741541
+      ],
+      "address": "甘奎路与庆丰满路交叉口东南120米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0G0SC118M",
+      "name": "大杨树森林消防大队",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.620767,
+        49.730331
+      ],
+      "address": "中国石油加油站东侧280米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场 | 大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0G0VHKGW1",
+      "name": "家电修理",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.494794,
+        50.648712
+      ],
+      "address": "克一河林业局西南侧220米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0G0VHLX74",
+      "name": "乌尔旗汉林业工会",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.391997,
+        49.579051
+      ],
+      "address": "小海摩托修理部北侧290米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "乌尔旗汉林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0G27AD8RQ",
+      "name": "宇凯副食商店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.048662,
+        49.095324
+      ],
+      "address": "免渡河林业局西南侧70米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0G2GDN9CI",
+      "name": "轩也羊蝎骨火锅",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.050574,
+        49.095609
+      ],
+      "address": "免渡河林业局东侧80米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0G2TU68Y6",
+      "name": "根河林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.538954,
+        50.781648
+      ],
+      "address": "中央路与满归街交叉口西北60米",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0G2YYQ3Z4",
+      "name": "绿安超市(多布库尔街店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.600337,
+        49.746096
+      ],
+      "address": "大杨树林业局园丁小区东侧约200米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0G30PH1IY",
+      "name": "鑫源内衣生活馆",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.051426,
+        50.630881
+      ],
+      "address": "甘河镇甘河林业局",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0G3JR83GT",
+      "name": "东金五金商店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.048776,
+        50.631041
+      ],
+      "address": "甘河镇甘河林业局",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0G3JU65F6",
+      "name": "淑清吉祥蔬菜水果商店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.58924,
+        50.649154
+      ],
+      "address": "伊图里河林业局西侧80米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0G3JU7KN8",
+      "name": "伊乡源酒店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.589073,
+        50.650231
+      ],
+      "address": "伊图里河林业局西北侧110米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0G3JU7Z2I",
+      "name": "国家电网",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.589147,
+        50.649779
+      ],
+      "address": "伊图里河林业局西侧80米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0GD3A3IRB",
+      "name": "甘河林业局物资供应处",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.075097,
+        50.63384
+      ],
+      "address": "",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0GKFNN1VY",
+      "name": "娜仁工艺品商店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.047244,
+        49.095846
+      ],
+      "address": "免渡河林业局西侧160米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0GKHC1FQR",
+      "name": "晟华园经典菜馆",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.050652,
+        49.095521
+      ],
+      "address": "免渡河林业局东侧80米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0GKXLGZOD",
+      "name": "四季香约火锅",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.61954,
+        50.028706
+      ],
+      "address": "库都尔林业局西南侧110米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "库都尔林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0GKYPEY21",
+      "name": "潮衣裤服装批发城(中兴商业街店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.04708,
+        49.096008
+      ],
+      "address": "免渡河林业局西侧170米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0GRNH78AF",
+      "name": "源章商店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.392808,
+        49.578739
+      ],
+      "address": "乌尔旗汉林业工会东侧60米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "乌尔旗汉林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0GUOL5JVH",
+      "name": "加格达奇林业局(跃进经营林场)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.078901,
+        50.425426
+      ],
+      "address": "西兴苑小区北410米",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林场 | 加格达奇林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0H3J604A5",
+      "name": "嘛哩嘛哩酸菜鱼(大杨树店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.623772,
+        49.737044
+      ],
+      "address": "大杨树林业局派出所东侧",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0H64ZHXZQ",
+      "name": "中共吉文林业局森防站支部委员会",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        123.183986,
+        50.579623
+      ],
+      "address": "",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "吉文林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0H6CMW4TS",
+      "name": "克一河新悦来食品商店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.495225,
+        50.649175
+      ],
+      "address": "克一河林业局老楼三号楼下",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0H6PMM12W",
+      "name": "内蒙古吉文林业局森防站",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        123.183862,
+        50.579725
+      ],
+      "address": "吉文镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "吉文林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0HBTU37FJ",
+      "name": "阿里河站停车场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.730329,
+        50.580544
+      ],
+      "address": "中央路与向阳街交叉口南80米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0HG0SXTQ8",
+      "name": "中国福利彩票(中华路三道街店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.047056,
+        49.095592
+      ],
+      "address": "免渡河林业局西侧170米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0HK1S4PN9",
+      "name": "甘源管护所",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.075807,
+        50.635398
+      ],
+      "address": "甘河林业公路管理处",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0HKKSK5RL",
+      "name": "包氏砂锅馅饼(中兴商业街店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.050032,
+        49.095981
+      ],
+      "address": "免渡河林业局东北侧50米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0HR5G8RYC",
+      "name": "加格达奇区林业和草原局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.125159,
+        50.423776
+      ],
+      "address": "",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0HRD7YK3F",
+      "name": "甘河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.318088,
+        49.924873
+      ],
+      "address": "鄂伦春自治旗",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0HRLR33SD",
+      "name": "金河林业局电讯管理处",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.50454,
+        51.334034
+      ],
+      "address": "204省道与302省道交叉口东480米",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0I0BRCMNK",
+      "name": "阿里河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.632597,
+        50.75526
+      ],
+      "address": "鄂伦春自治旗",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0I0BRFWI7",
+      "name": "阿里河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.481613,
+        50.823398
+      ],
+      "address": "鄂伦春自治旗",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0I0UR5RCD",
+      "name": "阿里河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.498427,
+        51.049206
+      ],
+      "address": "鄂伦春自治旗",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0I0UR89D7",
+      "name": "阿里河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.503299,
+        50.931176
+      ],
+      "address": "鄂伦春自治旗",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0I0UR93PM",
+      "name": "阿里河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.524822,
+        51.015537
+      ],
+      "address": "鄂伦春自治旗",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0I0UR93PZ",
+      "name": "阿里河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.528336,
+        50.977108
+      ],
+      "address": "鄂伦春自治旗",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0I33RYU0K",
+      "name": "伊图里河宾馆",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.591475,
+        50.648842
+      ],
+      "address": "伊图里河镇",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0IA3ST0U9",
+      "name": "阿里河路",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        119.76744,
+        49.217313
+      ],
+      "address": "海拉尔区",
+      "adname": "海拉尔区",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0IA97R33M",
+      "name": "甘河林业局奇力滨管护所",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        123.058534,
+        50.633858
+      ],
+      "address": "甘河镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0IK5SNQH0",
+      "name": "牙克石林业和草原局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        120.699185,
+        49.287681
+      ],
+      "address": "湖滨北路25号",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0J2Z629SA",
+      "name": "大杨树林业局鑫港海鲜",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.624621,
+        49.737502
+      ],
+      "address": "大杨树镇林业局四号商住楼28号一带二层",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0J6PR7HYF",
+      "name": "阿里河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.67161,
+        50.714968
+      ],
+      "address": "鄂伦春自治旗",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0JB17HD1D",
+      "name": "甘河森林工业有限公司库西林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        123.041403,
+        50.63147
+      ],
+      "address": "甘河镇人民政府西南侧60米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0JB17HD22",
+      "name": "大杨树林业有限责任公司朝阳林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        124.29237,
+        49.878089
+      ],
+      "address": "乌鲁布铁镇扎兰河农场",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场 | 大杨树林业局",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0JBM756EM",
+      "name": "瑞丰液化气有限责任公司",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.609692,
+        49.720422
+      ],
+      "address": "大杨树镇林业局工程处坝北侧",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JBP9840V",
+      "name": "甘河森林公安局中心派出所",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.056739,
+        50.631363
+      ],
+      "address": "老兵饭庄东南侧210米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JG1SANFT",
+      "name": "大杨树林场卫生室",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        124.655306,
+        49.730299
+      ],
+      "address": "大杨树林场文化活动室西侧",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0JG1SF2KR",
+      "name": "大杨树林场文化活动室",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.655432,
+        49.730294
+      ],
+      "address": "林场卫生室东侧",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JG1SF2KS",
+      "name": "内蒙古大兴安岭森林公安局阿里河分局第二派出所",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.906695,
+        50.525685
+      ],
+      "address": "191县道",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JG1ZEVIJ",
+      "name": "哎约海鲜烧烤一角串",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.625317,
+        49.737581
+      ],
+      "address": "能源路与多布库尔街交叉口东南200米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JG1ZFHQN",
+      "name": "大杨树林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        124.650703,
+        49.730546
+      ],
+      "address": "升华公司西侧120米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0JG1ZGIHV",
+      "name": "内蒙古大兴安岭森林公安局阿里河分局第一派出所",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.709516,
+        50.598801
+      ],
+      "address": "广场路一巷8号",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JGNDTQHH",
+      "name": "林泰物业锅炉房",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.058069,
+        50.635716
+      ],
+      "address": "甘河林业局奇力滨管护所北侧200米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JGNDUSIX",
+      "name": "克一河林业局森调大队",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        122.504819,
+        50.651841
+      ],
+      "address": "克一河镇中央街大桥东南侧",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0JGNHQYWC",
+      "name": "内蒙古大兴安岭森林公安局大杨树分局宜里派出所",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.239739,
+        49.55351
+      ],
+      "address": "宜升街",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JGNSSVXR",
+      "name": "林泰物业克一河分公司",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.497274,
+        50.651139
+      ],
+      "address": "中央街362号",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0JGNSUSEI",
+      "name": "甘河森林工业有限公司源江林场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.065999,
+        50.634322
+      ],
+      "address": "中共甘河森工公司贮木场总支委员会北侧210米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JGNSV7MN",
+      "name": "甘河森林公安局第一派出所",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.066863,
+        50.634197
+      ],
+      "address": "中共甘河森工公司贮木场总支委员会北侧190米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JGNSVF27",
+      "name": "甘河森林工业有限公司乌里依特林场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.065791,
+        50.634188
+      ],
+      "address": "中共甘河森工公司贮木场总支委员会西北侧200米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JGNSVMPL",
+      "name": "星期八酒行",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.49428,
+        50.650107
+      ],
+      "address": "克一河林业局西侧130米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JGNSVU8H",
+      "name": "甘河森林工业有限公司森林消防专业扑火队",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.059767,
+        50.63169
+      ],
+      "address": "吉祥旅店车库东侧190米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JGNSWEM5",
+      "name": "甘河森林公路养护中心",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.091895,
+        50.644593
+      ],
+      "address": "运材路",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0JGTCYIWJ",
+      "name": "甘河林业局离退休职工管理处",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        123.040884,
+        50.631949
+      ],
+      "address": "甘河林业医院西侧100米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0JGX7BD25",
+      "name": "内蒙古大杨树粮库有限责任公司",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.631503,
+        49.754358
+      ],
+      "address": "大杨树镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0JKGH6G0Q",
+      "name": "大兴安岭林业集团加格达奇林业局翠峰林场翠古0公里检查站工会户外劳动者服务站点",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.289345,
+        50.614391
+      ],
+      "address": "加漠公路",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "加格达奇林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JKYZVP0I",
+      "name": "工会驿站(克一河林业局66综合管护站工会户外劳动者服务站点)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        122.397456,
+        50.64406
+      ],
+      "address": "克一河镇克一河林业局综合管护站",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "克一河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0JRBRYJXC",
+      "name": "玉镇山林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        121.219159,
+        48.609379
+      ],
+      "address": "204省道东北30米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0K13H0WGC",
+      "name": "国营甘河农场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.664578,
+        49.35163
+      ],
+      "address": "兴农村村民委员会东北侧",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0KDFX9NPL",
+      "name": "利洁干洗店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.04936,
+        49.096467
+      ],
+      "address": "免渡河林业局北侧80米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0KRKD7TVL",
+      "name": "肖家面馆",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.052996,
+        50.632454
+      ],
+      "address": "甘河林业局东侧170米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0KRLG56E5",
+      "name": "国营甘河农场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.65858,
+        49.221416
+      ],
+      "address": "腾克镇G111(京加线)",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0KRN4CARA",
+      "name": "大杨树农贸市场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.616073,
+        49.74588
+      ],
+      "address": "甘奎路与中心街交叉口东北160米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0L047Y02R",
+      "name": "供销为民超市",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.049655,
+        49.096324
+      ],
+      "address": "免渡河林业局北侧60米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0L0C7Z69T",
+      "name": "甘河农场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.383075,
+        49.352125
+      ],
+      "address": "",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0L0O9J1R3",
+      "name": "甘河林业局信息中心",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.049197,
+        50.632765
+      ],
+      "address": "中央街16号",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0L0UZVE82",
+      "name": "阿里河铁道南派出所",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.725614,
+        50.584377
+      ],
+      "address": "阿里河镇",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0L0Z7F71W",
+      "name": "加格达奇林业局森林消防一大队",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.179145,
+        50.421513
+      ],
+      "address": "工业园区0公里",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0L12ZTPS4",
+      "name": "壹元油饼家常菜",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.050675,
+        49.095575
+      ],
+      "address": "免渡河林业局东侧90米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0L1ZCNP27",
+      "name": "阿里河国家森林公园景区餐厅",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.437099,
+        50.345535
+      ],
+      "address": "",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0L3ACVAEH",
+      "name": "东奇百货商店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.723967,
+        50.601507
+      ],
+      "address": "阿里河林业局北侧180米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0L3ASTP3U",
+      "name": "国营甘河农场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.690425,
+        49.320625
+      ],
+      "address": "",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0L3JLFFUS",
+      "name": "东风林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        124.119799,
+        50.355625
+      ],
+      "address": "Z001南30米",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0L67D1QEX",
+      "name": "伊图里河林业局",
+      "category": "bureau",
+      "status": "trusted",
+      "lnglat": [
+        121.553626,
+        50.65144
+      ],
+      "address": "伊图里河镇",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局 | 牙克石林业局 | 伊图里河林业局",
+      "reason": "name matches forestry bureau or forest-industry company"
+    },
+    {
+      "id": "B0L6LZAAEG",
+      "name": "阿里河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.652498,
+        50.739491
+      ],
+      "address": "鄂伦春自治旗",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0LACAKE4B",
+      "name": "国营甘河农场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.640649,
+        49.381567
+      ],
+      "address": "甘河农场学校东侧ab座",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0LASLWH8G",
+      "name": "伊东大商店",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.589228,
+        50.648938
+      ],
+      "address": "伊图里河林业局西南侧100米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "伊图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0LD3UCT78",
+      "name": "免渡河林业局红旗林场中心管护站",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        121.79683,
+        49.175404
+      ],
+      "address": "",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局 | 牙克石林业局",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0LDCHTDOR",
+      "name": "国营甘河农场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.557775,
+        49.353625
+      ],
+      "address": "",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0LDMRF0MK",
+      "name": "大杨树林业局库莫林场家属区",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.993,
+        49.667
+      ],
+      "address": "",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0LDS4VN9K",
+      "name": "免渡河林业局红旗林场62瞭望塔",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        121.746433,
+        49.143271
+      ],
+      "address": "",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局 | 牙克石林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0LGZ5S4Z0",
+      "name": "中铁三局滨洲铁路项目部",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.918475,
+        48.756375
+      ],
+      "address": "伊图里河林业局温河生态功能区管理处西侧120米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "伊图里河林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0LK078U5X",
+      "name": "库都尔镇中心卫生院",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.618075,
+        50.028525
+      ],
+      "address": "库都尔森林公安局西侧60米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "库都尔林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0LKPUZJH9",
+      "name": "国营甘河农场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.698725,
+        49.300875
+      ],
+      "address": "",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0LKZPE0XA",
+      "name": "内蒙古大杨树林业局停车场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.625825,
+        49.737225
+      ],
+      "address": "能源路与多布库尔街交叉口东南240米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0LR4HPXXK",
+      "name": "图里河育林农场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.072802,
+        50.377006
+      ],
+      "address": "图里河林业哈达防火外站",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "图里河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0LRZK10BY",
+      "name": "国营甘河农场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.727125,
+        49.307675
+      ],
+      "address": "",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0LU96A97Y",
+      "name": "牙克石市建设街道林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        120.692475,
+        49.323075
+      ],
+      "address": "闲庭雅苑养殖园东侧70米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0LU974O00",
+      "name": "黑龙江加格达奇国家森林公园",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.121681,
+        50.318014
+      ],
+      "address": "Z001",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0LUCZX131",
+      "name": "牙克石林场花海小院",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        120.796282,
+        49.279303
+      ],
+      "address": "牙克石市林场",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "牙克石林场",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0M63C8ZIN",
+      "name": "大杨树林业有限责任公司",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.626025,
+        49.737225
+      ],
+      "address": "能源路与多布库尔街交叉口东南260米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场 | 大杨树林业局",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0M69DAUAX",
+      "name": "大杨树农贸市场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.607723,
+        49.747052
+      ],
+      "address": "甘奎街与繁荣路交叉口北20米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0M6B7HJG6",
+      "name": "甘河农场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.881625,
+        49.522475
+      ],
+      "address": "巴彦农场中央街与兴彦路交叉口东北100米",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "B0MB2Z0KFI",
+      "name": "跃进林场",
+      "category": "farm",
+      "status": "trusted",
+      "lnglat": [
+        124.080119,
+        50.424418
+      ],
+      "address": "加格达奇林业局(跃进经营林场)东南侧140米",
+      "adname": "加格达奇区",
+      "source": "amap_place_text",
+      "query": "加格达奇林场 | 加格达奇林业局",
+      "reason": "name matches forest farm"
+    },
+    {
+      "id": "B0MBB9XHEA",
+      "name": "多乐士(中华路二道街店)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.049489,
+        49.09637
+      ],
+      "address": "免渡河林业局北侧70米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0MBKKOLJS",
+      "name": "大杨树农贸市场",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.584475,
+        49.753375
+      ],
+      "address": "红星街与南环路交叉口东300米",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "大杨树林场",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0MBLUTER9",
+      "name": "劳保百货鞋帽",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.047575,
+        49.095625
+      ],
+      "address": "免渡河林业局西侧130米",
+      "adname": "牙克石市",
+      "source": "amap_place_text",
+      "query": "免渡河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "B0MBRGPX7X",
+      "name": "阿龙山森林公安局",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        121.870362,
+        51.69222
+      ],
+      "address": "根河瑞丰旅店南侧120米",
+      "adname": "根河市",
+      "source": "amap_place_text",
+      "query": "根河林业局",
+      "reason": "noise keyword or POI type suggests related non-forestry venue"
+    },
+    {
+      "id": "BY0001JSIX",
+      "name": "阿里河",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        123.755348,
+        50.574538
+      ],
+      "address": "鄂伦春自治旗",
+      "adname": "鄂伦春自治旗",
+      "source": "amap_place_text",
+      "query": "阿里河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "BZGJRQ0003",
+      "name": "甘河农场收费站(京加线东南向)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.731541,
+        49.576376
+      ],
+      "address": "莫力达瓦达斡尔族自治旗",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    },
+    {
+      "id": "BZGJRQ0004",
+      "name": "甘河农场收费站(京加线西北向)",
+      "category": "related",
+      "status": "unverified",
+      "lnglat": [
+        124.732164,
+        49.576509
+      ],
+      "address": "莫力达瓦达斡尔族自治旗",
+      "adname": "莫力达瓦达斡尔族自治旗",
+      "source": "amap_place_text",
+      "query": "甘河林场",
+      "reason": "Amap returned this POI but it is not a direct bureau or forest-farm match"
+    }
+  ]
+}

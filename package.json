@@ -1,0 +1,11 @@
+{
+  "name": "7-day-hike-map",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-map-data.mjs",
+    "serve": "node scripts/serve-map.mjs",
+    "test": "node --test"
+  }
+}

@@ -1,315 +1,560 @@
 const state = {
-  filter: "all",
-  search: "",
-  features: [],
-  anchors: [],
-  routes: [],
-  fullViewBox: null,
-  viewBox: null,
-  dragging: null,
+  amap: null,
+  map: null,
+  data: null,
+  zoom: 7,
+  showBureau: true,
+  showFarm: true,
+  showUnverified: false,
+  overlays: {
+    routeLines: [],
+    anchorMarkers: [],
+    placeMarkers: [],
+    labelsLayer: null,
+    unverifiedCluster: null,
+    highlight: null,
+  },
 };
 
 const els = {
+  loading: document.querySelector("#loadingState"),
+  error: document.querySelector("#errorState"),
+  errorTitle: document.querySelector("#errorTitle"),
+  errorBody: document.querySelector("#errorBody"),
   poiCount: document.querySelector("#poiCount"),
-  anchorCount: document.querySelector("#anchorCount"),
+  trustedCount: document.querySelector("#trustedCount"),
   routeKm: document.querySelector("#routeKm"),
-  routeList: document.querySelector("#routeList"),
   searchInput: document.querySelector("#searchInput"),
-  filters: [...document.querySelectorAll(".filter")],
-  svg: document.querySelector("#mapSvg"),
-  tip: document.querySelector("#mapTip"),
-  zoomIn: document.querySelector("#zoomIn"),
-  zoomOut: document.querySelector("#zoomOut"),
-  resetView: document.querySelector("#resetView"),
+  layerButtons: [...document.querySelectorAll("[data-layer]")],
+  routeList: document.querySelector("#routeList"),
+  resultsList: document.querySelector("#resultsList"),
+  detailPanel: document.querySelector("#detailPanel"),
+  zoomHint: document.querySelector("#zoomHint"),
 };
 
-const NS = "http://www.w3.org/2000/svg";
+const CATEGORY_LABELS = {
+  anchor: "路线锚点",
+  bureau: "林业局",
+  farm: "林场",
+  related: "待核查",
+};
 
-function classify(feature) {
-  const name = feature.properties.name || "";
-  const query = feature.properties.query || "";
-  if (name.includes("林业局") || query.includes("林业局") || name.includes("森工")) return "bureau";
-  if (name.includes("林场") || query.includes("林场")) return "farm";
-  return "other";
+const STATUS_LABELS = {
+  trusted: "可信",
+  unverified: "待核查",
+};
+
+function showError(title, body) {
+  els.loading.hidden = true;
+  els.error.hidden = false;
+  els.errorTitle.textContent = title;
+  els.errorBody.textContent = body;
 }
 
-function parseLocation(location) {
-  const [lng, lat] = location.split(",").map(Number);
-  return { lng, lat };
+function setLoading(text) {
+  els.loading.hidden = false;
+  els.loading.textContent = text;
 }
 
-function mercator({ lng, lat }) {
-  const x = (lng + 180) / 360;
-  const sin = Math.sin((lat * Math.PI) / 180);
-  const y = 0.5 - Math.log((1 + sin) / (1 - sin)) / (4 * Math.PI);
-  return { x: x * 100000, y: y * 100000 };
+async function getJson(url) {
+  const response = await fetch(url, { cache: "no-store" });
+  if (!response.ok) throw new Error(`${url} returned ${response.status}`);
+  return response.json();
 }
 
-function featureVisible(feature) {
-  const kind = classify(feature);
-  const props = feature.properties;
-  const haystack = `${props.name} ${props.query} ${props.address} ${props.adname}`;
-  const filterOk = state.filter === "all" || state.filter === kind;
-  const searchOk = !state.search || haystack.toLowerCase().includes(state.search.toLowerCase());
-  return filterOk && searchOk;
-}
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const existing = document.querySelector(`script[src="${src}"]`);
+    if (existing) {
+      if (window.AMapLoader) resolve();
+      existing.addEventListener("load", resolve, { once: true });
+      existing.addEventListener("error", reject, { once: true });
+      return;
+    }
 
-function svgEl(name, attrs = {}) {
-  const node = document.createElementNS(NS, name);
-  for (const [key, value] of Object.entries(attrs)) {
-    if (value !== null && value !== undefined) node.setAttribute(key, String(value));
-  }
-  return node;
-}
-
-function setViewBox(box) {
-  state.viewBox = { ...box };
-  els.svg.setAttribute("viewBox", `${box.x} ${box.y} ${box.width} ${box.height}`);
-}
-
-function dataBounds(points) {
-  const xs = points.map((point) => point.x);
-  const ys = points.map((point) => point.y);
-  const minX = Math.min(...xs);
-  const maxX = Math.max(...xs);
-  const minY = Math.min(...ys);
-  const maxY = Math.max(...ys);
-  const width = maxX - minX || 1000;
-  const height = maxY - minY || 1000;
-  return {
-    x: minX - width * 0.16,
-    y: minY - height * 0.16,
-    width: width * 1.32,
-    height: height * 1.32,
-  };
-}
-
-function presentationBox(box) {
-  const viewport = els.svg.getBoundingClientRect();
-  const sidebar = document.querySelector(".sidebar")?.getBoundingClientRect();
-  if (!viewport.width || !sidebar) return box;
-
-  const covered = Math.min(0.62, Math.max(0, (sidebar.right + 28) / viewport.width));
-  const targetWidthFraction = Math.max(0.28, 0.94 - covered);
-  const width = box.width / targetWidthFraction;
-  return {
-    x: box.x - covered * width,
-    y: box.y,
-    width,
-    height: box.height,
-  };
-}
-
-function zoom(factor, center = null) {
-  const box = state.viewBox;
-  const c = center || { x: box.x + box.width / 2, y: box.y + box.height / 2 };
-  const next = {
-    width: box.width * factor,
-    height: box.height * factor,
-  };
-  next.x = c.x - (c.x - box.x) * factor;
-  next.y = c.y - (c.y - box.y) * factor;
-  setViewBox(next);
-}
-
-function screenToSvg(event) {
-  const rect = els.svg.getBoundingClientRect();
-  const box = state.viewBox;
-  return {
-    x: box.x + ((event.clientX - rect.left) / rect.width) * box.width,
-    y: box.y + ((event.clientY - rect.top) / rect.height) * box.height,
-  };
-}
-
-function routePath(anchors) {
-  return anchors.map((anchor, index) => `${index === 0 ? "M" : "L"} ${anchor.point.x} ${anchor.point.y}`).join(" ");
-}
-
-function renderBackground(svg, box) {
-  const defs = svgEl("defs");
-  defs.append(
-    svgEl("pattern", {
-      id: "paperGrid",
-      width: 1400,
-      height: 1400,
-      patternUnits: "userSpaceOnUse",
-    }),
-  );
-  const pattern = defs.querySelector("pattern");
-  pattern.append(svgEl("path", { d: "M 1400 0 L 0 0 0 1400", fill: "none", stroke: "#d8d0bd", "stroke-width": 28, opacity: 0.32 }));
-  svg.append(defs);
-
-  svg.append(svgEl("rect", { x: box.x, y: box.y, width: box.width, height: box.height, fill: "#f7f4eb" }));
-  svg.append(svgEl("rect", { x: box.x, y: box.y, width: box.width, height: box.height, fill: "url(#paperGrid)" }));
-}
-
-function renderRoutes(svg, anchors) {
-  const route = svgEl("path", {
-    d: routePath(anchors),
-    class: "route-main",
-    fill: "none",
+    const script = document.createElement("script");
+    script.src = src;
+    script.async = true;
+    script.onload = resolve;
+    script.onerror = () => reject(new Error(`Failed to load ${src}`));
+    document.head.append(script);
   });
-  svg.append(route);
-
-  for (let i = 0; i < anchors.length - 1; i += 1) {
-    const a = anchors[i].point;
-    const b = anchors[i + 1].point;
-    const mid = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
-    const routeInfo = state.routes[i];
-    if (!routeInfo) continue;
-    const text = svgEl("text", {
-      x: mid.x,
-      y: mid.y,
-      class: "route-label",
-      "text-anchor": "middle",
-    });
-    text.textContent = `${(routeInfo.distance_m / 1000).toFixed(0)} km`;
-    svg.append(text);
-  }
 }
 
-function renderAnchors(svg, anchors) {
-  const group = svgEl("g", { class: "anchors" });
-  for (const anchor of anchors) {
-    group.append(svgEl("circle", { cx: anchor.point.x, cy: anchor.point.y, r: 18, class: "anchor-dot" }));
-    const label = svgEl("text", {
-      x: anchor.point.x + 32,
-      y: anchor.point.y - 22,
-      class: "anchor-label",
-    });
-    label.textContent = anchor.name;
-    group.append(label);
-  }
-  svg.append(group);
-}
-
-function showTip(event, props, kind) {
-  els.tip.hidden = false;
-  els.tip.innerHTML = `<strong>${props.name}</strong><span>${kind === "bureau" ? "林业局" : kind === "farm" ? "林场" : "其他"}</span><small>${props.address || props.adname || ""}</small>`;
-  els.tip.style.left = `${event.clientX + 14}px`;
-  els.tip.style.top = `${event.clientY + 14}px`;
-}
-
-function hideTip() {
-  els.tip.hidden = true;
-}
-
-function renderPois(svg) {
-  const group = svgEl("g", { class: "pois" });
-  const visible = state.features.filter(featureVisible);
-  for (const feature of visible) {
-    const [lng, lat] = feature.geometry.coordinates;
-    const point = mercator({ lng, lat });
-    const kind = classify(feature);
-    const marker = svgEl("circle", {
-      cx: point.x,
-      cy: point.y,
-      r: kind === "other" ? 7 : 10,
-      class: `poi ${kind}`,
-      tabindex: 0,
-    });
-    marker.addEventListener("pointermove", (event) => showTip(event, feature.properties, kind));
-    marker.addEventListener("pointerleave", hideTip);
-    group.append(marker);
-  }
-  svg.append(group);
-  els.poiCount.textContent = visible.length;
-}
-
-function renderMap() {
-  const svg = els.svg;
-  svg.replaceChildren();
-  const anchorPoints = state.anchors.map((anchor) => ({ ...anchor, point: mercator(parseLocation(anchor.location)) }));
-  const poiPoints = state.features.map((feature) => {
-    const [lng, lat] = feature.geometry.coordinates;
-    return mercator({ lng, lat });
+async function loadAmap(config) {
+  window._AMapSecurityConfig = {
+    securityJsCode: config.amap.securityJsCode,
+  };
+  await loadScript("https://webapi.amap.com/loader.js");
+  return window.AMapLoader.load({
+    key: config.amap.key,
+    version: "2.0",
+    plugins: ["AMap.MarkerCluster"],
   });
-  const box = dataBounds([...anchorPoints.map((anchor) => anchor.point), ...poiPoints]);
-  state.fullViewBox = presentationBox(box);
-  if (!state.viewBox) setViewBox(state.fullViewBox);
+}
 
-  renderBackground(svg, box);
-  renderRoutes(svg, anchorPoints);
-  renderPois(svg);
-  renderAnchors(svg, anchorPoints);
+function totalRouteKm() {
+  return Math.round(state.data.routes.reduce((sum, route) => sum + route.distance_m, 0) / 1000);
+}
+
+function visibleTrustedPlaces() {
+  return state.data.places
+    .filter((place) => place.status === "trusted")
+    .filter((place) => {
+      if (place.category === "bureau") return state.showBureau && state.zoom >= 8;
+      if (place.category === "farm") return state.showFarm && state.zoom >= 10;
+      return false;
+    });
+}
+
+function visibleLabelPlaces() {
+  const places = visibleTrustedPlaces();
+  if (state.showUnverified && state.zoom >= 12) {
+    places.push(...state.data.places.filter((place) => place.status === "unverified"));
+  }
+  return places;
+}
+
+function clearOverlays(items) {
+  for (const item of items) item.setMap?.(null);
+  items.length = 0;
+}
+
+function clearLayer(layer) {
+  if (layer) layer.setMap(null);
+}
+
+function markerContent(className, text = "") {
+  const label = text ? `<span>${text}</span>` : "";
+  return `<div class="${className}">${label}</div>`;
+}
+
+function makeMarker(item, className, text = "") {
+  const marker = new state.amap.Marker({
+    position: item.lnglat,
+    content: markerContent(className, text),
+    anchor: "center",
+    offset: new state.amap.Pixel(0, 0),
+    extData: item,
+  });
+  marker.on("click", () => selectItem(item));
+  return marker;
+}
+
+function renderMetrics() {
+  const trusted = state.data.places.filter((place) => place.status === "trusted").length;
+  els.poiCount.textContent = state.data.places.length;
+  els.trustedCount.textContent = trusted;
+  els.routeKm.textContent = totalRouteKm();
+}
+
+function renderRoutes() {
+  clearOverlays(state.overlays.routeLines);
+
+  for (const route of state.data.routes) {
+    const line = new state.amap.Polyline({
+      path: [route.origin, route.destination],
+      strokeColor: "#2d7190",
+      strokeWeight: 7,
+      strokeOpacity: 0.9,
+      lineJoin: "round",
+      lineCap: "round",
+      extData: route,
+      zIndex: 80,
+    });
+    line.on("click", () => selectRoute(route));
+    state.overlays.routeLines.push(line);
+  }
+
+  state.map.add(state.overlays.routeLines);
+}
+
+function renderAnchors() {
+  clearOverlays(state.overlays.anchorMarkers);
+  state.overlays.anchorMarkers = state.data.anchors.map((anchor, index) => makeMarker(anchor, "marker marker-anchor", String(index + 1)));
+  state.map.add(state.overlays.anchorMarkers);
+}
+
+function labelIcon(category, status) {
+  const color = category === "bureau" ? "#b55b32" : category === "farm" ? "#145c3d" : category === "anchor" ? "#2d7190" : "#6e8f3d";
+  const opacity = status === "unverified" ? 0.58 : 0.96;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><circle cx="9" cy="9" r="6" fill="${color}" fill-opacity="${opacity}" stroke="white" stroke-width="3"/></svg>`;
+  return {
+    type: "image",
+    image: `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`,
+    size: [18, 18],
+    anchor: "center",
+  };
+}
+
+function makeLabelMarker(item) {
+  const marker = new state.amap.LabelMarker({
+    position: item.lnglat,
+    rank: item.status === "trusted" ? 50 : 10,
+    icon: labelIcon(item.category, item.status),
+    text: {
+      content: item.name,
+      direction: "right",
+      offset: [8, 0],
+      style: {
+        fontSize: item.status === "trusted" ? 13 : 12,
+        fontWeight: item.status === "trusted" ? "700" : "500",
+        fillColor: item.status === "trusted" ? "#14211d" : "#63736d",
+        strokeColor: "#fffdf7",
+        strokeWidth: 4,
+      },
+    },
+    extData: item,
+  });
+  marker.on("click", () => selectItem(item));
+  return marker;
+}
+
+function makeRouteDistanceLabel(route) {
+  const midpoint = [(route.origin[0] + route.destination[0]) / 2, (route.origin[1] + route.destination[1]) / 2];
+  const emptyIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"></svg>`;
+  const marker = new state.amap.LabelMarker({
+    position: midpoint,
+    rank: 80,
+    icon: {
+      type: "image",
+      image: `data:image/svg+xml;utf8,${encodeURIComponent(emptyIcon)}`,
+      size: [1, 1],
+      anchor: "center",
+    },
+    text: {
+      content: `${Math.round(route.distance_m / 1000)} km`,
+      direction: "center",
+      offset: [0, 0],
+      style: {
+        fontSize: 12,
+        fontWeight: "800",
+        fillColor: "#2d7190",
+        strokeColor: "#fffdf7",
+        strokeWidth: 5,
+      },
+    },
+    extData: route,
+  });
+  marker.on("click", () => selectRoute(route));
+  return marker;
+}
+
+function renderLabels() {
+  clearLayer(state.overlays.labelsLayer);
+  state.overlays.labelsLayer = new state.amap.LabelsLayer({
+    zooms: [3, 20],
+    zIndex: 1000,
+    collision: true,
+    allowCollision: false,
+  });
+
+  const anchorLabels = state.data.anchors.map((anchor) => {
+    const marker = new state.amap.LabelMarker({
+      position: anchor.lnglat,
+      rank: 100,
+      icon: labelIcon("anchor", "trusted"),
+      text: {
+        content: anchor.name,
+        direction: "top",
+        offset: [0, -10],
+        style: {
+          fontSize: 14,
+          fontWeight: "800",
+          fillColor: "#14211d",
+          strokeColor: "#fffdf7",
+          strokeWidth: 5,
+        },
+      },
+      extData: anchor,
+    });
+    marker.on("click", () => selectItem(anchor));
+    return marker;
+  });
+
+  const routeLabels = state.data.routes.map(makeRouteDistanceLabel);
+  state.overlays.labelsLayer.add([...anchorLabels, ...routeLabels, ...visibleLabelPlaces().map(makeLabelMarker)]);
+  state.map.add(state.overlays.labelsLayer);
+}
+
+function renderTrustedMarkers() {
+  clearOverlays(state.overlays.placeMarkers);
+  state.overlays.placeMarkers = visibleTrustedPlaces().map((place) => makeMarker(place, `marker marker-${place.category}`));
+  if (state.overlays.placeMarkers.length) state.map.add(state.overlays.placeMarkers);
+}
+
+function renderUnverifiedCluster() {
+  clearLayer(state.overlays.unverifiedCluster);
+  state.overlays.unverifiedCluster = null;
+  if (!state.showUnverified) return;
+
+  const points = state.data.places
+    .filter((place) => place.status === "unverified")
+    .map((place) => ({
+      lnglat: place.lnglat,
+      weight: 1,
+      item: place,
+    }));
+
+  state.map.plugin(["AMap.MarkerCluster"], () => {
+    state.overlays.unverifiedCluster = new state.amap.MarkerCluster(state.map, points, {
+      gridSize: state.zoom >= 12 ? 40 : 72,
+      renderClusterMarker(context) {
+        context.marker.setContent(markerContent("cluster-marker", String(context.count)));
+        context.marker.setOffset(new state.amap.Pixel(-18, -18));
+      },
+      renderMarker(context) {
+        const place = context.data[0].item;
+        context.marker.setContent(markerContent("marker marker-related"));
+        context.marker.setOffset(new state.amap.Pixel(-8, -8));
+        context.marker.on("click", () => selectItem(place));
+      },
+    });
+  });
+}
+
+function renderMapObjects() {
+  if (!state.map) return;
+  renderTrustedMarkers();
+  renderLabels();
+  renderUnverifiedCluster();
+  renderZoomHint();
+}
+
+function renderZoomHint() {
+  if (state.zoom < 8) {
+    els.zoomHint.textContent = "当前只显示路线骨架。放大到 8 级显示林业局，10 级显示林场。";
+  } else if (state.zoom < 10) {
+    els.zoomHint.textContent = "当前显示可信林业局。继续放大到 10 级显示林场。";
+  } else if (state.zoom < 12) {
+    els.zoomHint.textContent = "当前显示可信林业局和林场。12 级后可查看待核查点。";
+  } else {
+    els.zoomHint.textContent = state.showUnverified ? "待核查层已开启，标签会自动避让；完整列表仍可搜索。" : "可开启待核查层查看高德返回的关联 POI。";
+  }
+}
+
+function renderLayerButtons() {
+  for (const button of els.layerButtons) {
+    const layer = button.dataset.layer;
+    const active = layer === "bureau" ? state.showBureau : layer === "farm" ? state.showFarm : state.showUnverified;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  }
+}
+
+function routeLabel(route) {
+  return `${route.from} -> ${route.to}`;
 }
 
 function renderRouteList() {
-  els.routeList.innerHTML = state.routes
+  els.routeList.innerHTML = state.data.routes
     .map((route) => {
       const km = (route.distance_m / 1000).toFixed(1);
       const hours = (route.duration_s / 3600).toFixed(1);
-      return `<li><b>${route.from} -> ${route.to}</b><span>${km} km · ${hours} h</span></li>`;
+      return `<li><button type="button" data-route="${route.id}"><b>${routeLabel(route)}</b><span>${km} km · ${hours} h</span></button></li>`;
     })
+    .join("");
+
+  els.routeList.querySelectorAll("[data-route]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const route = state.data.routes.find((item) => item.id === button.dataset.route);
+      selectRoute(route);
+    });
+  });
+}
+
+function matchesSearch(item, term) {
+  const text = [item.name, item.from, item.to, item.address, item.adname, item.category, item.status, item.query].filter(Boolean).join(" ");
+  return text.toLowerCase().includes(term.toLowerCase());
+}
+
+function renderResults() {
+  const term = els.searchInput.value.trim();
+  if (!term) {
+    els.resultsList.innerHTML = "";
+    return;
+  }
+
+  const items = [
+    ...state.data.anchors.map((item) => ({ type: "item", item })),
+    ...state.data.routes.map((item) => ({ type: "route", item })),
+    ...state.data.places.map((item) => ({ type: "item", item })),
+  ]
+    .filter(({ item }) => matchesSearch(item, term))
+    .slice(0, 30);
+
+  els.resultsList.innerHTML = items
+    .map(({ type, item }) => {
+      const title = type === "route" ? routeLabel(item) : item.name;
+      const meta = type === "route" ? `${Math.round(item.distance_m / 1000)} km` : `${CATEGORY_LABELS[item.category]} · ${STATUS_LABELS[item.status]}`;
+      return `<li><button type="button" data-kind="${type}" data-id="${item.id}"><b>${title}</b><span>${meta}</span></button></li>`;
+    })
+    .join("");
+
+  els.resultsList.querySelectorAll("button").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (button.dataset.kind === "route") {
+        selectRoute(state.data.routes.find((item) => item.id === button.dataset.id));
+      } else {
+        selectItem([...state.data.anchors, ...state.data.places].find((item) => item.id === button.dataset.id));
+      }
+    });
+  });
+}
+
+function renderDetail(html) {
+  els.detailPanel.innerHTML = html;
+}
+
+function detailRows(rows) {
+  return rows
+    .filter((row) => row.value !== undefined && row.value !== null && row.value !== "")
+    .map((row) => `<dt>${row.label}</dt><dd>${row.value}</dd>`)
     .join("");
 }
 
-async function init() {
-  const [places, anchors, routes] = await Promise.all([
-    fetch("../data/processed/places-first-pass.geojson").then((r) => r.json()),
-    fetch("../data/processed/anchor-towns.json").then((r) => r.json()),
-    fetch("../data/processed/anchor-route-segments.json").then((r) => r.json()),
-  ]);
+function selectItem(item) {
+  if (!item) return;
+  state.map.setZoomAndCenter(Math.max(state.zoom, item.category === "anchor" ? 8 : 12), item.lnglat);
+  drawHighlight(item.lnglat);
 
-  state.features = places.features;
-  state.anchors = anchors;
-  state.routes = routes;
-  els.anchorCount.textContent = anchors.length;
-  els.routeKm.textContent = Math.round(routes.reduce((sum, route) => sum + (route.distance_m || 0), 0) / 1000);
-  renderRouteList();
-  renderMap();
+  renderDetail(`
+    <article class="detail-card ${item.status}">
+      <span>${CATEGORY_LABELS[item.category]} · ${STATUS_LABELS[item.status]}</span>
+      <h2>${item.name}</h2>
+      <dl>${detailRows([
+        { label: "地址", value: item.address },
+        { label: "区域", value: item.adname },
+        { label: "来源", value: item.source },
+        { label: "查询词", value: item.query },
+        { label: "判断", value: item.reason },
+        { label: "坐标", value: item.lnglat.join(", ") },
+      ])}</dl>
+    </article>
+  `);
 }
 
-els.filters.forEach((button) => {
+function routeBounds(route) {
+  const minLng = Math.min(route.origin[0], route.destination[0]);
+  const maxLng = Math.max(route.origin[0], route.destination[0]);
+  const minLat = Math.min(route.origin[1], route.destination[1]);
+  const maxLat = Math.max(route.origin[1], route.destination[1]);
+  return new state.amap.Bounds([minLng, minLat], [maxLng, maxLat]);
+}
+
+function mapAvoidPadding() {
+  const sidebar = document.querySelector(".sidebar")?.getBoundingClientRect();
+  if (!sidebar) return [72, 72, 72, 72];
+
+  // AMap's avoid array order is top, bottom, left, right.
+  if (window.innerWidth <= 680) {
+    return [72, Math.min(Math.round(sidebar.height + 32), Math.round(window.innerHeight * 0.48)), 48, 48];
+  }
+
+  return [72, 72, Math.min(Math.round(sidebar.width + 48), Math.round(window.innerWidth * 0.45)), 72];
+}
+
+function selectRoute(route) {
+  if (!route) return;
+  state.map.setBounds(routeBounds(route), false, mapAvoidPadding());
+  clearHighlight();
+
+  renderDetail(`
+    <article class="detail-card route">
+      <span>路线段</span>
+      <h2>${routeLabel(route)}</h2>
+      <dl>${detailRows([
+        { label: "距离", value: `${(route.distance_m / 1000).toFixed(1)} km` },
+        { label: "预计时间", value: `${(route.duration_s / 3600).toFixed(1)} h` },
+        { label: "来源", value: route.source },
+      ])}</dl>
+    </article>
+  `);
+}
+
+function clearHighlight() {
+  if (state.overlays.highlight) {
+    state.overlays.highlight.setMap(null);
+    state.overlays.highlight = null;
+  }
+}
+
+function drawHighlight(position) {
+  clearHighlight();
+  state.overlays.highlight = new state.amap.CircleMarker({
+    center: position,
+    radius: 18,
+    strokeColor: "#14211d",
+    strokeWeight: 3,
+    fillColor: "#f7c948",
+    fillOpacity: 0.45,
+    zIndex: 2000,
+  });
+  state.map.add(state.overlays.highlight);
+}
+
+function fitRoute() {
+  const overlays = [...state.overlays.anchorMarkers, ...state.overlays.routeLines];
+  if (overlays.length) {
+    state.map.setFitView(overlays, false, mapAvoidPadding(), 11);
+  } else if (state.data.anchors.length) {
+    state.map.setCenter(state.data.anchors[0].lnglat);
+  }
+}
+
+async function boot() {
+  setLoading("正在读取地图配置...");
+  const [config, data] = await Promise.all([getJson("/api/config"), getJson("../data/processed/map-data.json")]);
+  state.data = data;
+  renderMetrics();
+  renderRouteList();
+  renderResults();
+
+  if (!config.ok) {
+    showError("缺少高德 JS API 配置", `请在本地或服务器环境变量中设置：${config.missing.join(", ")}`);
+    return;
+  }
+
+  setLoading("正在加载高德地图...");
+  const AMap = await loadAmap(config);
+  state.amap = AMap;
+  state.map = new AMap.Map("map", {
+    zoom: 7,
+    center: [122.2, 50.1],
+    viewMode: "2D",
+    resizeEnable: true,
+    mapStyle: "amap://styles/whitesmoke",
+  });
+
+  state.map.on("zoomend", () => {
+    state.zoom = state.map.getZoom();
+    renderMapObjects();
+  });
+
+  state.map.on("complete", () => {
+    state.zoom = state.map.getZoom();
+    els.loading.hidden = true;
+    renderRoutes();
+    renderAnchors();
+    renderMapObjects();
+    fitRoute();
+  });
+}
+
+els.layerButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    els.filters.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
-    state.filter = button.dataset.filter;
-    renderMap();
+    const layer = button.dataset.layer;
+    if (layer === "bureau") state.showBureau = !state.showBureau;
+    if (layer === "farm") state.showFarm = !state.showFarm;
+    if (layer === "unverified") state.showUnverified = !state.showUnverified;
+    renderLayerButtons();
+    renderMapObjects();
   });
 });
 
-els.searchInput.addEventListener("input", (event) => {
-  state.search = event.target.value.trim();
-  renderMap();
-});
+els.searchInput.addEventListener("input", renderResults);
 
-els.zoomIn.addEventListener("click", () => zoom(0.72));
-els.zoomOut.addEventListener("click", () => zoom(1.38));
-els.resetView.addEventListener("click", () => {
-  setViewBox(state.fullViewBox);
-});
-
-els.svg.addEventListener("wheel", (event) => {
-  event.preventDefault();
-  zoom(event.deltaY < 0 ? 0.82 : 1.22, screenToSvg(event));
-});
-
-els.svg.addEventListener("pointerdown", (event) => {
-  els.svg.setPointerCapture(event.pointerId);
-  state.dragging = { start: screenToSvg(event), box: { ...state.viewBox } };
-});
-
-els.svg.addEventListener("pointermove", (event) => {
-  if (!state.dragging) return;
-  const current = screenToSvg(event);
-  const dx = current.x - state.dragging.start.x;
-  const dy = current.y - state.dragging.start.y;
-  setViewBox({
-    ...state.dragging.box,
-    x: state.dragging.box.x - dx,
-    y: state.dragging.box.y - dy,
-  });
-});
-
-els.svg.addEventListener("pointerup", () => {
-  state.dragging = null;
-});
-
-els.svg.addEventListener("pointercancel", () => {
-  state.dragging = null;
-});
-
-init().catch((error) => {
-  document.body.innerHTML = `<pre>${error.stack || error.message}</pre>`;
+renderLayerButtons();
+boot().catch((error) => {
+  showError("地图初始化失败", error.message || String(error));
 });

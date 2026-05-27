@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>7天徒步 · 大兴安岭林业点位</title>
+    <title>7天徒步路线 · 大兴安岭林业点位</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="shell">
       <section class="sidebar" aria-label="数据概览">
         <div class="brand">
-          <span class="kicker">Amap first pass</span>
+          <span class="kicker">Amap JS API</span>
           <h1>大兴安岭林业点位</h1>
         </div>
 
@@ -20,8 +20,8 @@
             <span>POI</span>
           </div>
           <div>
-            <strong id="anchorCount">0</strong>
-            <span>锚点</span>
+            <strong id="trustedCount">0</strong>
+            <span>可信点</span>
           </div>
           <div>
             <strong id="routeKm">0</strong>
@@ -29,11 +29,10 @@
           </div>
         </div>
 
-        <div class="filters" aria-label="筛选">
-          <button class="filter active" data-filter="all">全部</button>
-          <button class="filter" data-filter="bureau">林业局</button>
-          <button class="filter" data-filter="farm">林场</button>
-          <button class="filter" data-filter="other">其他</button>
+        <div class="filters" aria-label="图层">
+          <button class="filter active" data-layer="bureau" aria-pressed="true" type="button">林业局</button>
+          <button class="filter active" data-layer="farm" aria-pressed="true" type="button">林场</button>
+          <button class="filter" data-layer="unverified" aria-pressed="false" type="button">待核查</button>
         </div>
 
         <label class="search">
@@ -41,22 +40,33 @@
           <input id="searchInput" type="search" placeholder="输入林场、林业局或镇名" />
         </label>
 
+        <p id="zoomHint" class="zoom-hint"></p>
+
+        <ul id="resultsList" class="results-list" aria-label="搜索结果"></ul>
+
+        <section id="detailPanel" class="detail-panel" aria-label="详情">
+          <article class="detail-card">
+            <span>默认视图</span>
+            <h2>路线骨架</h2>
+            <p>点击路线、锚点或搜索结果查看详情。待核查点默认隐藏，可手动开启。</p>
+          </article>
+        </section>
+
         <ol id="routeList" class="route-list" aria-label="相邻路线距离"></ol>
       </section>
 
       <section class="map-wrap" aria-label="地图">
-        <div id="map" class="vector-map" aria-label="可缩放地图">
-          <svg id="mapSvg" role="img" aria-label="大兴安岭林业点位图"></svg>
-          <div id="mapTip" class="map-tip" hidden></div>
-          <div class="map-controls" aria-label="地图控制">
-            <button id="zoomIn" title="放大" aria-label="放大">+</button>
-            <button id="zoomOut" title="缩小" aria-label="缩小">−</button>
-            <button id="resetView" title="重置视图" aria-label="重置视图">◎</button>
-          </div>
+        <div id="map" class="real-map" aria-label="高德地图"></div>
+        <div id="loadingState" class="state-overlay">正在加载...</div>
+        <div id="errorState" class="state-overlay error" hidden>
+          <strong id="errorTitle">地图不可用</strong>
+          <p id="errorBody"></p>
         </div>
         <div class="legend">
+          <span><i class="dot anchor"></i>锚点</span>
           <span><i class="dot bureau"></i>林业局</span>
           <span><i class="dot farm"></i>林场</span>
+          <span><i class="dot related"></i>待核查</span>
           <span><i class="line"></i>锚点路线</span>
         </div>
       </section>
