@@ -4,12 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>7天徒步 · 大兴安岭林业点位</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIINfQPDt4j0N2u6CkHHWMxT6cW5Jw4r6wM="
-      crossorigin=""
-    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -51,7 +45,15 @@
       </section>
 
       <section class="map-wrap" aria-label="地图">
-        <div id="map"></div>
+        <div id="map" class="vector-map" aria-label="可缩放地图">
+          <svg id="mapSvg" role="img" aria-label="大兴安岭林业点位图"></svg>
+          <div id="mapTip" class="map-tip" hidden></div>
+          <div class="map-controls" aria-label="地图控制">
+            <button id="zoomIn" title="放大" aria-label="放大">+</button>
+            <button id="zoomOut" title="缩小" aria-label="缩小">−</button>
+            <button id="resetView" title="重置视图" aria-label="重置视图">◎</button>
+          </div>
+        </div>
         <div class="legend">
           <span><i class="dot bureau"></i>林业局</span>
           <span><i class="dot farm"></i>林场</span>
@@ -60,11 +62,6 @@
       </section>
     </main>
 
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
     <script src="./app.js"></script>
   </body>
 </html>
