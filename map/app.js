@@ -71,8 +71,12 @@ function asNumber(value) {
   return Number.isFinite(number) ? number : null;
 }
 
+function sameOriginUrl(path) {
+  return new URL(path, `${window.location.protocol}//${window.location.host}`).toString();
+}
+
 function getJson(url) {
-  return fetch(url, { cache: "no-store" }).then((response) => {
+  return fetch(sameOriginUrl(url), { cache: "no-store" }).then((response) => {
     if (!response.ok) throw new Error(`${url} returned ${response.status}`);
     return response.json();
   });
@@ -608,7 +612,7 @@ async function saveRoutebooks() {
   updateSaveState("保存中");
   const now = new Date().toISOString();
   for (const routebook of state.routebooks) routebook.updatedAt = now;
-  const response = await fetch("/api/routebooks", {
+  const response = await fetch(sameOriginUrl("/api/routebooks"), {
     method: "PUT",
     headers: { "content-type": "application/json" },
     body: JSON.stringify({ routebooks: state.routebooks }),
