@@ -1,6 +1,7 @@
 import { createReadStream, existsSync, readFileSync, statSync } from "node:fs";
+import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { createServer } from "node:http";
-import { extname, join, normalize, resolve } from "node:path";
+import { dirname, extname, join, normalize, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const defaultRoot = resolve(process.cwd());
@@ -66,6 +67,73 @@ export function isAuthorized(headers = {}, env = process.env) {
   return raw.slice(0, separator) === user && raw.slice(separator + 1) === password;
 }
 
+function routebooksPath(root, env = process.env) {
+  if (env.ROUTEBOOKS_PATH) return resolve(root, env.ROUTEBOOKS_PATH);
+  return resolve(root, "tmp", "routebooks.local.json");
+}
+
+async function readRoutebooks(root, env = process.env) {
+  const path = routebooksPath(root, env);
+  try {
+    const text = await readFile(path, "utf8");
+    const data = JSON.parse(text.replace(/^\uFEFF/, ""));
+    return Array.isArray(data?.routebooks) ? data : { routebooks: [] };
+  } catch (error) {
+    if (error.code === "ENOENT") return { routebooks: [] };
+    throw error;
+  }
+}
+
+async function writeRoutebooks(root, env = process.env, data) {
+  if (!Array.isArray(data?.routebooks)) {
+    const error = new Error("routebooks must be an array");
+    error.statusCode = 400;
+    throw error;
+  }
+
+  const path = routebooksPath(root, env);
+  await mkdir(dirname(path), { recursive: true });
+  const tempPath = `${path}.${process.pid}.${Date.now()}.tmp`;
+  const payload = JSON.stringify({ routebooks: data.routebooks }, null, 2);
+  await writeFile(tempPath, `${payload}\n`, "utf8");
+  await rename(tempPath, path);
+  return { routebooks: data.routebooks };
+}
+
+function readRequestJson(req) {
+  return new Promise((resolveJson, reject) => {
+    let body = "";
+    req.setEncoding("utf8");
+    req.on("data", (chunk) => {
+      body += chunk;
+      if (body.length > 2_000_000) {
+        const error = new Error("request body too large");
+        error.statusCode = 413;
+        reject(error);
+        req.destroy();
+      }
+    });
+    req.on("end", () => {
+      try {
+        resolveJson(body ? JSON.parse(body) : {});
+      } catch {
+        const error = new Error("invalid JSON body");
+        error.statusCode = 400;
+        reject(error);
+      }
+    });
+    req.on("error", reject);
+  });
+}
+
+function sendJson(res, statusCode, data) {
+  res.writeHead(statusCode, {
+    "content-type": "application/json; charset=utf-8",
+    "cache-control": "no-store",
+  });
+  res.end(JSON.stringify(data));
+}
+
 function resolvePath(root, urlPath) {
   const decoded = decodeURIComponent(urlPath.split("?")[0]);
   const candidate = normalize(join(root, decoded === "/" ? "map/index.html" : decoded));
@@ -78,6 +146,12 @@ function resolvePath(root, urlPath) {
 
 export function createMapServer({ root = defaultRoot, env = process.env } = {}) {
   return createServer((req, res) => {
+    void handleMapRequest(req, res, { root, env });
+  });
+}
+
+async function handleMapRequest(req, res, { root, env }) {
+  try {
     if (!isAuthorized(req.headers, env)) {
       res.writeHead(401, {
         "content-type": "text/plain; charset=utf-8",
@@ -87,12 +161,25 @@ export function createMapServer({ root = defaultRoot, env = process.env } = {}) 
       return;
     }
 
-    if ((req.url || "").split("?")[0] === "/api/config") {
-      res.writeHead(200, {
-        "content-type": "application/json; charset=utf-8",
-        "cache-control": "no-store",
-      });
-      res.end(JSON.stringify(getClientConfig(env)));
+    const requestPath = (req.url || "").split("?")[0];
+
+    if (requestPath === "/api/config") {
+      sendJson(res, 200, getClientConfig(env));
+      return;
+    }
+
+    if (requestPath === "/api/routebooks") {
+      if (req.method === "GET") {
+        sendJson(res, 200, await readRoutebooks(root, env));
+        return;
+      }
+      if (req.method === "PUT") {
+        const data = await writeRoutebooks(root, env, await readRequestJson(req));
+        sendJson(res, 200, { ok: true, routebooks: data.routebooks });
+        return;
+      }
+      res.writeHead(405, { "content-type": "text/plain; charset=utf-8", allow: "GET, PUT" });
+      res.end("Method not allowed");
       return;
     }
 
@@ -108,7 +195,13 @@ export function createMapServer({ root = defaultRoot, env = process.env } = {}) 
       "cache-control": "no-store",
     });
     createReadStream(filePath).pipe(res);
-  });
+  } catch (error) {
+    const statusCode = error.statusCode || 500;
+    sendJson(res, statusCode, {
+      ok: false,
+      error: statusCode === 500 ? "internal_server_error" : error.message,
+    });
+  }
 }
 
 const currentFile = fileURLToPath(import.meta.url);

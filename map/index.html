@@ -3,81 +3,65 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>7天徒步路线 · 大兴安岭与草原路线草案</title>
+    <title>路书规划器 · 徒步路线</title>
     <link rel="stylesheet" href="/map/styles.css" />
   </head>
   <body>
-    <main class="shell">
-      <section class="sidebar" aria-label="数据概览">
-        <div class="brand">
-          <span class="kicker">Amap JS API</span>
-          <h1>徒步路线地图</h1>
-        </div>
-
-        <div class="metrics">
+    <main class="planner-shell">
+      <aside class="planner-panel" aria-label="路书编辑器">
+        <header class="planner-head">
           <div>
-            <strong id="poiCount">0</strong>
-            <span>POI</span>
+            <span class="kicker">Routebook Planner</span>
+            <h1>路书规划器</h1>
           </div>
-          <div>
-            <strong id="trustedCount">0</strong>
-            <span>可信点</span>
-          </div>
-          <div>
-            <strong id="routeKm">0</strong>
-            <span>路线 km</span>
-          </div>
-        </div>
+          <strong id="saveState" class="save-state">未保存</strong>
+        </header>
 
-        <div id="routeGroupControls" class="route-tabs" aria-label="路线组"></div>
-
-        <div class="tool-row" aria-label="测距工具">
-          <button id="measureToggle" class="tool-button" type="button" aria-pressed="false">测路线距离</button>
-          <button id="measureClear" class="tool-button secondary" type="button">清除</button>
-        </div>
-        <p id="measureStatus" class="measure-status"></p>
-
-        <div class="filters" aria-label="图层">
-          <button class="filter active" data-layer="bureau" aria-pressed="true" type="button">林业局</button>
-          <button class="filter active" data-layer="farm" aria-pressed="true" type="button">林场</button>
-          <button class="filter" data-layer="unverified" aria-pressed="false" type="button">待核查</button>
-        </div>
-
-        <label class="search">
-          <span>搜索</span>
-          <input id="searchInput" type="search" placeholder="输入路线、林场、林业局或镇名" />
-        </label>
-
-        <p id="zoomHint" class="zoom-hint"></p>
-
-        <ul id="resultsList" class="results-list" aria-label="搜索结果"></ul>
-
-        <section id="detailPanel" class="detail-panel" aria-label="详情">
-          <article class="detail-card">
-            <span>默认视图</span>
-            <h2>全部路线</h2>
-            <p>草案路线均标记为待核查。点击路线段、节点或搜索结果查看详情。</p>
-          </article>
+        <section class="routebook-bar" aria-label="路书管理">
+          <select id="routebookSelect" aria-label="选择路书"></select>
+          <button id="newRoutebook" type="button">新建</button>
+          <button id="duplicateRoutebook" type="button">复制</button>
+          <button id="deleteRoutebook" type="button">删除</button>
         </section>
 
-        <ol id="routeList" class="route-list" aria-label="路线段"></ol>
-      </section>
+        <section id="routebookForm" class="routebook-form" aria-label="当前路书"></section>
 
-      <section class="map-wrap" aria-label="地图">
+        <section class="metrics" aria-label="路书统计">
+          <div>
+            <strong id="dayCount">0</strong>
+            <span>天</span>
+          </div>
+          <div>
+            <strong id="planKm">0</strong>
+            <span>计划 km</span>
+          </div>
+          <div>
+            <strong id="walkingKm">0</strong>
+            <span>高德 km</span>
+          </div>
+        </section>
+
+        <section class="day-toolbar" aria-label="Day 操作">
+          <button id="addDay" type="button">添加 Day</button>
+          <button id="calculateAll" type="button">计算全部距离</button>
+          <button id="saveRoutebooks" class="primary" type="button">保存</button>
+        </section>
+
+        <section id="dayList" class="day-list" aria-label="Day 列表"></section>
+      </aside>
+
+      <section class="map-stage" aria-label="路书地图">
         <div id="map" class="real-map" aria-label="高德地图"></div>
+        <section id="detailPanel" class="detail-panel" aria-label="选中详情"></section>
         <div id="loadingState" class="state-overlay">正在加载...</div>
         <div id="errorState" class="state-overlay error" hidden>
           <strong id="errorTitle">地图不可用</strong>
           <p id="errorBody"></p>
         </div>
         <div class="legend">
-          <span><i class="dot anchor"></i>可信锚点</span>
-          <span><i class="dot draft"></i>草案节点</span>
-          <span><i class="dot bureau"></i>林业局</span>
-          <span><i class="dot farm"></i>林场</span>
-          <span><i class="dot related"></i>待核查</span>
-          <span><i class="line"></i>可信路线</span>
-          <span><i class="line dashed"></i>草案路线</span>
+          <span><i class="dot start"></i>起终点</span>
+          <span><i class="line planned"></i>高德路线</span>
+          <span><i class="line intent"></i>待核查连接</span>
         </div>
       </section>
     </main>
