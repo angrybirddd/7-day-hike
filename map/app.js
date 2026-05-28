@@ -6,6 +6,7 @@ const state = {
   routebooks: [],
   activeRoutebookId: "",
   selectedDayId: "",
+  expandedDayId: "",
   pickTarget: null,
   dirty: false,
   overlays: {
@@ -122,6 +123,14 @@ function findDay(dayId) {
   return activeDays().find((day) => day.id === dayId);
 }
 
+function selectDay(dayId, { expand = true } = {}) {
+  const day = findDay(dayId);
+  if (!day) return null;
+  state.selectedDayId = day.id;
+  if (expand) state.expandedDayId = day.id;
+  return day;
+}
+
 function emptyPoint(name = "") {
   return {
     name,
@@ -229,6 +238,25 @@ function formatKm(value) {
   return number ? (number / 1000).toFixed(1) : "0";
 }
 
+function dayRouteLabel(day) {
+  return `${day.start?.name || "起点"} → ${day.end?.name || "终点"}`;
+}
+
+function dayWalkingLabel(day) {
+  if (day.walkingStatus === "ok") {
+    return `${formatKm(day.walkingDistanceM)} km · ${((Number(day.walkingDurationS || 0)) / 3600).toFixed(1)} h`;
+  }
+  if (day.walkingStatus === "failed") return "未规划";
+  if (day.walkingStatus === "calculating") return "计算中";
+  if (day.walkingStatus === "missing_point") return "缺坐标";
+  return "待计算";
+}
+
+function daySummary(day) {
+  const plan = day.planKm ? `计划 ${day.planKm} km` : "计划 - km";
+  return `${plan} · 高德 ${dayWalkingLabel(day)}`;
+}
+
 function routePathFromWalkingResult(result) {
   const route = result?.routes?.[0];
   const path = [];
@@ -249,30 +277,69 @@ function midpoint(start, end) {
   return [(Number(start[0]) + Number(end[0])) / 2, (Number(start[1]) + Number(end[1])) / 2];
 }
 
-function setDetail(day) {
-  if (!day) {
+function nonEmptyRows(rows) {
+  return rows
+    .filter((row) => row.value !== null && row.value !== undefined && String(row.value).trim() !== "")
+    .map((row) => `<dt>${escapeHtml(row.label)}</dt><dd>${escapeHtml(row.value)}</dd>`)
+    .join("");
+}
+
+function previewRows(day) {
+  return nonEmptyRows([
+    { label: "爬升", value: day.ascentM ? `${day.ascentM} m` : "" },
+    { label: "下降", value: day.descentM ? `${day.descentM} m` : "" },
+    {
+      label: "海拔",
+      value:
+        day.elevationMinM || day.elevationMaxM
+          ? `${day.elevationMinM || "-"} - ${day.elevationMaxM || "-"} m`
+          : "",
+    },
+    { label: "地貌", value: day.terrain },
+    { label: "补给", value: day.supply },
+    { label: "住宿", value: day.lodging },
+    { label: "风险", value: day.risk },
+    { label: "风土", value: day.culture },
+    { label: "备注", value: day.notes },
+  ]);
+}
+
+function renderRoutebookPreview() {
+  const routebook = activeRoutebook();
+  if (!routebook) {
     els.detailPanel.innerHTML = "";
     return;
   }
 
-  const walking =
-    day.walkingStatus === "ok"
-      ? `高德 ${formatKm(day.walkingDistanceM)} km · ${((Number(day.walkingDurationS || 0)) / 3600).toFixed(1)} h`
-      : day.walkingStatus === "failed"
-        ? "高德未规划"
-        : "待计算";
+  const days = activeDays();
+  const planKm = days.reduce((sum, day) => sum + Number(day.planKm || 0), 0);
+  const walkingM = days.reduce((sum, day) => sum + Number(day.walkingStatus === "ok" ? day.walkingDistanceM || 0 : 0), 0);
 
   els.detailPanel.innerHTML = `
-    <article>
-      <span>${escapeHtml(day.title || `Day${day.dayIndex}`)}</span>
-      <h2>${escapeHtml(day.start?.name || "起点")} → ${escapeHtml(day.end?.name || "终点")}</h2>
-      <dl>
-        <dt>计划</dt><dd>${escapeHtml(day.planKm || "-")} km</dd>
-        <dt>高德</dt><dd>${escapeHtml(walking)}</dd>
-        <dt>地貌</dt><dd>${escapeHtml(day.terrain || "-")}</dd>
-        <dt>补给</dt><dd>${escapeHtml(day.supply || "-")}</dd>
-        <dt>风险</dt><dd>${escapeHtml(day.risk || "-")}</dd>
-      </dl>
+    <article class="routebook-preview">
+      <header>
+        <span>完整文字路书</span>
+        <h2>${escapeHtml(routebook.name || "未命名路书")}</h2>
+        <p>${escapeHtml([routebook.region, `${days.length} 天`, `计划 ${planKm || 0} km`, `高德 ${formatKm(walkingM)} km`].filter(Boolean).join(" · "))}</p>
+      </header>
+      <ol>
+        ${days
+          .map((day) => {
+            const selected = day.id === state.selectedDayId ? " selected" : "";
+            const rows = previewRows(day);
+            return `
+              <li class="preview-day${selected}">
+                <button type="button" data-preview-day-id="${escapeHtml(day.id)}">
+                  <span>${escapeHtml(day.title || `Day${day.dayIndex}`)}</span>
+                  <strong>${escapeHtml(dayRouteLabel(day))}</strong>
+                  <em>${escapeHtml(daySummary(day))}</em>
+                </button>
+                ${rows ? `<dl>${rows}</dl>` : ""}
+              </li>
+            `;
+          })
+          .join("")}
+      </ol>
     </article>
   `;
 }
@@ -375,6 +442,7 @@ function renderDayList() {
   els.dayList.innerHTML = days
     .map((day, index) => {
       const selected = day.id === state.selectedDayId ? " selected" : "";
+      const expanded = day.id === state.expandedDayId;
       const walking =
         day.walkingStatus === "ok"
           ? `高德 ${formatKm(day.walkingDistanceM)} km`
@@ -382,31 +450,42 @@ function renderDayList() {
             ? "未规划"
             : "待计算";
       return `
-        <article class="day-card${selected}" data-day-id="${escapeHtml(day.id)}">
+        <article class="day-card${selected}${expanded ? " expanded" : " collapsed"}" data-day-id="${escapeHtml(day.id)}">
           <header>
-            <label>
-              <span>标题</span>
-              <input data-day-id="${escapeHtml(day.id)}" data-day-field="title" value="${escapeHtml(day.title || `Day${index + 1}`)}" />
-            </label>
+            <button class="day-summary-button" type="button" data-action="select-day" data-day-id="${escapeHtml(day.id)}">
+              <span>${escapeHtml(day.title || `Day${index + 1}`)}</span>
+              <strong>${escapeHtml(dayRouteLabel(day))}</strong>
+              <em>${escapeHtml(daySummary(day))}</em>
+            </button>
             <div class="day-actions">
-              <button type="button" data-action="select-day" data-day-id="${escapeHtml(day.id)}">查看</button>
+              <button type="button" data-action="toggle-day" data-day-id="${escapeHtml(day.id)}">${expanded ? "收起" : "编辑"}</button>
               <button type="button" data-action="move-day-up" data-day-id="${escapeHtml(day.id)}">上移</button>
               <button type="button" data-action="move-day-down" data-day-id="${escapeHtml(day.id)}">下移</button>
               <button type="button" data-action="calc-day" data-day-id="${escapeHtml(day.id)}">计算</button>
               <button type="button" data-action="delete-day" data-day-id="${escapeHtml(day.id)}">删除</button>
             </div>
           </header>
-          <div class="endpoint-grid">
-            ${endpointControls(day, "start")}
-            ${endpointControls(day, "end")}
-          </div>
-          <div class="field-grid">
-            ${DAY_FIELDS.map((field) => dayField(day, field)).join("")}
-          </div>
-          <footer>
-            <span>计划 ${escapeHtml(day.planKm || "-")} km</span>
-            <span>${escapeHtml(walking)}</span>
-          </footer>
+          ${
+            expanded
+              ? `
+                <label>
+                  <span>标题</span>
+                  <input data-day-id="${escapeHtml(day.id)}" data-day-field="title" value="${escapeHtml(day.title || `Day${index + 1}`)}" />
+                </label>
+                <div class="endpoint-grid">
+                  ${endpointControls(day, "start")}
+                  ${endpointControls(day, "end")}
+                </div>
+                <div class="field-grid">
+                  ${DAY_FIELDS.map((field) => dayField(day, field)).join("")}
+                </div>
+                <footer>
+                  <span>计划 ${escapeHtml(day.planKm || "-")} km</span>
+                  <span>${escapeHtml(walking)}</span>
+                </footer>
+              `
+              : ""
+          }
         </article>
       `;
     })
@@ -419,7 +498,7 @@ function renderAll() {
   renderMetrics();
   renderDayList();
   renderMapObjects();
-  setDetail(findDay(state.selectedDayId) || activeDays()[0]);
+  renderRoutebookPreview();
 }
 
 function makePointMarker(day, endpoint, label) {
@@ -434,7 +513,7 @@ function makePointMarker(day, endpoint, label) {
     zIndex: day.id === state.selectedDayId ? 120 : 100,
   });
   marker.on("click", () => {
-    state.selectedDayId = day.id;
+    selectDay(day.id);
     renderAll();
   });
   marker.on("dragend", (event) => {
@@ -442,6 +521,7 @@ function makePointMarker(day, endpoint, label) {
     point.source = "map_drag";
     point.status = "resolved";
     clearDayWalking(day);
+    selectDay(day.id);
     markDirty();
     renderAll();
   });
@@ -505,7 +585,7 @@ function renderMapObjects() {
         zIndex: selected ? 90 : 60,
       });
       line.on("click", () => {
-        state.selectedDayId = day.id;
+        selectDay(day.id);
         renderAll();
       });
       state.overlays.lines.push(line);
@@ -539,13 +619,15 @@ function clearDayWalking(day) {
 }
 
 function setPoint(day, endpoint, point) {
+  const previous = day[endpoint]?.lnglat?.join(",");
+  const next = point.lnglat ? point.lnglat.map(Number).join(",") : "";
   day[endpoint] = {
     ...normalizePoint(day[endpoint]),
     ...point,
     lnglat: point.lnglat ? point.lnglat.map(Number) : null,
     status: point.lnglat ? "resolved" : "unresolved",
   };
-  clearDayWalking(day);
+  if (previous !== next) clearDayWalking(day);
   markDirty();
 }
 
@@ -553,6 +635,7 @@ function searchPlace(day, endpoint) {
   const point = day[endpoint];
   const keyword = point?.name?.trim();
   if (!keyword) return;
+  selectDay(day.id);
   point.status = "searching";
   renderDayList();
 
@@ -629,6 +712,7 @@ function addRoutebook(routebook) {
   state.routebooks.push(routebook);
   state.activeRoutebookId = routebook.id;
   state.selectedDayId = routebook.days[0]?.id || "";
+  state.expandedDayId = state.selectedDayId;
   markDirty();
   renderAll();
 }
@@ -647,6 +731,7 @@ function handleBookField(event) {
   routebook[field] = event.target.value;
   markDirty();
   renderRoutebookSelect();
+  renderRoutebookPreview();
 }
 
 function handleDayInput(event) {
@@ -658,20 +743,23 @@ function handleDayInput(event) {
   const endpoint = event.target.dataset.endpoint;
   const pointField = event.target.dataset.pointField;
   if (endpoint && pointField) {
+    selectDay(day.id);
     day[endpoint][pointField] = event.target.value;
-    clearDayWalking(day);
+    day[endpoint].candidates = [];
     markDirty();
     renderMetrics();
+    renderRoutebookPreview();
     return;
   }
 
   const field = event.target.dataset.dayField;
   if (!field) return;
+  selectDay(day.id);
   const numeric = ["planKm", "ascentM", "descentM", "elevationMinM", "elevationMaxM"].includes(field);
   day[field] = numeric ? asNumber(event.target.value) : event.target.value;
-  if (field !== "title") clearDayWalking(day);
   markDirty();
   renderMetrics();
+  renderRoutebookPreview();
 }
 
 function handleDayAction(event) {
@@ -682,34 +770,44 @@ function handleDayAction(event) {
   const action = button.dataset.action;
 
   if (action === "select-day" && day) {
+    selectDay(day.id);
+    renderAll();
+  } else if (action === "toggle-day" && day) {
     state.selectedDayId = day.id;
+    state.expandedDayId = state.expandedDayId === day.id ? "" : day.id;
     renderAll();
   } else if (action === "move-day-up" && day) {
     const index = routebook.days.indexOf(day);
     if (index > 0) [routebook.days[index - 1], routebook.days[index]] = [routebook.days[index], routebook.days[index - 1]];
     reindexDays(routebook);
+    selectDay(day.id);
     markDirty();
     renderAll();
   } else if (action === "move-day-down" && day) {
     const index = routebook.days.indexOf(day);
     if (index < routebook.days.length - 1) [routebook.days[index + 1], routebook.days[index]] = [routebook.days[index], routebook.days[index + 1]];
     reindexDays(routebook);
+    selectDay(day.id);
     markDirty();
     renderAll();
   } else if (action === "delete-day" && day && confirm(`删除 ${day.title || `Day${day.dayIndex}`}？`)) {
     routebook.days = routebook.days.filter((item) => item.id !== day.id);
     reindexDays(routebook);
     state.selectedDayId = routebook.days[0]?.id || "";
+    state.expandedDayId = state.selectedDayId;
     markDirty();
     renderAll();
   } else if (action === "calc-day" && day) {
+    selectDay(day.id);
     void calculateDay(day);
   } else if (action === "search-place" && day) {
     searchPlace(day, button.dataset.endpoint);
   } else if (action === "pick-map" && day) {
+    selectDay(day.id);
     state.pickTarget = { dayId: day.id, endpoint: button.dataset.endpoint };
     updateSaveState(`${button.dataset.endpoint === "start" ? "点选起点" : "点选终点"}`);
   } else if (action === "clear-point" && day) {
+    selectDay(day.id);
     setPoint(day, button.dataset.endpoint, emptyPoint(day[button.dataset.endpoint]?.name || ""));
     renderAll();
   } else if (action === "choose-candidate" && day) {
@@ -721,11 +819,31 @@ function handleDayAction(event) {
       lnglat: candidate.lnglat,
       source: candidate.source,
       status: "resolved",
-      candidates: day[endpoint].candidates,
+      candidates: [],
     });
-    state.selectedDayId = day.id;
+    selectDay(day.id);
     renderAll();
   }
+}
+
+function handleDayFocus(event) {
+  const holder = event.target.closest("[data-day-id]");
+  const dayId = holder?.dataset.dayId || event.target.dataset.dayId;
+  const day = findDay(dayId);
+  if (!day || state.selectedDayId === day.id) return;
+  selectDay(day.id);
+  for (const item of els.dayList.querySelectorAll(".day-card")) {
+    item.classList.toggle("selected", item.dataset.dayId === day.id);
+  }
+  renderMapObjects();
+  renderRoutebookPreview();
+}
+
+function handlePreviewClick(event) {
+  const button = event.target.closest("button[data-preview-day-id]");
+  if (!button) return;
+  selectDay(button.dataset.previewDayId);
+  renderAll();
 }
 
 function handleMapClick(event) {
@@ -741,7 +859,7 @@ function handleMapClick(event) {
     status: "resolved",
     candidates: [],
   });
-  state.selectedDayId = day.id;
+  selectDay(day.id);
   state.pickTarget = null;
   renderAll();
 }
@@ -757,6 +875,7 @@ async function boot() {
   if (!state.routebooks.length) state.routebooks = [createRoutebook()];
   state.activeRoutebookId = state.routebooks[0].id;
   state.selectedDayId = state.routebooks[0].days[0]?.id || "";
+  state.expandedDayId = state.selectedDayId;
   state.dirty = !routebookData.routebooks?.length;
 
   state.amap = await loadAmap(config);
@@ -778,6 +897,7 @@ async function boot() {
 els.routebookSelect.addEventListener("change", () => {
   state.activeRoutebookId = els.routebookSelect.value;
   state.selectedDayId = activeDays()[0]?.id || "";
+  state.expandedDayId = state.selectedDayId;
   renderAll();
 });
 els.newRoutebook.addEventListener("click", () => addRoutebook(createRoutebook()));
@@ -792,17 +912,21 @@ els.deleteRoutebook.addEventListener("click", () => {
   if (!state.routebooks.length) state.routebooks = [createRoutebook()];
   state.activeRoutebookId = state.routebooks[0].id;
   state.selectedDayId = state.routebooks[0].days[0]?.id || "";
+  state.expandedDayId = state.selectedDayId;
   markDirty();
   renderAll();
 });
 els.routebookForm.addEventListener("input", handleBookField);
 els.dayList.addEventListener("input", handleDayInput);
+els.dayList.addEventListener("focusin", handleDayFocus);
 els.dayList.addEventListener("click", handleDayAction);
+els.detailPanel.addEventListener("click", handlePreviewClick);
 els.addDay.addEventListener("click", () => {
   const routebook = activeRoutebook();
   const day = createDay(routebook.days.length + 1);
   routebook.days.push(day);
   state.selectedDayId = day.id;
+  state.expandedDayId = day.id;
   markDirty();
   renderAll();
 });
