@@ -7,6 +7,8 @@ const state = {
   activeRoutebookId: "",
   selectedDayId: "",
   expandedDayId: "",
+  leftPanelOpen: true,
+  rightPanelOpen: false,
   pickTarget: null,
   dirty: false,
   overlays: {
@@ -17,6 +19,7 @@ const state = {
 };
 
 const els = {
+  shell: document.querySelector("#plannerShell"),
   map: document.querySelector("#map"),
   loading: document.querySelector("#loadingState"),
   error: document.querySelector("#errorState"),
@@ -36,6 +39,8 @@ const els = {
   saveRoutebooks: document.querySelector("#saveRoutebooks"),
   dayList: document.querySelector("#dayList"),
   detailPanel: document.querySelector("#detailPanel"),
+  leftPanelToggle: document.querySelector("#leftPanelToggle"),
+  rightPanelToggle: document.querySelector("#rightPanelToggle"),
 };
 
 const DAY_FIELDS = [
@@ -224,6 +229,35 @@ function updateSaveState(text) {
   els.saveState.classList.toggle("dirty", state.dirty);
 }
 
+function updatePanelChrome() {
+  els.shell.classList.toggle("left-collapsed", !state.leftPanelOpen);
+  els.shell.classList.toggle("right-open", state.rightPanelOpen);
+  els.leftPanelToggle.textContent = state.leftPanelOpen ? "收起编辑" : "编辑";
+  els.leftPanelToggle.setAttribute("aria-expanded", String(state.leftPanelOpen));
+  els.rightPanelToggle.setAttribute("aria-expanded", String(state.rightPanelOpen));
+}
+
+function mapFitPadding() {
+  return [
+    88,
+    state.rightPanelOpen ? 460 : 96,
+    88,
+    state.leftPanelOpen ? 96 : 56,
+  ];
+}
+
+function refreshMapLayout() {
+  updatePanelChrome();
+  window.requestAnimationFrame(() => {
+    state.map?.resize?.();
+    renderMapObjects();
+  });
+  window.setTimeout(() => {
+    state.map?.resize?.();
+    renderMapObjects();
+  }, 210);
+}
+
 function clearOverlays(items) {
   for (const item of items) item.setMap?.(null);
   items.length = 0;
@@ -319,6 +353,7 @@ function renderRoutebookPreview() {
     <article class="routebook-preview">
       <header>
         <span>完整文字路书</span>
+        <button class="preview-close" type="button" data-action="toggle-routebook" aria-label="收起完整文字路书">收起路书</button>
         <h2>${escapeHtml(routebook.name || "未命名路书")}</h2>
         <p>${escapeHtml([routebook.region, `${days.length} 天`, `计划 ${planKm || 0} km`, `高德 ${formatKm(walkingM)} km`].filter(Boolean).join(" · "))}</p>
       </header>
@@ -608,7 +643,7 @@ function renderMapObjects() {
   }
 
   const fitItems = [...state.overlays.markers, ...state.overlays.lines];
-  if (fitItems.length) state.map.setFitView(fitItems, false, [88, 96, 88, 460], 13);
+  if (fitItems.length) state.map.setFitView(fitItems, false, mapFitPadding(), 13);
 }
 
 function clearDayWalking(day) {
@@ -840,10 +875,26 @@ function handleDayFocus(event) {
 }
 
 function handlePreviewClick(event) {
+  const toggle = event.target.closest("button[data-action='toggle-routebook']");
+  if (toggle) {
+    state.rightPanelOpen = false;
+    refreshMapLayout();
+    return;
+  }
   const button = event.target.closest("button[data-preview-day-id]");
   if (!button) return;
   selectDay(button.dataset.previewDayId);
   renderAll();
+}
+
+function toggleLeftPanel() {
+  state.leftPanelOpen = !state.leftPanelOpen;
+  refreshMapLayout();
+}
+
+function toggleRightPanel() {
+  state.rightPanelOpen = !state.rightPanelOpen;
+  refreshMapLayout();
 }
 
 function handleMapClick(event) {
@@ -891,6 +942,7 @@ async function boot() {
 
   els.loading.hidden = true;
   updateSaveState();
+  updatePanelChrome();
   renderAll();
 }
 
@@ -921,6 +973,8 @@ els.dayList.addEventListener("input", handleDayInput);
 els.dayList.addEventListener("focusin", handleDayFocus);
 els.dayList.addEventListener("click", handleDayAction);
 els.detailPanel.addEventListener("click", handlePreviewClick);
+els.leftPanelToggle.addEventListener("click", toggleLeftPanel);
+els.rightPanelToggle.addEventListener("click", toggleRightPanel);
 els.addDay.addEventListener("click", () => {
   const routebook = activeRoutebook();
   const day = createDay(routebook.days.length + 1);

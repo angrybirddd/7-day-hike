@@ -101,6 +101,11 @@ label {
   display: grid;
   grid-template-columns: 520px 1fr;
   height: 100vh;
+  transition: grid-template-columns 180ms ease;
+}
+
+.planner-shell.left-collapsed {
+  grid-template-columns: 92px 1fr;
 }
 
 .planner-panel {
@@ -121,6 +126,54 @@ label {
   align-items: start;
   justify-content: space-between;
   gap: 16px;
+}
+
+.planner-head-actions {
+  display: grid;
+  justify-items: end;
+  gap: 8px;
+}
+
+.planner-head-actions button {
+  min-height: 30px;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.planner-shell.left-collapsed .planner-panel {
+  gap: 0;
+  padding: 12px 10px;
+}
+
+.planner-shell.left-collapsed .planner-head {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.planner-shell.left-collapsed .planner-head > div:first-child,
+.planner-shell.left-collapsed .routebook-bar,
+.planner-shell.left-collapsed .routebook-form,
+.planner-shell.left-collapsed .metrics,
+.planner-shell.left-collapsed .day-toolbar,
+.planner-shell.left-collapsed .day-list {
+  display: none;
+}
+
+.planner-shell.left-collapsed .planner-head-actions {
+  justify-items: center;
+}
+
+.planner-shell.left-collapsed .planner-head-actions button {
+  width: 62px;
+  padding: 0;
+}
+
+.planner-shell.left-collapsed .save-state {
+  min-width: 62px;
+  padding: 6px 5px;
+  font-size: 11px;
 }
 
 .kicker {
@@ -436,6 +489,38 @@ h1 {
   width: min(420px, calc(100% - 48px));
   max-height: calc(100vh - 118px);
   overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(18px);
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
+}
+
+.planner-shell.right-open .detail-panel {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.routebook-toggle {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  z-index: 9;
+  min-height: 36px;
+  padding: 0 14px;
+  border-color: #c9d4cc;
+  background: rgba(255, 253, 247, 0.96);
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 760;
+  box-shadow: var(--shadow);
+}
+
+.planner-shell.right-open .routebook-toggle {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .detail-panel article {
@@ -465,6 +550,22 @@ h1 {
   font-size: 12px;
   font-weight: 650;
   line-height: 1.5;
+}
+
+.routebook-preview header {
+  position: relative;
+  padding-right: 90px;
+}
+
+.routebook-preview .preview-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-height: 30px;
+  padding: 0 10px;
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 650;
 }
 
 .routebook-preview ol {
@@ -623,10 +724,18 @@ h1 {
     height: auto;
   }
 
+  .planner-shell.left-collapsed {
+    grid-template-columns: 1fr;
+  }
+
   .planner-panel {
     height: auto;
     min-height: 70vh;
     overflow: visible;
+  }
+
+  .planner-shell.left-collapsed .planner-panel {
+    min-height: auto;
   }
 
   .map-stage {

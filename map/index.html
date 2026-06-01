@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="/map/styles.css" />
   </head>
   <body>
-    <main class="planner-shell">
+    <main id="plannerShell" class="planner-shell">
       <aside class="planner-panel" aria-label="路书编辑器">
         <header class="planner-head">
           <div>
             <span class="kicker">Routebook Planner</span>
             <h1>路书规划器</h1>
           </div>
-          <strong id="saveState" class="save-state">未保存</strong>
+          <div class="planner-head-actions">
+            <button id="leftPanelToggle" type="button" aria-expanded="true">收起编辑</button>
+            <strong id="saveState" class="save-state">未保存</strong>
+          </div>
         </header>
 
         <section class="routebook-bar" aria-label="路书管理">
@@ -52,6 +55,7 @@
 
       <section class="map-stage" aria-label="路书地图">
         <div id="map" class="real-map" aria-label="高德地图"></div>
+        <button id="rightPanelToggle" class="routebook-toggle" type="button" aria-expanded="false">路书</button>
         <section id="detailPanel" class="detail-panel" aria-label="选中详情"></section>
         <div id="loadingState" class="state-overlay">正在加载...</div>
         <div id="errorState" class="state-overlay error" hidden>
